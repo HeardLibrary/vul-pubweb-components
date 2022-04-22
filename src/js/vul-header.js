@@ -25,24 +25,14 @@ class VulHeader extends HTMLElement {
         shadow.appendChild(header);
     }
 
-    loadStylesheets(shadowRoot) {
-        let stylesheets = [
-            'dist/css/bootstrap.css',
-            'dist/css/vu-main-2019.css',
-            'dist/css/vul-header-bs3.css',
-        ];
-
-        stylesheets.forEach((stylesheet) => {
-            var link = document.createElement('link');
-            link.setAttribute('rel', 'stylesheet');
-            link.setAttribute('href', stylesheet);
-            shadowRoot.appendChild(link);
-        });
-    }
-
     connectedCallback() {
         const { shadowRoot } = this;
-        this.loadStylesheets(shadowRoot);
+        let stylesheet = 'dist/css/vul-pw-header.css';
+
+        var link = document.createElement('link');
+        link.setAttribute('rel', 'stylesheet');
+        link.setAttribute('href', stylesheet);
+        shadowRoot.appendChild(link);
     }
 
     get division() {

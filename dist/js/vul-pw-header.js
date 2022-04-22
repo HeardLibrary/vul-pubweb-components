@@ -124,21 +124,14 @@ var VulHeader = /*#__PURE__*/function (_HTMLElement) {
   }
 
   _createClass(VulHeader, [{
-    key: "loadStylesheets",
-    value: function loadStylesheets(shadowRoot) {
-      var stylesheets = ['dist/css/bootstrap.css', 'dist/css/vu-main-2019.css', 'dist/css/vul-header-bs3.css'];
-      stylesheets.forEach(function (stylesheet) {
-        var link = document.createElement('link');
-        link.setAttribute('rel', 'stylesheet');
-        link.setAttribute('href', stylesheet);
-        shadowRoot.appendChild(link);
-      });
-    }
-  }, {
     key: "connectedCallback",
     value: function connectedCallback() {
       var shadowRoot = this.shadowRoot;
-      this.loadStylesheets(shadowRoot);
+      var stylesheet = 'dist/css/vul-pw-header.css';
+      var link = document.createElement('link');
+      link.setAttribute('rel', 'stylesheet');
+      link.setAttribute('href', stylesheet);
+      shadowRoot.appendChild(link);
     }
   }, {
     key: "division",
@@ -315,7 +308,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/dist/js/vul-pw-header": 0,
-/******/ 			"dist/css/bootstrap": 0
+/******/ 			"src/css/bootstrap": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -365,10 +358,10 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["dist/css/bootstrap"], () => (__webpack_require__("./src/js/vul-brandbar.js")))
-/******/ 	__webpack_require__.O(undefined, ["dist/css/bootstrap"], () => (__webpack_require__("./src/js/vul-header.js")))
-/******/ 	__webpack_require__.O(undefined, ["dist/css/bootstrap"], () => (__webpack_require__("./src/js/vul-navigation.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["dist/css/bootstrap"], () => (__webpack_require__("./src/bootstrap-3.4.1/less/bootstrap.less")))
+/******/ 	__webpack_require__.O(undefined, ["src/css/bootstrap"], () => (__webpack_require__("./src/js/vul-brandbar.js")))
+/******/ 	__webpack_require__.O(undefined, ["src/css/bootstrap"], () => (__webpack_require__("./src/js/vul-header.js")))
+/******/ 	__webpack_require__.O(undefined, ["src/css/bootstrap"], () => (__webpack_require__("./src/js/vul-navigation.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["src/css/bootstrap"], () => (__webpack_require__("./src/bootstrap-3.4.1/less/bootstrap.less")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

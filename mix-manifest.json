@@ -1,4 +1,5 @@
 {
     "/dist/js/vul-pw-header.js": "/dist/js/vul-pw-header.js",
-    "/dist/css/bootstrap.css": "/dist/css/bootstrap.css"
+    "/src/css/bootstrap.css": "/src/css/bootstrap.css",
+    "/dist/css/vul-pw-header.css": "/dist/css/vul-pw-header.css"
 }
