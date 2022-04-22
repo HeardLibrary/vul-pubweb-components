@@ -11,11 +11,11 @@ class VulHeader extends HTMLElement {
             <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
             <slot></slot>
             
-            <div class="img-banner header-background" data-div="${this.division}">
+            <div class="img-banner header-background" data-div="${division}">
                 <div class="container container--banner">
                     <a href="https://www.library.vanderbilt.edu/">
-                        <h1 class="graphic-header__title livetextheader" aria-label="${this.division} Home">
-                        Jean &amp; Alexander Heard <b>Libraries</b>
+                        <h1 class="graphic-header__title livetextheader" aria-label="${division} Home">
+                            Jean &amp; Alexander Heard <b>Libraries</b>
                         </h1>
                     </a>
                 </div>
