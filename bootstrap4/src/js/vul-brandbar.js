@@ -26,51 +26,51 @@ class VulBrandbar extends HTMLElement {
                     <ul class="vu-nav vu-navbar-nav vu-navbar-right vu-toolbar">
                         <!-- Logins -->
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="dropdown-toggle btn" type="button" id="loginsBtn" data-toggle="dropdown" aria-expanded="false" data-display="static">
                                 <i class="vubrandbar__icon glyphicon glyphicon-lock"></i>&nbsp; Logins <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="https://catalog.library.vanderbilt.edu/discovery/account?vid=01VAN_INST:vanui">My Account</a></li>
-                                <li><a href="http://gmail.vanderbilt.edu">VUGmail</a></li>
-                                <li><a href="https://outlook.office.com/vanderbilt.edu">VMail</a></li>
-                                <li><a href="http://yes.vanderbilt.edu/">YES</a></li>
-                                <li><a href="http://www.vanderbilt.edu/brightspace/">Brightspace</a></li>
-                                <li><a href="https://oraclecloud.vanderbilt.edu/">SkyVU</a></li>
-                                <li><a href="https://anchorlink.vanderbilt.edu/account/logon">Anchor Link</a></li>
-                            </ul>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="loginsBtn">
+                                <a class="dropdown-item" href="https://catalog.library.vanderbilt.edu/discovery/account?vid=01VAN_INST:vanui">My Account</a>
+                                <a class="dropdown-item" href="http://gmail.vanderbilt.edu">VUGmail</a>
+                                <a class="dropdown-item" href="https://outlook.office.com/vanderbilt.edu">VMail</a>
+                                <a class="dropdown-item" href="http://yes.vanderbilt.edu/">YES</a>
+                                <a class="dropdown-item" href="http://www.vanderbilt.edu/brightspace/">Brightspace</a>
+                                <a class="dropdown-item" href="https://oraclecloud.vanderbilt.edu/">SkyVU</a>
+                                <a class="dropdown-item" href="https://anchorlink.vanderbilt.edu/account/logon">Anchor Link</a>
+                            </div>
                         </li>
 
                         <!-- Resources -->
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="dropdown-toggle btn" type="button" id="resourcesBtn" data-toggle="dropdown" aria-expanded="false" data-display="static">
                                 <i class="vubrandbar__icon glyphicon glyphicon-cog"></i>&nbsp; Resources <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="http://vu.edu/peoplefinder">PeopleFinder</a></li>
-                                <li><a href="http://www.library.vanderbilt.edu/">Libraries</a></li>
-                                <li><a href="http://news.vanderbilt.edu">News</a></li>
-                                <li><a href="http://events.vanderbilt.edu">Calendar</a></li>
-                                <li><a href="http://www.vanderbilt.edu/map/">Maps</a></li>
-                                <li><a href="http://www.vanderbilt.edu/atoz/letter/A">A-Z</a></li>
-                                <li><a href="https://social.vanderbilt.edu">Get Social</a></li>
-                            </ul>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="http://vu.edu/peoplefinder">PeopleFinder</a>
+                                <a class="dropdown-item" href="http://www.library.vanderbilt.edu/">Libraries</a>
+                                <a class="dropdown-item" href="http://news.vanderbilt.edu">News</a>
+                                <a class="dropdown-item" href="http://events.vanderbilt.edu">Calendar</a>
+                                <a class="dropdown-item" href="http://www.vanderbilt.edu/map/">Maps</a>
+                                <a class="dropdown-item" href="http://www.vanderbilt.edu/atoz/letter/A">A-Z</a>
+                                <a class="dropdown-item" href="https://social.vanderbilt.edu">Get Social</a>
+                            </div>
                         </li>
 
                         <!-- Explore VU -->
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="dropdown-toggle btn" type="button" id="exploreBtn" data-toggle="dropdown" aria-expanded="false" data-display="static">
                                 <i class="vubrandbar__icon glyphicon glyphicon-th"></i>&nbsp; Explore VU <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="http://www.vanderbilt.edu/about/">About</a></li>
-                                <li><a href="http://www.vanderbilt.edu/prospective/">Admissions</a></li>
-                                <li><a href="http://www.vanderbilt.edu/academics/">Academics</a></li>
-                                <li><a href="http://research.vanderbilt.edu/">Research</a></li>
-                                <li><a href="http://www.vanderbilt.edu/student/">Students</a></li>
-                                <li><a href="http://www.vanderbilt.edu/faculty-staff/">Faculty &amp; Staff</a></li>
-                                <li><a href="http://www.vucommodores.com/">Athletics</a></li>
-                                <li class="last"><a href="http://www.mc.vanderbilt.edu/">Medical Center</a></li>
-                            </ul>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="exploreBtn">
+                                <a class="dropdown-item" href="http://www.vanderbilt.edu/about/">About</a>
+                                <a class="dropdown-item" href="http://www.vanderbilt.edu/prospective/">Admissions</a>
+                                <a class="dropdown-item" href="http://www.vanderbilt.edu/academics/">Academics</a>
+                                <a class="dropdown-item" href="http://research.vanderbilt.edu/">Research</a>
+                                <a class="dropdown-item" href="http://www.vanderbilt.edu/student/">Students</a>
+                                <a class="dropdown-item" href="http://www.vanderbilt.edu/faculty-staff/">Faculty &amp; Staff</a>
+                                <a class="dropdown-item" href="http://www.vucommodores.com/">Athletics</a>
+                                <a class="dropdown-item" href="http://www.mc.vanderbilt.edu/">Medical Center</a>
+                            </div>
                         </li>
                     </ul>
                 </div>

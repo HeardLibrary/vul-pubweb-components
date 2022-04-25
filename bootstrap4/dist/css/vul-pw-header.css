@@ -2883,29 +2883,35 @@ tbody.collapse.in {
   position: relative;
   display: block;
 }
-.vu-nav > li > a {
+.vu-nav > li > a,
+.vu-nav > li > button {
   position: relative;
   display: block;
   padding: 10px 15px;
 }
 .vu-nav > li > a:hover,
-.vu-nav > li > a:focus {
+.vu-nav > li > button:hover,
+.vu-nav > li > a:focus,
+.vu-nav > li > button:focus {
   text-decoration: none;
   background-color: #eeeeee;
 }
-.vu-nav > li.disabled > a {
+.vu-nav > li.disabled > a,
+.vu-nav > li.disabled > button {
   color: #777777;
 }
 .vu-nav > li.disabled > a:hover,
-.vu-nav > li.disabled > a:focus {
+.vu-nav > li.disabled > button:hover,
+.vu-nav > li.disabled > a:focus,
+.vu-nav > li.disabled > button:focus {
   color: #777777;
   text-decoration: none;
   cursor: not-allowed;
   background-color: transparent;
 }
-.vu-nav .open > a,
-.vu-nav .open > a:hover,
-.vu-nav .open > a:focus {
+.vu-nav .show > button,
+.vu-nav .show > button:hover,
+.vu-nav .show > button:focus {
   background-color: #eeeeee;
   border-color: #337ab7;
 }
@@ -2915,7 +2921,8 @@ tbody.collapse.in {
   overflow: hidden;
   background-color: #e5e5e5;
 }
-.vu-nav > li > a > img {
+.vu-nav > li > a > img,
+.vu-nav > li > button > img {
   max-width: none;
 }
 .vu-nav-tabs {
@@ -3224,13 +3231,14 @@ tbody.collapse.in {
 .vu-navbar-nav {
   margin: 7.5px -15px;
 }
-.vu-navbar-nav > li > a {
+.vu-navbar-nav > li > a,
+.vu-navbar-nav > li > button {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
 }
 @media (max-width: 767px) {
-  .vu-navbar-nav .open .dropdown-menu {
+  .vu-navbar-nav .show .dropdown-menu {
     position: static;
     float: none;
     width: auto;
@@ -3239,15 +3247,15 @@ tbody.collapse.in {
     border: 0;
     box-shadow: none;
   }
-  .vu-navbar-nav .open .dropdown-menu > li > a,
-  .vu-navbar-nav .open .dropdown-menu .dropdown-header {
+  .vu-navbar-nav .show .dropdown-menu > a,
+  .vu-navbar-nav .show .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
-  .vu-navbar-nav .open .dropdown-menu > li > a {
+  .vu-navbar-nav .show .dropdown-menu > a {
     line-height: 20px;
   }
-  .vu-navbar-nav .open .dropdown-menu > li > a:hover,
-  .vu-navbar-nav .open .dropdown-menu > li > a:focus {
+  .vu-navbar-nav .show .dropdown-menu > a:hover,
+  .vu-navbar-nav .show .dropdown-menu > a:focus {
     background-image: none;
   }
 }
@@ -3259,7 +3267,8 @@ tbody.collapse.in {
   .vu-navbar-nav > li {
     float: left;
   }
-  .vu-navbar-nav > li > a {
+  .vu-navbar-nav > li > a,
+  .vu-navbar-nav > li > button {
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -3405,51 +3414,48 @@ tbody.collapse.in {
 .vu-navbar-default .vu-navbar-text {
   color: #777;
 }
-.vu-navbar-default .vu-navbar-nav > li > a {
+.vu-navbar-default .vu-navbar-nav > li > a,
+.vu-navbar-default .vu-navbar-nav > li > button {
   color: #777;
 }
 .vu-navbar-default .vu-navbar-nav > li > a:hover,
-.vu-navbar-default .vu-navbar-nav > li > a:focus {
+.vu-navbar-default .vu-navbar-nav > li > button:hover,
+.vu-navbar-default .vu-navbar-nav > li > a:focus,
+.vu-navbar-default .vu-navbar-nav > li > button:focus {
   color: #333;
   background-color: transparent;
 }
 .vu-navbar-default .vu-navbar-nav > .active > a,
+.vu-navbar-default .vu-navbar-nav > .active > button,
 .vu-navbar-default .vu-navbar-nav > .active > a:hover,
-.vu-navbar-default .vu-navbar-nav > .active > a:focus {
+.vu-navbar-default .vu-navbar-nav > .active > button:hover,
+.vu-navbar-default .vu-navbar-nav > .active > a:focus,
+.vu-navbar-default .vu-navbar-nav > .active > button:focus {
   color: #555;
   background-color: #e7e7e7;
 }
 .vu-navbar-default .vu-navbar-nav > .disabled > a,
+.vu-navbar-default .vu-navbar-nav > .disabled > button,
 .vu-navbar-default .vu-navbar-nav > .disabled > a:hover,
-.vu-navbar-default .vu-navbar-nav > .disabled > a:focus {
+.vu-navbar-default .vu-navbar-nav > .disabled > button:hover,
+.vu-navbar-default .vu-navbar-nav > .disabled > a:focus,
+.vu-navbar-default .vu-navbar-nav > .disabled > button:focus {
   color: #ccc;
   background-color: transparent;
 }
-.vu-navbar-default .vu-navbar-nav > .open > a,
-.vu-navbar-default .vu-navbar-nav > .open > a:hover,
-.vu-navbar-default .vu-navbar-nav > .open > a:focus {
+.vu-navbar-default .vu-navbar-nav > .show > button,
+.vu-navbar-default .vu-navbar-nav > .show > button:hover,
+.vu-navbar-default .vu-navbar-nav > .show > button:focus {
   color: #555;
   background-color: #e7e7e7;
 }
 @media (max-width: 767px) {
-  .vu-navbar-default .vu-navbar-nav .open .dropdown-menu > li > a {
+  .vu-navbar-default .vu-navbar-nav .show .dropdown-menu > a {
     color: #777;
   }
-  .vu-navbar-default .vu-navbar-nav .open .dropdown-menu > li > a:hover,
-  .vu-navbar-default .vu-navbar-nav .open .dropdown-menu > li > a:focus {
+  .vu-navbar-default .vu-navbar-nav .show .dropdown-menu > a:hover,
+  .vu-navbar-default .vu-navbar-nav .show .dropdown-menu > a:focus {
     color: #333;
-    background-color: transparent;
-  }
-  .vu-navbar-default .vu-navbar-nav .open .dropdown-menu > .active > a,
-  .vu-navbar-default .vu-navbar-nav .open .dropdown-menu > .active > a:hover,
-  .vu-navbar-default .vu-navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555;
-    background-color: #e7e7e7;
-  }
-  .vu-navbar-default .vu-navbar-nav .open .dropdown-menu > .disabled > a,
-  .vu-navbar-default .vu-navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  .vu-navbar-default .vu-navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #ccc;
     background-color: transparent;
   }
 }
@@ -3501,57 +3507,54 @@ fieldset[disabled] .vu-navbar-default .btn-link:focus {
 .vu-navbar-inverse .vu-navbar-text {
   color: #9d9d9d;
 }
-.vu-navbar-inverse .vu-navbar-nav > li > a {
+.vu-navbar-inverse .vu-navbar-nav > li > a,
+.vu-navbar-inverse .vu-navbar-nav > li > button {
   color: #9d9d9d;
 }
 .vu-navbar-inverse .vu-navbar-nav > li > a:hover,
-.vu-navbar-inverse .vu-navbar-nav > li > a:focus {
+.vu-navbar-inverse .vu-navbar-nav > li > button:hover,
+.vu-navbar-inverse .vu-navbar-nav > li > a:focus,
+.vu-navbar-inverse .vu-navbar-nav > li > button:focus {
   color: #fff;
   background-color: transparent;
 }
 .vu-navbar-inverse .vu-navbar-nav > .active > a,
+.vu-navbar-inverse .vu-navbar-nav > .active > button,
 .vu-navbar-inverse .vu-navbar-nav > .active > a:hover,
-.vu-navbar-inverse .vu-navbar-nav > .active > a:focus {
+.vu-navbar-inverse .vu-navbar-nav > .active > button:hover,
+.vu-navbar-inverse .vu-navbar-nav > .active > a:focus,
+.vu-navbar-inverse .vu-navbar-nav > .active > button:focus {
   color: #fff;
   background-color: #080808;
 }
 .vu-navbar-inverse .vu-navbar-nav > .disabled > a,
+.vu-navbar-inverse .vu-navbar-nav > .disabled > button,
 .vu-navbar-inverse .vu-navbar-nav > .disabled > a:hover,
-.vu-navbar-inverse .vu-navbar-nav > .disabled > a:focus {
+.vu-navbar-inverse .vu-navbar-nav > .disabled > button:hover,
+.vu-navbar-inverse .vu-navbar-nav > .disabled > a:focus,
+.vu-navbar-inverse .vu-navbar-nav > .disabled > button:focus {
   color: #444;
   background-color: transparent;
 }
-.vu-navbar-inverse .vu-navbar-nav > .open > a,
-.vu-navbar-inverse .vu-navbar-nav > .open > a:hover,
-.vu-navbar-inverse .vu-navbar-nav > .open > a:focus {
+.vu-navbar-inverse .vu-navbar-nav > .show > button,
+.vu-navbar-inverse .vu-navbar-nav > .show > button:hover,
+.vu-navbar-inverse .vu-navbar-nav > .show > button:focus {
   color: #fff;
   background-color: #080808;
 }
 @media (max-width: 767px) {
-  .vu-navbar-inverse .vu-navbar-nav .open .dropdown-menu > .dropdown-header {
+  .vu-navbar-inverse .vu-navbar-nav .show .dropdown-menu > .dropdown-header {
     border-color: #080808;
   }
-  .vu-navbar-inverse .vu-navbar-nav .open .dropdown-menu .divider {
+  .vu-navbar-inverse .vu-navbar-nav .show .dropdown-menu .divider {
     background-color: #080808;
   }
-  .vu-navbar-inverse .vu-navbar-nav .open .dropdown-menu > li > a {
+  .vu-navbar-inverse .vu-navbar-nav .show .dropdown-menu > a {
     color: #9d9d9d;
   }
-  .vu-navbar-inverse .vu-navbar-nav .open .dropdown-menu > li > a:hover,
-  .vu-navbar-inverse .vu-navbar-nav .open .dropdown-menu > li > a:focus {
+  .vu-navbar-inverse .vu-navbar-nav .show .dropdown-menu > a:hover,
+  .vu-navbar-inverse .vu-navbar-nav .show .dropdown-menu > a:focus {
     color: #fff;
-    background-color: transparent;
-  }
-  .vu-navbar-inverse .vu-navbar-nav .open .dropdown-menu > .active > a,
-  .vu-navbar-inverse .vu-navbar-nav .open .dropdown-menu > .active > a:hover,
-  .vu-navbar-inverse .vu-navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #fff;
-    background-color: #080808;
-  }
-  .vu-navbar-inverse .vu-navbar-nav .open .dropdown-menu > .disabled > a,
-  .vu-navbar-inverse .vu-navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  .vu-navbar-inverse .vu-navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #444;
     background-color: transparent;
   }
 }
@@ -3868,160 +3871,6 @@ fieldset[disabled] .vu-navbar-inverse .btn-link:focus {
 }
 
 
-/* -----------------------------------
-NAVIGATION
------------------------------------ */
-
-#main_navbar {
-    margin: 0 !important;
-    border-radius: 0 !important;
-    z-index: 1000;
-}
-
-#main_navbar .vumcbrandbar {
-	padding: 10px 0px;
-}
-
-.vu-navbar-form input {
-    background: #444;
-    border: 1px solid #666;
-    color: #000;
-}
-
-.vu-navbar-form button {
-    background: #444;
-    border: 1px solid #666;color: #FC6;
-}
-
-ul.dropdown-menu {
-    background: #383838;
-}
-
-ul.dropdown-menu li a {
-    color: #CCC;
-}
-
-.vu-navbar .vu-navbar-brand {
-    padding: 8px 0 0px 10px;
-}
-
-.vumcbrandbar .vu-navbar-brand {
-    padding: 0px 0 0px 10px;  height: auto;
-}
-
-.vu-navbar-brand img {
-    max-width: 220px;
-    display: inline;
-}
-
-/* brandbar */
-.vubrandbar__icon {
-    color: #d8ab4c;
-}
-
-/*main nav */
-.vu-navbar {
-    margin-bottom: 0;
-    min-height: 0;
-    z-index: 300;
-}
-
-.vubrandbar form input.form-control {
-	padding-left: 10px;
-	color: #BBB !important;
-}
-
-li.searchdropdown label {
-  display: inline;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: 1.42857143;
-  color: #FFF;
-  white-space: nowrap;
-}
-
-li.searchdropdown {
-	padding: 5px 5px 5px 10px;
-}
-
-li.searchdropdown label:hover,
-li.searchdropdown label:focus {
-  text-decoration: none;
-  background-color: transparent;
-}
-
-li.searchdropdown input:checked ~ label,
-li.searchdropdown input:checked ~ label:hover,
-li.searchdropdown input:checked ~ label:focus,
-li.searchdropdown .active > label,
-li.searchdropdown .active > label:hover,
-li.searchdropdown .active > label:focus {
-  color: #FC6;
-  text-decoration: none;
-  outline: 0;
-  background-color: transparent;
-
-}
-
-li.searchdropdown label {
-  margin-bottom: 0;
-  cursor: pointer;
-}
-
-li.searchdropdown input[type="radio"] {
-	display: inline;
-	background: #222;
-	border: 0;
-	padding: 0;
-}
-
-li.searchdropdown label:focus,
-li.searchdropdown input:focus ~ label {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
-li.doswordmark {
-	border-right: 0 !important;
-	margin-left: 40px;
-	margin-right: 25px;
-}
-
-li.doswordmark a {
-	background: url('../images/DOS-grey.png') top left no-repeat !important;
-	text-indent: -9999px;
-	width: 100px;
-	height: 45px;
-	padding: 0 !important;
-}
-
-/* -----------------------------------
-RESPONSIVE
------------------------------------ */
-
-@media (min-width: 768px) {
-
-    .vu-navbar-brand img {
-        max-width: 100%;
-        display: block;
-    }
-
-    .nav-visibility {
-        visibility: visible;
-    }
-
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-
-    .vu-navbar.vu-navbar-inverse-light {
-        background: #444 !important;
-    }
-
-}
-
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -4114,7 +3963,12 @@ RESPONSIVE
       margin: 18px 0; }
       .vu-navbar.vu-navbar-inverse .vu-navbar-toggle:focus {
         border: 1px dotted #fff !important;
-        padding: 2px; } }
+        padding: 2px; } 
+    
+    .vu-navbar .btn {
+      width: 100%;
+      text-align: left;
+    } }
   
   .vu-navbar.vu-navbar-inverse-light .dropdown-menu .vumainmenu__button,
   .vu-navbar.vu-navbar-inverse .dropdown-menu .vubrandbar__button {
@@ -4320,13 +4174,19 @@ RESPONSIVE
     max-width: 220px;
     display: inline; }
   
-  .vumainmenu .vunavigation > li > a {
+  .vumainmenu .vunavigation > li > a,
+  .vumainmenu .vunavigation > li > button {
     color: #bfbfbf; }
   
   /* Accessibility Options */
-  .dropdown-toggle:focus {
+  .vu-nav .dropdown .dropdown-toggle:focus {
     background-color: #484848 !important;
     outline: #5e9ed7 auto 5px; }
+
+  .vu-nav .dropdown .dropdown-toggle:focus,
+  .vu-nav .dropdown .dropdown-toggle:focus-visible {
+    outline-offset: -2px;
+  }
   
   .vu-navbar.vu-navbar-inverse-light .vu-navbar-nav .dropdown-menu li:not(.list-group) > a:focus {
     background-color: #555; }
@@ -4362,6 +4222,181 @@ RESPONSIVE
     a[href]:after {
       font-size: 0.8rem; } }
   
+/* -----------------------------------
+NAVIGATION
+----------------------------------- */
+
+#main_navbar {
+    margin: 0 !important;
+    border-radius: 0 !important;
+    z-index: 1000;
+}
+
+#main_navbar .vumcbrandbar {
+	padding: 10px 0px;
+}
+
+.vu-navbar-form input {
+    background: #444;
+    border: 1px solid #666;
+    color: #000;
+}
+
+.vu-navbar-form button {
+    background: #444;
+    border: 1px solid #666;color: #FC6;
+}
+
+.vu-nav .dropdown .dropdown-toggle {
+    padding: 9px 14px; /* To account for transparent border */
+    transition: none;
+    font-size: inherit;
+    font-weight: 300;
+    border-radius: 0;
+}
+
+.vu-nav .dropdown-menu {
+    background: #383838;
+}
+
+.vu-nav .dropdown-menu .dropdown-item {
+    color: #CCC;
+    line-height: 1.42857;
+    padding: 3px 20px;
+}
+
+.vu-nav .dropdown-menu .dropdown-item:hover,
+.vu-nav .dropdown-menu .dropdown-item:focus {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+.vu-navbar .vu-navbar-brand {
+    padding: 8px 0 0px 10px;
+}
+
+.vumcbrandbar .vu-navbar-brand {
+    padding: 0px 0 0px 10px;  height: auto;
+}
+
+.vu-navbar-brand img {
+    max-width: 220px;
+    display: inline;
+}
+
+/* brandbar */
+.vubrandbar__icon {
+    color: #d8ab4c;
+}
+
+/*main nav */
+.vu-navbar {
+    margin-bottom: 0;
+    min-height: 0;
+    z-index: 300;
+}
+
+.vubrandbar form input.form-control {
+	padding-left: 10px;
+	color: #BBB !important;
+}
+
+li.searchdropdown label {
+  display: inline;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #FFF;
+  white-space: nowrap;
+}
+
+li.searchdropdown {
+	padding: 5px 5px 5px 10px;
+}
+
+li.searchdropdown label:hover,
+li.searchdropdown label:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+li.searchdropdown input:checked ~ label,
+li.searchdropdown input:checked ~ label:hover,
+li.searchdropdown input:checked ~ label:focus,
+li.searchdropdown .active > label,
+li.searchdropdown .active > label:hover,
+li.searchdropdown .active > label:focus {
+  color: #FC6;
+  text-decoration: none;
+  outline: 0;
+  background-color: transparent;
+
+}
+
+li.searchdropdown label {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+li.searchdropdown input[type="radio"] {
+	display: inline;
+	background: #222;
+	border: 0;
+	padding: 0;
+}
+
+li.searchdropdown label:focus,
+li.searchdropdown input:focus ~ label {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+li.doswordmark {
+	border-right: 0 !important;
+	margin-left: 40px;
+	margin-right: 25px;
+}
+
+li.doswordmark a {
+	background: url('../images/DOS-grey.png') top left no-repeat !important;
+	text-indent: -9999px;
+	width: 100px;
+	height: 45px;
+	padding: 0 !important;
+}
+
+/* -----------------------------------
+RESPONSIVE
+----------------------------------- */
+
+@media (min-width: 768px) {
+
+    .vu-navbar-brand img {
+        max-width: 100%;
+        display: block;
+    }
+
+    .nav-visibility {
+        visibility: visible;
+    }
+
+    .vu-nav .dropdown .dropdown-toggle {
+        padding: 14px; /* To account for transparent border */
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .vu-navbar.vu-navbar-inverse-light {
+        background: #444 !important;
+    }
+
+}
+
 /*
 |--------------------------------------------------------------------------
 | Global

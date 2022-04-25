@@ -90,7 +90,12 @@
       margin: 18px 0; }
       .vu-navbar.vu-navbar-inverse .vu-navbar-toggle:focus {
         border: 1px dotted #fff !important;
-        padding: 2px; } }
+        padding: 2px; } 
+    
+    .vu-navbar .btn {
+      width: 100%;
+      text-align: left;
+    } }
   
   .vu-navbar.vu-navbar-inverse-light .dropdown-menu .vumainmenu__button,
   .vu-navbar.vu-navbar-inverse .dropdown-menu .vubrandbar__button {
@@ -296,13 +301,19 @@
     max-width: 220px;
     display: inline; }
   
-  .vumainmenu .vunavigation > li > a {
+  .vumainmenu .vunavigation > li > a,
+  .vumainmenu .vunavigation > li > button {
     color: #bfbfbf; }
   
   /* Accessibility Options */
-  .dropdown-toggle:focus {
+  .vu-nav .dropdown .dropdown-toggle:focus {
     background-color: #484848 !important;
     outline: #5e9ed7 auto 5px; }
+
+  .vu-nav .dropdown .dropdown-toggle:focus,
+  .vu-nav .dropdown .dropdown-toggle:focus-visible {
+    outline-offset: -2px;
+  }
   
   .vu-navbar.vu-navbar-inverse-light .vu-navbar-nav .dropdown-menu li:not(.list-group) > a:focus {
     background-color: #555; }

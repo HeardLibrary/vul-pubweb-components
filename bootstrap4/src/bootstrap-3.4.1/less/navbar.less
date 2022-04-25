@@ -232,7 +232,8 @@
 .vu-navbar-nav {
   margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
 
-  > li > a {
+  > li > a,
+  > li > button {
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: @line-height-computed;
@@ -240,7 +241,7 @@
 
   @media (max-width: @grid-float-breakpoint-max) {
     // Dropdowns get custom display when collapsed
-    .open .dropdown-menu {
+    .show .dropdown-menu {
       position: static;
       float: none;
       width: auto;
@@ -248,11 +249,11 @@
       background-color: transparent;
       border: 0;
       box-shadow: none;
-      > li > a,
+      > a,
       .dropdown-header {
         padding: 5px 15px 5px 25px;
       }
-      > li > a {
+      > a {
         line-height: @line-height-computed;
         &:hover,
         &:focus {
@@ -269,7 +270,8 @@
 
     > li {
       float: left;
-      > a {
+      > a,
+      > button {
         padding-top: @navbar-padding-vertical;
         padding-bottom: @navbar-padding-vertical;
       }
@@ -410,7 +412,8 @@
   }
 
   .vu-navbar-nav {
-    > li > a {
+    > li > a,
+    > li > button {
       color: @navbar-default-link-color;
 
       &:hover,
@@ -419,7 +422,8 @@
         background-color: @navbar-default-link-hover-bg;
       }
     }
-    > .active > a {
+    > .active > a,
+    > .active > button {
       &,
       &:hover,
       &:focus {
@@ -427,7 +431,8 @@
         background-color: @navbar-default-link-active-bg;
       }
     }
-    > .disabled > a {
+    > .disabled > a,
+    > .disabled > button {
       &,
       &:hover,
       &:focus {
@@ -438,7 +443,7 @@
 
     // Dropdown menu items
     // Remove background color from open dropdown
-    > .open > a {
+    > .show > button {
       &,
       &:hover,
       &:focus {
@@ -449,29 +454,13 @@
 
     @media (max-width: @grid-float-breakpoint-max) {
       // Dropdowns get custom display when collapsed
-      .open .dropdown-menu {
-        > li > a {
+      .show .dropdown-menu {
+        > a {
           color: @navbar-default-link-color;
           &:hover,
           &:focus {
             color: @navbar-default-link-hover-color;
             background-color: @navbar-default-link-hover-bg;
-          }
-        }
-        > .active > a {
-          &,
-          &:hover,
-          &:focus {
-            color: @navbar-default-link-active-color;
-            background-color: @navbar-default-link-active-bg;
-          }
-        }
-        > .disabled > a {
-          &,
-          &:hover,
-          &:focus {
-            color: @navbar-default-link-disabled-color;
-            background-color: @navbar-default-link-disabled-bg;
           }
         }
       }
@@ -542,7 +531,8 @@
   }
 
   .vu-navbar-nav {
-    > li > a {
+    > li > a,
+    > li > button {
       color: @navbar-inverse-link-color;
 
       &:hover,
@@ -551,7 +541,8 @@
         background-color: @navbar-inverse-link-hover-bg;
       }
     }
-    > .active > a {
+    > .active > a,
+    > .active > button {
       &,
       &:hover,
       &:focus {
@@ -559,7 +550,8 @@
         background-color: @navbar-inverse-link-active-bg;
       }
     }
-    > .disabled > a {
+    > .disabled > a,
+    > .disabled > button {
       &,
       &:hover,
       &:focus {
@@ -569,7 +561,7 @@
     }
 
     // Dropdowns
-    > .open > a {
+    > .show > button {
       &,
       &:hover,
       &:focus {
@@ -580,35 +572,19 @@
 
     @media (max-width: @grid-float-breakpoint-max) {
       // Dropdowns get custom display
-      .open .dropdown-menu {
+      .show .dropdown-menu {
         > .dropdown-header {
           border-color: @navbar-inverse-border;
         }
         .divider {
           background-color: @navbar-inverse-border;
         }
-        > li > a {
+        > a {
           color: @navbar-inverse-link-color;
           &:hover,
           &:focus {
             color: @navbar-inverse-link-hover-color;
             background-color: @navbar-inverse-link-hover-bg;
-          }
-        }
-        > .active > a {
-          &,
-          &:hover,
-          &:focus {
-            color: @navbar-inverse-link-active-color;
-            background-color: @navbar-inverse-link-active-bg;
-          }
-        }
-        > .disabled > a {
-          &,
-          &:hover,
-          &:focus {
-            color: @navbar-inverse-link-disabled-color;
-            background-color: @navbar-inverse-link-disabled-bg;
           }
         }
       }
