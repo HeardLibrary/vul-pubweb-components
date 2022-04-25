@@ -1,0 +1,77 @@
+/*
+|--------------------------------------------------------------------------
+| Global
+|--------------------------------------------------------------------------
+*/
+
+/* :host {
+	all: initial;
+} */
+
+/* a, 
+button, 
+i {
+	transition: background-color 100ms ease-in-out, 
+				color 100ms ease-in-out,
+				text-decoration-color 100ms ease-in-out;
+} */
+
+/*
+|--------------------------------------------------------------------------
+| Banner Image
+|--------------------------------------------------------------------------
+*/
+
+.img-banner.header-background[data-div*="Heard"] {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.library.vanderbilt.edu/images/banners/banner-heard.jpg") top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Special Collections"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-specialcollections.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background {
+	position: static;
+	margin: 0;
+}
+
+.img-banner .container--banner {
+	padding: 2.8125rem 1.875rem;
+}
+
+.img-banner.header-background[data-div*="Heard"] .graphic-header__title {
+	margin: 0;
+}
+
+.graphic-header__small {
+	color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.5em;
+	line-height: 1.25;
+	text-transform: uppercase;
+}
+
+.header-background .graphic-header__title {
+	font-size: 2.25em;
+	margin: 0.5rem 0 0 0;
+}
+
+@media only screen and (min-width: 48em) {
+	.header-background .graphic-header__title {
+		font-size: 3.25rem;
+	}
+	
+	.graphic-header__small {
+		font-size: 1.75rem;
+	}
+}
+
+@media only screen and (min-width: 62em) {
+	.header-background .graphic-header__title {
+		font-size: 4rem;
+	}
+	
+	.graphic-header__small {
+		font-size: 2em;
+	}
+}
