@@ -124,18 +124,12 @@ class VulFooter extends HTMLElement {
 
     connectedCallback() {
         const { shadowRoot } = this;
-        let stylesheets = [
-            'dist/css/bootstrap.css',
-            'src/css/vu-main-2019-footer.css',
-            'src/css/vul-footer.css'
-        ];
+        let stylesheet = 'dist/css/vul-pw-footer.css';
 
-        stylesheets.forEach((stylesheet) => {
-            var link = document.createElement('link');
-            link.setAttribute('rel', 'stylesheet');
-            link.setAttribute('href', stylesheet);
-            shadowRoot.appendChild(link);
-        });
+        var link = document.createElement('link');
+        link.setAttribute('rel', 'stylesheet');
+        link.setAttribute('href', stylesheet);
+        shadowRoot.appendChild(link);
     }
 }
 
