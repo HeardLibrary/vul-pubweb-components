@@ -27,7 +27,7 @@
     <vul-footer></vul-footer>
 
     <script src="dist/js/vul-pw-header.js"></script>
-    <script src="src/js/vul-footer.js"></script>
+    <script src="dist/js/vul-pw-footer.js"></script>
 
     <!-- BS3 JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
@@ -42,40 +42,16 @@
 
     <!-- FA styles must be loaded into component shadow DOM -->
     <script>
-        // function loadScript(url, callback) {
-        //     var head = document.head;
-        //     var script = document.createElement('script');
-        //     script.type = 'text/javascript';
-        //     script.src = url;
+        FontAwesome.dom.i2svg({
+            node: document.querySelector('vul-footer').shadowRoot
+        });
 
-        //     // FA config
-        //     script.setAttribute('data-auto-add-css', false);
-        //     script.setAttribute('data-auto-replace-svg', 'nest');
-
-        //     script.onreadystatechange = callback;
-        //     script.onload = callback;
-
-        //     head.appendChild(script);
-        // }
-
-        // var insertFA = function() {
-        //     addFa2Footer();
-        // }
-
-        // function addFa2Footer() {
-            FontAwesome.dom.i2svg({
-                node: document.querySelector('vul-footer').shadowRoot
-            });
-
-            const css = FontAwesome.dom.css();
-            
-            let style = document.createElement('style');
-            style.innerText = css;
-            vulFooter = document.getElementsByTagName('vul-footer')[0];
-            vulFooter.shadowRoot.appendChild(style);
-        // }
-
-        // loadScript("https://use.fontawesome.com/releases/v5.13.0/js/all.js", insertFA);
+        const css = FontAwesome.dom.css();
+        
+        let style = document.createElement('style');
+        style.innerText = css;
+        vulFooter = document.getElementsByTagName('vul-footer')[0];
+        vulFooter.shadowRoot.appendChild(style);
     </script>
 </body>
 

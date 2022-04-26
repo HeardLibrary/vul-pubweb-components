@@ -127,8 +127,7 @@ class VulFooter extends HTMLElement {
         let stylesheets = [
             'dist/css/bootstrap.css',
             'src/css/vu-main-2019-footer.css',
-            'src/css/vul-footer.css',
-            // 'https://use.fontawesome.com/releases/v5.15.4/css/all.css'
+            'src/css/vul-footer.css'
         ];
 
         stylesheets.forEach((stylesheet) => {
