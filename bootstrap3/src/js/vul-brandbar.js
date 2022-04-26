@@ -18,8 +18,8 @@ class VulBrandbar extends HTMLElement {
                         <span class="icon-bar"></span>
                     </button>
                     <a class="vu-navbar-brand" href="http://www.vanderbilt.edu">
-                        <img class="hidden-xs hidden-sm hidden-md" src="https://www.library.vanderbilt.edu/images/vanderbilt2022.svg" alt="Vanderbilt University" width="100%" height="90%">
-                        <img class="visible-xs visible-sm visible-md" src="https://www.library.vanderbilt.edu/images/vanderbilt2022.svg" alt="Vanderbilt University" width="100%" height="90%">
+                        <img class="hidden-xs hidden-sm hidden-md" src="https://www.library.vanderbilt.edu/images/vanderbilt2022.svg" alt="Vanderbilt University">
+                        <img class="visible-xs visible-sm visible-md" src="https://www.library.vanderbilt.edu/images/vanderbilt2022.svg" alt="Vanderbilt University">
                     </a>
                 </div>
                 <div class="vubrandbar collapse vu-navbar-collapse">
