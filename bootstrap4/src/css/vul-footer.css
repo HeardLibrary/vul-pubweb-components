@@ -1,0 +1,141 @@
+/*
+|--------------------------------------------------------------------------
+| Global
+|--------------------------------------------------------------------------
+*/
+
+:host {
+	all: initial;
+}
+
+.btn:not(.btn-link):not(.gsw-list__link) {
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+    white-space: normal;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Footer
+|--------------------------------------------------------------------------
+*/
+
+.vu-footer {
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	line-height: 1.6rem;
+	padding-bottom: 0;
+}
+
+.vu-footer h4 {
+	line-height: 1.35;
+}
+
+.vu-footer ul {
+	color: #aaa;
+	font-size: 1.2rem;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.vu-footer__social .social-icons li {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.vu-footer__social .social-icons i {
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	font-size: 30px;
+    padding: 10px 0;
+	transition: transform 100ms ease-in-out;
+    min-width: 50px;
+	min-height: 50px;
+}
+
+.vu-footer__social .social-icons i:hover {
+	transform: scale(1.1);
+}
+
+.vu-footer__social .social-icons .facebook i {
+	background-color: hsl(221, 44%, 41%);
+}
+
+.vu-footer__social .social-icons .twitter i {
+	background-color: hsl(203, 89%, 53%);
+}
+
+.vu-footer__social .social-icons .instagram i {
+	background: radial-gradient(circle at 10% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.vu-footer__social .social-icons .youtube i {
+	background-color: hsl(0, 100%, 46%);
+}
+
+.vu-footer__social .social-icons .flickr i {
+	background-color: #fff;
+	position: relative;
+	z-index: 0;
+}
+
+.vu-footer__social .social-icons .flickr i:after {
+	background: linear-gradient(to right, #0063dc 50%, #ff0084 50%);
+	content: "";
+	height: 18px;
+	left: 15px;
+	position: absolute;
+	top: 15px;
+	width: 20px;
+	z-index: -1;
+}
+
+.vu-footer__social .social-icons .rss i {
+	background-color: hsl(32, 100%, 50%);
+	color: hsl(32, 100%, 18%);
+}
+
+.vu-footer__social .social-icons .linkedin i {
+	background-color: hsl(201, 100%, 35%);
+}
+
+.vu-footer__yourvu li, 
+.vu-footer__popular li {
+	line-height: 1.35;
+	margin-bottom: 0.5em;
+}
+
+.vu-footer__map .embed-responsive-16by9 {
+	height: initial;
+	padding: initial;
+}
+
+.vu-footer__map .give-now img {
+	min-width: 100px;
+	width: 100%;
+}
+
+.vu-footer__map .friend {
+	padding: 15px 0;
+}
+
+.vu-footer__map .friend a {
+	color: #333;
+}
+
+.credits {
+	margin-top: 2rem;
+}
+
+.credits a { 
+	text-decoration: underline transparent;
+}
+
+.credits a:hover {
+	text-decoration-color: #d8ab4c;
+}
+
+.credits .depository-logo {
+	width: 30px;
+}

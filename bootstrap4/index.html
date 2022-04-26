@@ -22,7 +22,12 @@
         <vul-navigation></vul-navigation>
     </vul-header>
 
+    <div style="margin-top: 5rem"></div>
+
+    <vul-footer></vul-footer>
+
     <script src="dist/js/vul-pw-header.js"></script>
+    <script src="dist/js/vul-pw-footer.js"></script>
 
     <!-- BS3 JavaScript -->
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
@@ -34,6 +39,20 @@
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-add-css data-auto-replace-svg="nest"></script>
+
+    <!-- FA styles must be loaded into component shadow DOM -->
+    <script>
+        FontAwesome.dom.i2svg({
+            node: document.querySelector('vul-footer').shadowRoot
+        });
+
+        const css = FontAwesome.dom.css();
+        
+        let style = document.createElement('style');
+        style.innerText = css;
+        vulFooter = document.getElementsByTagName('vul-footer')[0];
+        vulFooter.shadowRoot.appendChild(style);
+    </script>
 </body>
 
 </html>

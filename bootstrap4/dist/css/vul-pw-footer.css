@@ -4303,3 +4303,343 @@ fieldset[disabled] .vu-navbar-inverse .btn-link:focus {
   }
 }
 
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  html {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; }
+  
+  @media (min-width: 480px) {
+    html {
+      font-size: 14px; } }
+  
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px; } }
+  
+  body {
+    font-size: 1rem;
+    line-height: 1.6em;
+    font-weight: 300;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #fff; }
+    body.fresh {
+      background-color: #fff; }
+  
+  .container {
+    width: 100%;
+    width: calc(100% - 30px);
+    max-width: 1450px; }
+  
+  a {
+    color: #333333; }
+    a:hover {
+      color: #006682; }
+  
+  .btn {
+    font-family: 'Roboto', sans-serif; }
+    .btn-primary {
+      background-color: #d8ab4c;
+      border: #d8ab4c;
+      color: #000; }
+      .btn-primary:hover {
+        background-color: #c6942b;
+        color: #000; }
+  
+  a.btn-primary {
+    color: #000; }
+    a.btn-primary:hover {
+      color: #000; }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding-bottom: 50px; } }
+  
+  .get-social__list .get-social__item {
+    text-align: center; }
+    .get-social__list .get-social__item .get-social__link {
+      padding: 5px 0; }
+  
+  .vu-social {
+    background: rgba(34, 34, 34, 0.5);
+    margin: -1.5em 0 1.5em; }
+  
+  .get-social {
+    background: #000;
+    padding-bottom: 1em; }
+    .get-social__title {
+      color: #d8ab4c;
+      font-family: Vollkorn, serif; }
+    .get-social__list {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      .get-social__list li {
+        float: left;
+        display: block;
+        padding-right: 10px;
+        margin-bottom: 10px; }
+        .get-social__list li a {
+          color: #fff;
+          display: block;
+          height: 45px;
+          width: 45px;
+          text-indent: -9999px;
+          background-image: url(https://cdn.vanderbilt.edu/vu-www4/i/social-icons.png);
+          border-radius: 20px;
+          border-width: initial;
+          border-style: none;
+          border-color: initial;
+          border-image: initial;
+          text-decoration: none; }
+      .get-social__list .socialfacebook a {
+        background-position: 0 0; }
+      .get-social__list .socialtwitter a {
+        background-position: 0 -1330px; }
+      .get-social__list .socialpinterest a {
+        background-position: 0 -760px; }
+      .get-social__list .socialinstagram a {
+        background-position: 0 -380px; }
+      .get-social__list .socialyoutube a {
+        background-position: 0 -1520px; }
+      .get-social__list .socialflickr a {
+        background-position: 0 -95px; }
+      .get-social__list .socialtumblr a {
+        background-position: 0 -1235px; }
+      .get-social__list .socialfoursquare a {
+        background-position: 0 -190px; }
+      .get-social__list .socialgplus a {
+        background-position: 0 -285px; }
+      .get-social__list .socialrss a {
+        background-position: 0 -855px; }
+      .get-social__list .sociallinkedin a {
+        background-position: 0 -570px; }
+      .get-social__list .socialsnapchat a {
+        background-position: 0 -1615px; }
+      .get-social__list .socialrenren a {
+        background-position: 0 -1710px; }
+      .get-social__list .socialweibo a {
+        background-position: 0 -1805px; }
+      .get-social__list .socialemail a {
+        background-position: 0 -1900px; }
+      .get-social__list .socialwechat a {
+        background-position: 0 -1995px; }
+    .get-social__item {
+      display: inline-block;
+      margin: 0 .5em; }
+  
+  .vu-footer {
+    background: #333 url("https://cdn.vanderbilt.edu/vu-www4/omni/i/VUfooterphoto.jpg") no-repeat top center/cover;
+    border-top: 7px solid #d8ab4c;
+    color: #aaa;
+    font-size: 1.2rem;
+    min-height: 300px;
+    padding: 1.5em 0;
+    position: relative; }
+    .vu-footer h4 {
+      font-weight: 300;
+      font-size: 1.4rem; }
+    .vu-footer p a {
+      color: inherit;
+      text-decoration: underline; }
+    .vu-footer a {
+      color: #ccc; }
+      .vu-footer a:hover {
+        color: #d8ab4c;
+        text-decoration: none; }
+    .vu-footer ul {
+      line-height: 1.4em;
+      list-style-type: none;
+      margin-right: 0;
+      padding: 0; }
+    .vu-footer__social .get-social__list {
+      margin-right: 0; }
+    .vu-footer__social .get-social__item {
+      display: inline-block;
+      margin: 0 .5em .5em 0;
+      text-align: left; }
+    .vu-footer__title {
+      margin: 15px 0px;
+      color: #d8ab4c;
+      font-family: Roboto, sans-serif;
+      font-weight: 700; }
+      .vu-footer__title a {
+        color: #d8ab4c; }
+        .vu-footer__title a:hover {
+          color: #ccc; }
+    .vu-footer .flickr_badge_image {
+      border: 1px solid #666;
+      padding: 2px;
+      background: #222;
+      float: left;
+      margin: 0px 10px 10px 0px; }
+  
+  .credits {
+    background: #000;
+    font-size: 1.2rem;
+    padding: 15px 0px 10px 0px;
+    color: #969696; }
+    .credits a {
+      color: #aaa; }
+      .credits a:visited {
+        color: #aaa; }
+      .credits a:hover {
+        color: #d8ab4c; }
+  
+  @media print {
+    a[href]:after {
+      font-size: 0.8rem; } }
+  /*# sourceMappingURL=map/vu-main-2019.css.map */
+  
+/*
+|--------------------------------------------------------------------------
+| Global
+|--------------------------------------------------------------------------
+*/
+
+:host {
+	all: initial;
+}
+
+.btn:not(.btn-link):not(.gsw-list__link) {
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+    white-space: normal;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Footer
+|--------------------------------------------------------------------------
+*/
+
+.vu-footer {
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	line-height: 1.6rem;
+	padding-bottom: 0;
+}
+
+.vu-footer h4 {
+	line-height: 1.35;
+}
+
+.vu-footer ul {
+	color: #aaa;
+	font-size: 1.2rem;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.vu-footer__social .social-icons li {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.vu-footer__social .social-icons i {
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	font-size: 30px;
+    padding: 10px 0;
+	transition: transform 100ms ease-in-out;
+    min-width: 50px;
+	min-height: 50px;
+}
+
+.vu-footer__social .social-icons i:hover {
+	transform: scale(1.1);
+}
+
+.vu-footer__social .social-icons .facebook i {
+	background-color: hsl(221, 44%, 41%);
+}
+
+.vu-footer__social .social-icons .twitter i {
+	background-color: hsl(203, 89%, 53%);
+}
+
+.vu-footer__social .social-icons .instagram i {
+	background: radial-gradient(circle at 10% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.vu-footer__social .social-icons .youtube i {
+	background-color: hsl(0, 100%, 46%);
+}
+
+.vu-footer__social .social-icons .flickr i {
+	background-color: #fff;
+	position: relative;
+	z-index: 0;
+}
+
+.vu-footer__social .social-icons .flickr i:after {
+	background: linear-gradient(to right, #0063dc 50%, #ff0084 50%);
+	content: "";
+	height: 18px;
+	left: 15px;
+	position: absolute;
+	top: 15px;
+	width: 20px;
+	z-index: -1;
+}
+
+.vu-footer__social .social-icons .rss i {
+	background-color: hsl(32, 100%, 50%);
+	color: hsl(32, 100%, 18%);
+}
+
+.vu-footer__social .social-icons .linkedin i {
+	background-color: hsl(201, 100%, 35%);
+}
+
+.vu-footer__yourvu li, 
+.vu-footer__popular li {
+	line-height: 1.35;
+	margin-bottom: 0.5em;
+}
+
+.vu-footer__map .embed-responsive-16by9 {
+	height: initial;
+	padding: initial;
+}
+
+.vu-footer__map .give-now img {
+	min-width: 100px;
+	width: 100%;
+}
+
+.vu-footer__map .friend {
+	padding: 15px 0;
+}
+
+.vu-footer__map .friend a {
+	color: #333;
+}
+
+.credits {
+	margin-top: 2rem;
+}
+
+.credits a { 
+	text-decoration: underline transparent;
+}
+
+.credits a:hover {
+	text-decoration-color: #d8ab4c;
+}
+
+.credits .depository-logo {
+	width: 30px;
+}
