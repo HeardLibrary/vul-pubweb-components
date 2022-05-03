@@ -39,6 +39,9 @@ NAVIGATION
     color: #CCC;
     line-height: 1.42857;
     padding: 3px 20px;
+    display: block;
+    font-weight: 400;
+    white-space: nowrap;
 }
 
 .vu-nav .dropdown-menu .dropdown-item:hover,
