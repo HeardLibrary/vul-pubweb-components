@@ -2,6 +2,11 @@ let mix = require('laravel-mix');
 
 mix.setPublicPath('dist');
 
+const purgecss = require('@fullhuman/postcss-purgecss')({
+    content: ['./src/js/*.js'],
+    safelist: ['open', 'collapsing', 'in']
+});
+
 mix.less('src/bootstrap-3.4.1/less/bootstrap.less', 'css')
     .styles([
         'dist/css/bootstrap.css', 
@@ -20,3 +25,10 @@ mix.less('src/bootstrap-3.4.1/less/bootstrap.less', 'css')
         'src/js/vul-navigation.js'
     ], 'dist/js/vul-pw-header.js')
     .copy('src/js/vul-footer.js', 'dist/js/vul-pw-footer.js');
+
+mix.options({
+    processCssUrls: false,
+    postCss: [
+        purgecss
+    ],
+});
