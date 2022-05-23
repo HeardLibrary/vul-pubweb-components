@@ -242,13 +242,14 @@
   @media (max-width: @grid-float-breakpoint-max) {
     // Dropdowns get custom display when collapsed
     .show .dropdown-menu {
-      position: static;
+      position: static !important;
       float: none;
       width: auto;
       margin-top: 0;
       background-color: transparent;
       border: 0;
       box-shadow: none;
+      transform: initial !important;
       > a,
       .dropdown-header {
         padding: 5px 15px 5px 25px;
