@@ -20,9 +20,7 @@
   body {
     font-size: 1rem;
     line-height: 1.6em;
-    font-weight: 300;
     color: #222;
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -32,8 +30,8 @@
   
   .container {
     width: 100%;
-    width: calc(100% - 30px);
-    max-width: 1450px; }
+    width: calc(100% - 30px) !important;
+    max-width: 1450px !important; }
   
   a {
     color: #333333; }
@@ -47,7 +45,9 @@
     margin-bottom: 0;
     min-height: 0;
     z-index: 300;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300 !important; }
   
   @media (min-width: 480px) {
     .vu-navbar {

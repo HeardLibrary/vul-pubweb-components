@@ -56,8 +56,8 @@ button::-moz-focus-inner {
 }
 @font-face {
   font-family: "Glyphicons Halflings";
-  src: url("/dist/fonts/glyphicons-halflings-regular.eot");
-  src: url("/dist/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("/dist/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/dist/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/dist/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 .glyphicon {
   position: relative;
@@ -406,9 +406,9 @@ ul ul {
   display: none;
   float: left;
   min-width: 160px;
-  padding: 5px 0;
+  padding: 5px 0 !important;
   margin: 2px 0 0;
-  font-size: 14px;
+  font-size: 14px !important;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -446,7 +446,7 @@ ul ul {
   }
 }
 .dropdown-toggle::after {
-  content: none;
+  content: none !important;
 }
 .vu-nav {
   padding-left: 0;
@@ -964,9 +964,7 @@ RESPONSIVE
   body {
     font-size: 1rem;
     line-height: 1.6em;
-    font-weight: 300;
     color: #222;
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -976,8 +974,8 @@ RESPONSIVE
   
   .container {
     width: 100%;
-    width: calc(100% - 30px);
-    max-width: 1450px; }
+    width: calc(100% - 30px) !important;
+    max-width: 1450px !important; }
   
   a {
     color: #333333; }
@@ -991,7 +989,9 @@ RESPONSIVE
     margin-bottom: 0;
     min-height: 0;
     z-index: 300;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300 !important; }
   
   @media (min-width: 480px) {
     .vu-navbar {
@@ -1295,27 +1295,15 @@ RESPONSIVE
   
 /*
 |--------------------------------------------------------------------------
-| Global
-|--------------------------------------------------------------------------
-*/
-
-/* :host {
-	all: initial;
-} */
-
-/* a, 
-button, 
-i {
-	transition: background-color 100ms ease-in-out, 
-				color 100ms ease-in-out,
-				text-decoration-color 100ms ease-in-out;
-} */
-
-/*
-|--------------------------------------------------------------------------
 | Banner Image
 |--------------------------------------------------------------------------
 */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+    .header-background {
+        text-shadow: 1px 1px 6px #111;
+    }
+}
 
 .img-banner.header-background[data-div*="Heard"] {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.library.vanderbilt.edu/images/banners/banner-heard.jpg") top center / cover no-repeat;

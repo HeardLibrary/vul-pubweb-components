@@ -56,8 +56,8 @@ button::-moz-focus-inner {
 }
 @font-face {
   font-family: "Glyphicons Halflings";
-  src: url("/dist/fonts/glyphicons-halflings-regular.eot");
-  src: url("/dist/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("/dist/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/dist/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/dist/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 .glyphicon {
   position: relative;
@@ -406,9 +406,9 @@ ul ul {
   display: none;
   float: left;
   min-width: 160px;
-  padding: 5px 0;
+  padding: 5px 0 !important;
   margin: 2px 0 0;
-  font-size: 14px;
+  font-size: 14px !important;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -446,7 +446,7 @@ ul ul {
   }
 }
 .dropdown-toggle::after {
-  content: none;
+  content: none !important;
 }
 .vu-nav {
   padding-left: 0;
