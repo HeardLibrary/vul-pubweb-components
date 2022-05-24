@@ -200,14 +200,10 @@
           display: none; } }
   
   .header-background {
-    background: #ccc url("../../images/vuheader-bkg@1x.png") top center;
     background-size: cover;
     margin-bottom: -52px;
     position: relative;
     top: -52px; }
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-      .header-background {
-        background-image: url(../../images/vuheader-bkg@2x.png); } }
     @media screen and (max-width: 1199px) {
       .header-background {
         top: 0;

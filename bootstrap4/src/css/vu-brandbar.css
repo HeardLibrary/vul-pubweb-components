@@ -8,10 +8,6 @@ NAVIGATION
     z-index: 1000;
 }
 
-#main_navbar .vumcbrandbar {
-	padding: 10px 0px;
-}
-
 .vu-navbar-form input {
     background: #444;
     border: 1px solid #666;
@@ -55,10 +51,6 @@ NAVIGATION
     padding: 8px 0 0px 10px;
 }
 
-.vumcbrandbar .vu-navbar-brand {
-    padding: 0px 0 0px 10px;  height: auto;
-}
-
 .vu-navbar-brand img {
     max-width: 220px;
     display: inline;
@@ -79,72 +71,6 @@ NAVIGATION
 .vubrandbar form input.form-control {
 	padding-left: 10px;
 	color: #BBB !important;
-}
-
-li.searchdropdown label {
-  display: inline;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: 1.42857143;
-  color: #FFF;
-  white-space: nowrap;
-}
-
-li.searchdropdown {
-	padding: 5px 5px 5px 10px;
-}
-
-li.searchdropdown label:hover,
-li.searchdropdown label:focus {
-  text-decoration: none;
-  background-color: transparent;
-}
-
-li.searchdropdown input:checked ~ label,
-li.searchdropdown input:checked ~ label:hover,
-li.searchdropdown input:checked ~ label:focus,
-li.searchdropdown .active > label,
-li.searchdropdown .active > label:hover,
-li.searchdropdown .active > label:focus {
-  color: #FC6;
-  text-decoration: none;
-  outline: 0;
-  background-color: transparent;
-
-}
-
-li.searchdropdown label {
-  margin-bottom: 0;
-  cursor: pointer;
-}
-
-li.searchdropdown input[type="radio"] {
-	display: inline;
-	background: #222;
-	border: 0;
-	padding: 0;
-}
-
-li.searchdropdown label:focus,
-li.searchdropdown input:focus ~ label {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
-li.doswordmark {
-	border-right: 0 !important;
-	margin-left: 40px;
-	margin-right: 25px;
-}
-
-li.doswordmark a {
-	background: url('../images/DOS-grey.png') top left no-repeat !important;
-	text-indent: -9999px;
-	width: 100px;
-	height: 45px;
-	padding: 0 !important;
 }
 
 /* -----------------------------------
