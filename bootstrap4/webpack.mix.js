@@ -4,6 +4,9 @@ mix.setPublicPath('dist');
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
     content: ['./src/js/*.js'],
+    fontFace: true,
+    keyframes: true,
+    variables: true,
     safelist: ['collapsing', 'show']
 });
 
