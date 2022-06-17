@@ -258,6 +258,19 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
 
+/***/ }),
+
+/***/ "./src/fontawesome-free-5.15.4/less/v4-shims.less":
+/*!********************************************************!*\
+  !*** ./src/fontawesome-free-5.15.4/less/v4-shims.less ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
 /***/ })
 
 /******/ 	});
@@ -347,6 +360,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/vul-pw-header": 0,
+/******/ 			"css/v4-shims": 0,
 /******/ 			"css/brands": 0,
 /******/ 			"css/solid": 0,
 /******/ 			"css/fontawesome": 0,
@@ -400,13 +414,14 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/js/vul-brandbar.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/js/vul-header.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/js/vul-navigation.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/bootstrap-3.4.1/less/bootstrap.less")))
-/******/ 	__webpack_require__.O(undefined, ["css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/fontawesome-free-5.15.4/less/fontawesome.less")))
-/******/ 	__webpack_require__.O(undefined, ["css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/fontawesome-free-5.15.4/less/solid.less")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/fontawesome-free-5.15.4/less/brands.less")))
+/******/ 	__webpack_require__.O(undefined, ["css/v4-shims","css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/js/vul-brandbar.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/v4-shims","css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/js/vul-header.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/v4-shims","css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/js/vul-navigation.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/v4-shims","css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/bootstrap-3.4.1/less/bootstrap.less")))
+/******/ 	__webpack_require__.O(undefined, ["css/v4-shims","css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/fontawesome-free-5.15.4/less/fontawesome.less")))
+/******/ 	__webpack_require__.O(undefined, ["css/v4-shims","css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/fontawesome-free-5.15.4/less/solid.less")))
+/******/ 	__webpack_require__.O(undefined, ["css/v4-shims","css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/fontawesome-free-5.15.4/less/brands.less")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/v4-shims","css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/fontawesome-free-5.15.4/less/v4-shims.less")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

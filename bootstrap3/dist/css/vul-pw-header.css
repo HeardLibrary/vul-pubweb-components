@@ -778,7 +778,7 @@ ul ul {
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-
+.fa,
 .fas,
 .fab {
   -moz-osx-font-smoothing: grayscale;
@@ -813,6 +813,9 @@ ul ul {
 }
 .fa-linkedin-in:before {
   content: "\f0e1";
+}
+.fa-plus-square:before {
+  content: "\f0fe";
 }
 .fa-rss:before {
   content: "\f09e";
@@ -856,7 +859,7 @@ ul ul {
   src: url('../fonts/fa-solid-900.eot');
   src: url('../fonts/fa-solid-900.eot?#iefix') format('embedded-opentype'), url('../fonts/fa-solid-900.woff2') format('woff2'), url('../fonts/fa-solid-900.woff') format('woff'), url('../fonts/fa-solid-900.ttf') format('truetype'), url('../fonts/fa-solid-900.svg#fontawesome') format('svg');
 }
-
+.fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
@@ -876,6 +879,38 @@ ul ul {
   src: url('../fonts/fa-brands-400.eot?#iefix') format('embedded-opentype'), url('../fonts/fa-brands-400.woff2') format('woff2'), url('../fonts/fa-brands-400.woff') format('woff'), url('../fonts/fa-brands-400.ttf') format('truetype'), url('../fonts/fa-brands-400.svg#fontawesome') format('svg');
 }
 .fab {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+
+
+/*!
+ * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+.fa.fa-twitter {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+.fa.fa-facebook-f {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+.fa.fa-facebook-f:before {
+  content: "\f39e";
+}
+.fa.fa-external-link-square:before {
+  content: "\f360";
+}
+.fa.fa-youtube {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+.fa.fa-instagram {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+.fa.fa-flickr {
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400;
 }
@@ -1451,4 +1486,8 @@ i {
 	.graphic-header__small {
 		font-size: 2em;
 	}
+}
+
+.emergencybar h3 {
+	font-weight: 500; /* Needed when no external Bootstrap styling exists */
 }

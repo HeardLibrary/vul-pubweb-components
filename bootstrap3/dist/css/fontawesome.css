@@ -2,7 +2,7 @@
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-
+.fa,
 .fas,
 .fab {
   -moz-osx-font-smoothing: grayscale;
@@ -37,6 +37,9 @@
 }
 .fa-linkedin-in:before {
   content: "\f0e1";
+}
+.fa-plus-square:before {
+  content: "\f0fe";
 }
 .fa-rss:before {
   content: "\f09e";
