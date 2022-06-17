@@ -107,3 +107,35 @@
   font-weight: 400;
 }
 
+
+/*!
+ * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+.fa.fa-twitter {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+.fa.fa-facebook-f {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+.fa.fa-facebook-f:before {
+  content: "\f39e";
+}
+.fa.fa-external-link-square:before {
+  content: "\f360";
+}
+.fa.fa-youtube {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+.fa.fa-instagram {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+.fa.fa-flickr {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+

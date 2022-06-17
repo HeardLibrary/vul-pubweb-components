@@ -67,7 +67,3 @@
 .emergencybar h3 {
 	font-weight: 500; /* Needed when no external Bootstrap styling exists */
 }
-
-/* FA v4 shims */
-.fa.fa-external-link-square:before {
-	content: "\f360"; }

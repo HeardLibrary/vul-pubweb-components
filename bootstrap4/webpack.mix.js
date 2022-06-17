@@ -14,10 +14,12 @@ mix.less('src/bootstrap-3.4.1/less/bootstrap.less', 'css')
     .less('src/fontawesome-free-5.15.4/less/fontawesome.less', 'css')
     .less('src/fontawesome-free-5.15.4/less/solid.less', 'css')
     .less('src/fontawesome-free-5.15.4/less/brands.less', 'css')
+    .less('src/fontawesome-free-5.15.4/less/v4-shims.less', 'css')
     .styles([
         'dist/css/fontawesome.css',
         'dist/css/solid.css',
         'dist/css/brands.css',
+        'dist/css/v4-shims.css'
     ], 'dist/css/vul-fontawesome.css')
     .styles([
         'dist/css/bootstrap.css',
