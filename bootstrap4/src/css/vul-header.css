@@ -63,3 +63,7 @@
 		font-size: 2em;
 	}
 }
+
+/* FA v4 shims */
+.fa.fa-external-link-square:before {
+	content: "\f360"; }

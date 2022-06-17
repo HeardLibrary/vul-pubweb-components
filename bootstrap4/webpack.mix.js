@@ -7,7 +7,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     fontFace: true,
     keyframes: true,
     variables: true,
-    safelist: ['collapsing', 'show']
+    safelist: ['collapsing', 'show', 'fa', 'fa-plus-square', 'fa-external-link-square']
 });
 
 mix.less('src/bootstrap-3.4.1/less/bootstrap.less', 'css')
