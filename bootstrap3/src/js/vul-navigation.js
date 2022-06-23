@@ -1,7 +1,9 @@
 class VulNavigation extends HTMLElement {
     constructor() {
         super();
+    }
 
+    connectedCallback() {
         const vuNav = document.createElement('div');
         vuNav.classList.add('vu-navbar', 'vu-navbar-inverse', 'no-border-radius');
 

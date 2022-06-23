@@ -1,10 +1,14 @@
 class VulHeader extends HTMLElement {
     constructor() {
         super();
-        const shadow = this.attachShadow({ mode: 'open' });
+        this.attachShadow({ mode: 'open' });
+    }
 
+    connectedCallback() {
+        const { shadowRoot } = this;
         const header = document.createElement('header');
-        const division = this.division;
+        let stylesheet = 'dist/css/vul-pw-header.css';
+        let division = this.hasAttribute('division') ? this.getAttribute('division') : 'Jean &amp; Alexander Heard Libraries';
 
         header.classList.add('vu-header');
         header.innerHTML = `
@@ -21,22 +25,12 @@ class VulHeader extends HTMLElement {
                 </div>
             </div>
         `;
-
-        shadow.appendChild(header);
-    }
-
-    connectedCallback() {
-        const { shadowRoot } = this;
-        let stylesheet = 'dist/css/vul-pw-header.css';
+        shadowRoot.appendChild(header);
 
         var link = document.createElement('link');
         link.setAttribute('rel', 'stylesheet');
         link.setAttribute('href', stylesheet);
         shadowRoot.appendChild(link);
-    }
-
-    get division() {
-        return this.getAttribute('division') || '';
     }
 }
 

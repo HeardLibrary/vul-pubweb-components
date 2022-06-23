@@ -1,12 +1,16 @@
 class VulFooter extends HTMLElement {
     constructor() {
         super();
-        const shadow = this.attachShadow({ mode: 'open' });
+        this.attachShadow({ mode: 'open' });
+    }
 
+    connectedCallback() {
+        const { shadowRoot } = this;
         const footer = document.createElement('footer');
+        let stylesheet = 'dist/css/vul-pw-footer.css';
+
         footer.id = 'vu-footer';
         footer.classList.add('vu-footer', 'fresh');
-
         footer.innerHTML = `
             <div id="vu-social" class="vu-social">
                 <div class="container">
@@ -118,13 +122,7 @@ class VulFooter extends HTMLElement {
                 </div>
             </section>
         `;
-
-        shadow.appendChild(footer);
-    }
-
-    connectedCallback() {
-        const { shadowRoot } = this;
-        let stylesheet = 'dist/css/vul-pw-footer.css';
+        shadowRoot.appendChild(footer);
 
         var link = document.createElement('link');
         link.setAttribute('rel', 'stylesheet');

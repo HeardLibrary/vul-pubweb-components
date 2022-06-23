@@ -1,7 +1,9 @@
 class VulBrandbar extends HTMLElement {
     constructor() {
         super();
+    }
 
+    connectedCallback() {
         const brandbar = document.createElement('nav');
         brandbar.classList.add('vu-navbar', 'vu-navbar-inverse');
         brandbar.id = 'main_navbar';
