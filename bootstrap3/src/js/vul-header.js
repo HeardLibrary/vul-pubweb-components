@@ -7,7 +7,7 @@ class VulHeader extends HTMLElement {
     connectedCallback() {
         const { shadowRoot } = this;
         const header = document.createElement('header');
-        let stylesheet = 'dist/css/vul-pw-header.css';
+        let stylesheet = this.hasAttribute('stylesheet') ? this.getAttribute('stylesheet') : '../css/vul-pw-header.css';
         let division = this.hasAttribute('division') ? this.getAttribute('division') : 'Jean &amp; Alexander Heard Libraries';
 
         header.classList.add('vu-header');

@@ -124,7 +124,7 @@ var VulHeader = /*#__PURE__*/function (_HTMLElement) {
     value: function connectedCallback() {
       var shadowRoot = this.shadowRoot;
       var header = document.createElement('header');
-      var stylesheet = 'dist/css/vul-pw-header.css';
+      var stylesheet = this.hasAttribute('stylesheet') ? this.getAttribute('stylesheet') : 'dist/css/vul-pw-header.css';
       var division = this.hasAttribute('division') ? this.getAttribute('division') : 'Jean &amp; Alexander Heard Libraries';
       header.classList.add('vu-header');
       header.innerHTML = "\n            <a class=\"sr-only sr-only-focusable\" href=\"#maincontent\">Skip to main content</a>\n            <slot></slot>\n            \n            <div class=\"img-banner header-background\" data-div=\"".concat(division, "\">\n                <div class=\"container container--banner\">\n                    <a href=\"https://www.library.vanderbilt.edu/\">\n                        <h1 class=\"graphic-header__title livetextheader\" aria-label=\"").concat(division, " Home\">\n                            Jean &amp; Alexander Heard <b>Libraries</b>\n                        </h1>\n                    </a>\n                </div>\n            </div>\n        ");

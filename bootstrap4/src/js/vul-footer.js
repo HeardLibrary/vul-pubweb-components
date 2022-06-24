@@ -7,7 +7,7 @@ class VulFooter extends HTMLElement {
     connectedCallback() {
         const { shadowRoot } = this;
         const footer = document.createElement('footer');
-        let stylesheet = 'dist/css/vul-pw-footer.css';
+        let stylesheet = this.hasAttribute('stylesheet') ? this.getAttribute('stylesheet') : '../css/vul-pw-footer.css';
 
         footer.id = 'vu-footer';
         footer.classList.add('vu-footer', 'fresh');
