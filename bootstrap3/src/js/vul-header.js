@@ -9,6 +9,7 @@ class VulHeader extends HTMLElement {
         const header = document.createElement('header');
         let stylesheet = this.hasAttribute('stylesheet') ? this.getAttribute('stylesheet') : '../css/vul-pw-header.css';
         let division = this.hasAttribute('division') ? this.getAttribute('division') : 'Jean &amp; Alexander Heard Libraries';
+        let url = this.hasAttribute('url') ? this.getAttribute('url') : 'https://www.library.vanderbilt.edu';
 
         header.classList.add('vu-header');
         header.innerHTML = `
@@ -17,9 +18,11 @@ class VulHeader extends HTMLElement {
             
             <div class="img-banner header-background" data-div="${division}">
                 <div class="container container--banner">
-                    <a href="https://www.library.vanderbilt.edu/">
+                    <a href="${url}">
                         <h1 class="graphic-header__title livetextheader" aria-label="${division} Home">
-                            Jean &amp; Alexander Heard <b>Libraries</b>
+                            <slot name="banner-text">
+                                Jean &amp; Alexander Heard <b>Libraries</b>
+                            </slot>
                         </h1>
                     </a>
                 </div>
