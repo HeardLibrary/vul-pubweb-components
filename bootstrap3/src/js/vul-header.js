@@ -19,11 +19,12 @@ class VulBanner extends HTMLElement {
             <div class="img-banner header-background" data-div="${division}">
                 <div class="container container--banner">
                     <a href="${url}">
-                        <h1 class="graphic-header__title livetextheader" aria-label="${division} Home">
+                        <h1 class="graphic-header__title livetextheader">
                             <slot name="banner-text">
                                 Jean &amp; Alexander Heard <b>Libraries</b>
                             </slot>
                         </h1>
+                        <span class="sr-only">Home</span>
                     </a>
                 </div>
             </div>
