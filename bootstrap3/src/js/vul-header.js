@@ -1,4 +1,4 @@
-class VulHeader extends HTMLElement {
+class VulBanner extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
@@ -37,4 +37,4 @@ class VulHeader extends HTMLElement {
     }
 }
 
-customElements.define('vul-header', VulHeader);
+customElements.define('vul-banner', VulBanner);

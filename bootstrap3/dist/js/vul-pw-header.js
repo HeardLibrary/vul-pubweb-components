@@ -100,15 +100,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var VulHeader = /*#__PURE__*/function (_HTMLElement) {
-  _inherits(VulHeader, _HTMLElement);
+var VulBanner = /*#__PURE__*/function (_HTMLElement) {
+  _inherits(VulBanner, _HTMLElement);
 
-  var _super = _createSuper(VulHeader);
+  var _super = _createSuper(VulBanner);
 
-  function VulHeader() {
+  function VulBanner() {
     var _this;
 
-    _classCallCheck(this, VulHeader);
+    _classCallCheck(this, VulBanner);
 
     _this = _super.call(this);
 
@@ -119,7 +119,7 @@ var VulHeader = /*#__PURE__*/function (_HTMLElement) {
     return _this;
   }
 
-  _createClass(VulHeader, [{
+  _createClass(VulBanner, [{
     key: "connectedCallback",
     value: function connectedCallback() {
       var shadowRoot = this.shadowRoot;
@@ -137,10 +137,10 @@ var VulHeader = /*#__PURE__*/function (_HTMLElement) {
     }
   }]);
 
-  return VulHeader;
+  return VulBanner;
 }( /*#__PURE__*/_wrapNativeSuper(HTMLElement));
 
-customElements.define('vul-header', VulHeader);
+customElements.define('vul-banner', VulBanner);
 
 /***/ }),
 
