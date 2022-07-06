@@ -14,7 +14,8 @@ class VulBanner extends HTMLElement {
         header.classList.add('vu-header');
         header.innerHTML = `
             <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
-            <slot></slot>
+
+            <slot name="before-img"></slot>
             
             <div class="img-banner header-background" data-div="${division}">
                 <div class="container container--banner">
@@ -28,6 +29,8 @@ class VulBanner extends HTMLElement {
                     </a>
                 </div>
             </div>
+
+            <slot name="after-img"></slot>
         `;
         shadowRoot.appendChild(header);
 
