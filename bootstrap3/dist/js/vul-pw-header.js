@@ -1,6 +1,84 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/vul-banner.js":
+/*!******************************!*\
+  !*** ./src/js/vul-banner.js ***!
+  \******************************/
+/***/ (() => {
+
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _wrapNativeSuper(Class) { var _cache = typeof Map === "function" ? new Map() : undefined; _wrapNativeSuper = function _wrapNativeSuper(Class) { if (Class === null || !_isNativeFunction(Class)) return Class; if (typeof Class !== "function") { throw new TypeError("Super expression must either be null or a function"); } if (typeof _cache !== "undefined") { if (_cache.has(Class)) return _cache.get(Class); _cache.set(Class, Wrapper); } function Wrapper() { return _construct(Class, arguments, _getPrototypeOf(this).constructor); } Wrapper.prototype = Object.create(Class.prototype, { constructor: { value: Wrapper, enumerable: false, writable: true, configurable: true } }); return _setPrototypeOf(Wrapper, Class); }; return _wrapNativeSuper(Class); }
+
+function _construct(Parent, args, Class) { if (_isNativeReflectConstruct()) { _construct = Reflect.construct; } else { _construct = function _construct(Parent, args, Class) { var a = [null]; a.push.apply(a, args); var Constructor = Function.bind.apply(Parent, a); var instance = new Constructor(); if (Class) _setPrototypeOf(instance, Class.prototype); return instance; }; } return _construct.apply(null, arguments); }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _isNativeFunction(fn) { return Function.toString.call(fn).indexOf("[native code]") !== -1; }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var VulBanner = /*#__PURE__*/function (_HTMLElement) {
+  _inherits(VulBanner, _HTMLElement);
+
+  var _super = _createSuper(VulBanner);
+
+  function VulBanner() {
+    var _this;
+
+    _classCallCheck(this, VulBanner);
+
+    _this = _super.call(this);
+
+    _this.attachShadow({
+      mode: 'open'
+    });
+
+    return _this;
+  }
+
+  _createClass(VulBanner, [{
+    key: "connectedCallback",
+    value: function connectedCallback() {
+      var shadowRoot = this.shadowRoot;
+      var stylesheet = this.hasAttribute('stylesheet') ? this.getAttribute('stylesheet') : '../css/vul-pw-header.css';
+      var division = this.hasAttribute('division') ? this.getAttribute('division') : 'Jean &amp; Alexander Heard Libraries';
+      var url = this.hasAttribute('url') ? this.getAttribute('url') : 'https://www.library.vanderbilt.edu';
+      var banner = document.createElement('div');
+      banner.classList.add('img-banner', 'header-background');
+      banner.innerHTML = "\n            <div class=\"img-banner header-background\" data-div=\"".concat(division, "\">\n                <div class=\"container container--banner\">\n                    <a href=\"").concat(url, "\">\n                        <h1 class=\"graphic-header__title livetextheader\">\n                            <slot name=\"banner-text\">\n                                Jean &amp; Alexander Heard <b>Libraries</b>\n                            </slot>\n                        </h1>\n                        <span class=\"sr-only\">Home</span>\n                    </a>\n                </div>\n            </div>\n        ");
+      shadowRoot.appendChild(banner);
+      var link = document.createElement('link');
+      link.setAttribute('rel', 'stylesheet');
+      link.setAttribute('href', stylesheet);
+      shadowRoot.appendChild(link);
+    }
+  }]);
+
+  return VulBanner;
+}( /*#__PURE__*/_wrapNativeSuper(HTMLElement));
+
+customElements.define('vul-banner', VulBanner);
+
+/***/ }),
+
 /***/ "./src/js/vul-brandbar.js":
 /*!********************************!*\
   !*** ./src/js/vul-brandbar.js ***!
@@ -124,11 +202,11 @@ var VulHeader = /*#__PURE__*/function (_HTMLElement) {
     value: function connectedCallback() {
       var shadowRoot = this.shadowRoot;
       var header = document.createElement('header');
-      var stylesheet = this.hasAttribute('stylesheet') ? this.getAttribute('stylesheet') : '../css/vul-pw-header.css';
-      var division = this.hasAttribute('division') ? this.getAttribute('division') : 'Jean &amp; Alexander Heard Libraries';
-      var url = this.hasAttribute('url') ? this.getAttribute('url') : 'https://www.library.vanderbilt.edu';
+      var stylesheet = this.hasAttribute('stylesheet') ? this.getAttribute('stylesheet') : '../css/vul-pw-header.css'; // let division = this.hasAttribute('division') ? this.getAttribute('division') : 'Jean &amp; Alexander Heard Libraries';
+      // let url = this.hasAttribute('url') ? this.getAttribute('url') : 'https://www.library.vanderbilt.edu';
+
       header.classList.add('vu-header');
-      header.innerHTML = "\n            <a class=\"sr-only sr-only-focusable\" href=\"#maincontent\">Skip to main content</a>\n\n            <slot name=\"before-img\"></slot>\n            \n            <div class=\"img-banner header-background\" data-div=\"".concat(division, "\">\n                <div class=\"container container--banner\">\n                    <a href=\"").concat(url, "\">\n                        <h1 class=\"graphic-header__title livetextheader\">\n                            <slot name=\"banner-text\">\n                                Jean &amp; Alexander Heard <b>Libraries</b>\n                            </slot>\n                        </h1>\n                        <span class=\"sr-only\">Home</span>\n                    </a>\n                </div>\n            </div>\n\n            <slot name=\"after-img\"></slot>\n        ");
+      header.innerHTML = "\n            <a class=\"sr-only sr-only-focusable\" href=\"#maincontent\">Skip to main content</a>\n            <slot name=\"before-img\"></slot>\n            <slot></slot>\n            <slot name=\"after-img\"></slot>\n        ";
       shadowRoot.appendChild(header);
       var link = document.createElement('link');
       link.setAttribute('rel', 'stylesheet');
@@ -414,6 +492,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	__webpack_require__.O(undefined, ["css/v4-shims","css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/js/vul-brandbar.js")))
 /******/ 	__webpack_require__.O(undefined, ["css/v4-shims","css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/js/vul-header.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/v4-shims","css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/js/vul-banner.js")))
 /******/ 	__webpack_require__.O(undefined, ["css/v4-shims","css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/js/vul-navigation.js")))
 /******/ 	__webpack_require__.O(undefined, ["css/v4-shims","css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/bootstrap-3.4.1/less/bootstrap.less")))
 /******/ 	__webpack_require__.O(undefined, ["css/v4-shims","css/brands","css/solid","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./src/fontawesome-free-5.15.4/less/fontawesome.less")))

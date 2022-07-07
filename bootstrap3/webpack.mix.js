@@ -3,7 +3,7 @@ let mix = require('laravel-mix');
 mix.setPublicPath('dist');
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
-    content: ['./src/js/*.js'],
+    content: ['./src/js/*.js'], // separate these into their own purgecss variable to extract CSS specific to each component?
     fontFace: true,
     keyframes: true,
     variables: true,
@@ -37,6 +37,7 @@ mix.less('src/bootstrap-3.4.1/less/bootstrap.less', 'css')
     .js([
         'src/js/vul-brandbar.js', 
         'src/js/vul-header.js', 
+        'src/js/vul-banner.js',
         'src/js/vul-navigation.js'
     ], 'dist/js/vul-pw-header.js')
     .copy('src/js/vul-footer.js', 'dist/js/vul-pw-footer.js');
