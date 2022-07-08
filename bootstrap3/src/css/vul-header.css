@@ -78,7 +78,7 @@ i {
 	}
 }
 
-/*! purgecss start ignore */
+/*! purgecss ignore */
 .emergencybar h3 {
 	font-weight: 500; /* Needed when no external Bootstrap styling exists */
 }
