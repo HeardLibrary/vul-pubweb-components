@@ -1,134 +1,75 @@
-class VulFooter extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!******************************!*\
+  !*** ./src/js/vul-footer.js ***!
+  \******************************/
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _wrapNativeSuper(Class) { var _cache = typeof Map === "function" ? new Map() : undefined; _wrapNativeSuper = function _wrapNativeSuper(Class) { if (Class === null || !_isNativeFunction(Class)) return Class; if (typeof Class !== "function") { throw new TypeError("Super expression must either be null or a function"); } if (typeof _cache !== "undefined") { if (_cache.has(Class)) return _cache.get(Class); _cache.set(Class, Wrapper); } function Wrapper() { return _construct(Class, arguments, _getPrototypeOf(this).constructor); } Wrapper.prototype = Object.create(Class.prototype, { constructor: { value: Wrapper, enumerable: false, writable: true, configurable: true } }); return _setPrototypeOf(Wrapper, Class); }; return _wrapNativeSuper(Class); }
+
+function _construct(Parent, args, Class) { if (_isNativeReflectConstruct()) { _construct = Reflect.construct; } else { _construct = function _construct(Parent, args, Class) { var a = [null]; a.push.apply(a, args); var Constructor = Function.bind.apply(Parent, a); var instance = new Constructor(); if (Class) _setPrototypeOf(instance, Class.prototype); return instance; }; } return _construct.apply(null, arguments); }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _isNativeFunction(fn) { return Function.toString.call(fn).indexOf("[native code]") !== -1; }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var VulFooter = /*#__PURE__*/function (_HTMLElement) {
+  _inherits(VulFooter, _HTMLElement);
+
+  var _super = _createSuper(VulFooter);
+
+  function VulFooter() {
+    var _this;
+
+    _classCallCheck(this, VulFooter);
+
+    _this = _super.call(this);
+
+    _this.attachShadow({
+      mode: 'open'
+    });
+
+    return _this;
+  }
+
+  _createClass(VulFooter, [{
+    key: "connectedCallback",
+    value: function connectedCallback() {
+      var shadowRoot = this.shadowRoot;
+      var footer = document.createElement('footer');
+      var stylesheet = document.querySelector('link[href*="vul-pw-header.css"]').href.replace('header', 'footer');
+      footer.id = 'vu-footer';
+      footer.classList.add('vu-footer', 'fresh');
+      footer.innerHTML = "\n            <div id=\"vu-social\" class=\"vu-social\">\n                <div class=\"container\">\n                    <div class=\"row\">\n                        <section class=\"vu-footer__social text-center center-block\"><h4 class=\"vu-footer__title\"><a href=\"http://social.vanderbilt.edu\">Connect with Vanderbilt Libraries</a></h4>\n                            <ul class=\"social-icons h2\">\n                                <li class=\"facebook\">\n                                    <a href=\"https://www.facebook.com/vandylibraries\" target=\"_blank\" rel=\"noopener\">\n                                        <i title=\"follow us on facebook\" class=\"fab fa-facebook-f fa-fw\"></i>\n                                    </a>\n                                </li>\n                                <li class=\"twitter\">\n                                    <a href=\"https://twitter.com/vandylibraries\" target=\"_blank\" rel=\"noopener\">\n                                        <i title=\"follow us on twitter\" class=\"fab fa-twitter fa-fw\"></i>\n                                    </a>\n                                </li>\n                                <li class=\"instagram\">\n                                    <a href=\"https://www.instagram.com/vandylibraries/\" target=\"_blank\" rel=\"noopener\">\n                                        <i title=\"follow us on instagram\" class=\"fab fa-instagram fa-fw\"></i>\n                                    </a>\n                                </li>\n                                <li class=\"youtube\">\n                                    <a href=\"https://www.youtube.com/playlist?list=PLB1EPeYUwa4n_I0CyMrQidztwO-SdENRm\" target=\"_blank\" rel=\"noopener\">\n                                        <i title=\"watch our youtube videos\" class=\"fab fa-youtube fa-fw\"></i>\n                                    </a>\n                                </li>\n                                <li class=\"flickr\">\n                                    <a href=\"https://www.flickr.com/photos/vulibrary/\" target=\"_blank\" rel=\"noopener\">\n                                        <i title=\"view our photo album\" class=\"fab fa-flickr fa-fw\"></i>\n                                    </a>\n                                </li>\n                                <li class=\"rss\">\n                                    <a href=\"https://newsonline.library.vanderbilt.edu/?feed=rss2\" target=\"_blank\" rel=\"noopener\">\n                                        <i title=\"subscribe to our news rss feed\" class=\"fas fa-rss fa-fw\"></i>\n                                    </a>\n                                </li>\n                                <li class=\"linkedin\">\n                                    <a href=\"https://www.linkedin.com/company/jean-and-alexander-heard-libraries\" target=\"_blank\" rel=\"noopener\">\n                                        <i title=\"follow us on linkedin\" class=\"fab fa-linkedin-in fa-fw\"></i>\n                                    </a>\n                                </li>\n                            </ul>\n                        </section>\n                    </div>\n                </div>\n            </div>\n            <div class=\"container\">\n                <div class=\"row\">\n                    <section class=\"vu-footer__yourvu col-sm-3 clearfix\"><h4 class=\"vu-footer__title\">Your Vanderbilt</h4>\n                        <ul>\n                            <li><a href=\"https://www.vanderbilt.edu/alumni/\">Alumni</a></li>\n                            <li><a href=\"https://www.vanderbilt.edu/student/\">Current Students</a></li>\n                            <li><a href=\"https://www.vanderbilt.edu/faculty-staff/\">Faculty &amp; Staff</a></li>\n                            <li><a href=\"https://www.vanderbilt.edu/isss/\">International Students</a></li>\n                            <li><a href=\"https://news.vanderbilt.edu/for-media/\">Media</a></li>\n                            <li><a href=\"https://www.vanderbilt.edu/families/\">Parents &amp; Family</a></li>\n                            <li><a href=\"https://www.vanderbilt.edu/prospective/\">Prospective Students</a></li>\n                            <li><a href=\"https://www.vanderbilt.edu/academics/research/\">Researchers</a></li>\n                            <li><a href=\"https://www.vucommodores.com\">Sports Fans</a></li>\n                            <li><a href=\"https://www.vanderbilt.edu/community/\">Visitors &amp; Neighbors</a></li>\n                        </ul>\n                    </section>\n                    <section class=\"vu-footer__map col-sm-6 clearfix\">\n                        <div class=\"embed-responsive embed-responsive-16by9\"><!--<p><iframe src=\"https://www.youtube.com/embed/videoseries?list=PLB1EPeYUwa4kR8T8GEPHayPR7sDTo85X0&amp;rel=0&amp;controls=0&amp;showinfo=0\" width=\"300\" height=\"150\" frameborder=\"0\"></iframe></p>-->\n\n                        <h4 class=\"vu-footer__title\">Support the Jean and Alexander Heard Libraries</h4>\n                        <div class=\"row\">\n                            <div class=\"col-xs-3 col-sm-4 col-lg-3\">\n                                <a href=\"https://webapp.mis.vanderbilt.edu/olga/pub/landing?appealCode=Q13A8\" class=\"give-now\"><img src=\"https://www.library.vanderbilt.edu/images/giveNow-ccc.png\" alt=\"Support the Library...Give Now\" title=\"Support the Library...Give Now\"></a>\n                            </div>\n                            <p class=\"col-xs-12 col-sm-8 col-lg-9\">\n                                Gifts to the Libraries support the learning and research needs of the entire Vanderbilt community. <a href=\"https://www.library.vanderbilt.edu/giving/\">Learn more about giving to the Libraries.</a>\n                            </p>\n                        </div>\n                                <div class=\"friend\">\n                                    <a href=\"https://www.library.vanderbilt.edu/friends/\" class=\"btn btn-primary\" style=\"color: #333;\">\n                                        <i class=\"fas fa-heart fa-fw\" style=\"margin-right: 5px;\"></i>Become a Friend of the Libraries\n                                    </a>\n                                </div>\n                            </div>\n                    </section>\n                    <section class=\"vu-footer__popular col-sm-3 clearfix\"><h4 class=\"vu-footer__title\">Quick Links</h4>\n                        <ul>\n                            <li><a href=\"https://www.library.vanderbilt.edu/hours.php\">Hours</a></li>\n                            <li><a href=\"https://www.library.vanderbilt.edu/about\">About</a></li>\n                            <li><a href=\"https://www.library.vanderbilt.edu/about/employment.php\">Employment</a></li>\n                            <li><a href=\"https://www.library.vanderbilt.edu/staff\">Staff Directory</a></li>\n                            <li><a href=\"https://www.library.vanderbilt.edu/about/accessibility.php\">Accessibility Services</a></li>\n                            <li><a href=\"https://www.library.vanderbilt.edu/about/contact.php\">Contact</a></li>\n                            <li><a href=\"https://www.vanderbilt.edu\">Vanderbilt University</a></li>\n                        </ul>\n                    </section>\n                </div>\n            </div>\n            <section class=\"credits\">\n                <div class=\"container\">\n                    <div class=\"col-lg-12 text-center\">\n                        <p id=\"library-address\">\n                            <a href=\"https://www.library.vanderbilt.edu\">Jean and Alexander Heard Libraries</a> &middot; 419 21st Avenue South &middot; Nashville, TN 37203 &middot; <a href=\"https://www.library.vanderbilt.edu/about/contact.php\">Phone</a>&nbsp;&nbsp;<img src=\"https://www.library.vanderbilt.edu/images/USA_Federal_depository_library_logo.svg.png\" title=\"Vanderbilt is a US Federal Depository Library\" alt=\"Vanderbilt is a US Federal Depository Library\" class=\"depository-logo\">\n                        </p>            \n                        <p>\n                            <small>\n                                <span>&copy;</span>&nbsp;Vanderbilt University &middot; All rights reserved. Site Development: <a href=\"https://web.vanderbilt.edu/\">Digital Strategies (Division of Communications)</a> &amp; <a href=\"https://ltds.library.vanderbilt.edu/\">Library Technology and Digital Services</a>.\n                                <br>\n                                Vanderbilt University is committed to principles of equal opportunity and affirmative action. <a class=\"credits__link\" href=\"https://www.vanderbilt.edu/about/accessibility/\">Accessibility information</a>. <a class=\"credits__link\" href=\"https://www.vanderbilt.edu/about/privacy\">Privacy Policy</a>. <br>Vanderbilt&reg;, Vanderbilt University&reg;, V Oak Leaf Design&reg;, Star V Design&reg; and Anchor Down&reg; are trademarks of The Vanderbilt University\n                            </small>\n                        </p>\n                    </div>\n                </div>\n            </section>\n        ";
+      shadowRoot.appendChild(footer);
+      var link = document.createElement('link');
+      link.setAttribute('rel', 'stylesheet');
+      link.setAttribute('href', stylesheet);
+      shadowRoot.appendChild(link);
     }
+  }]);
 
-    connectedCallback() {
-        const { shadowRoot } = this;
-        const footer = document.createElement('footer');
-        let stylesheet = this.hasAttribute('stylesheet') ? this.getAttribute('stylesheet') : '../css/vul-pw-footer.css';
-
-        footer.id = 'vu-footer';
-        footer.classList.add('vu-footer', 'fresh');
-        footer.innerHTML = `
-            <div id="vu-social" class="vu-social">
-                <div class="container">
-                    <div class="row">
-                        <section class="vu-footer__social text-center center-block"><h4 class="vu-footer__title"><a href="http://social.vanderbilt.edu">Connect with Vanderbilt Libraries</a></h4>
-                            <ul class="social-icons h2">
-                                <li class="facebook">
-                                    <a href="https://www.facebook.com/vandylibraries" target="_blank" rel="noopener">
-                                        <i title="follow us on facebook" class="fab fa-facebook-f fa-fw"></i>
-                                    </a>
-                                </li>
-                                <li class="twitter">
-                                    <a href="https://twitter.com/vandylibraries" target="_blank" rel="noopener">
-                                        <i title="follow us on twitter" class="fab fa-twitter fa-fw"></i>
-                                    </a>
-                                </li>
-                                <li class="instagram">
-                                    <a href="https://www.instagram.com/vandylibraries/" target="_blank" rel="noopener">
-                                        <i title="follow us on instagram" class="fab fa-instagram fa-fw"></i>
-                                    </a>
-                                </li>
-                                <li class="youtube">
-                                    <a href="https://www.youtube.com/playlist?list=PLB1EPeYUwa4n_I0CyMrQidztwO-SdENRm" target="_blank" rel="noopener">
-                                        <i title="watch our youtube videos" class="fab fa-youtube fa-fw"></i>
-                                    </a>
-                                </li>
-                                <li class="flickr">
-                                    <a href="https://www.flickr.com/photos/vulibrary/" target="_blank" rel="noopener">
-                                        <i title="view our photo album" class="fab fa-flickr fa-fw"></i>
-                                    </a>
-                                </li>
-                                <li class="rss">
-                                    <a href="https://newsonline.library.vanderbilt.edu/?feed=rss2" target="_blank" rel="noopener">
-                                        <i title="subscribe to our news rss feed" class="fas fa-rss fa-fw"></i>
-                                    </a>
-                                </li>
-                                <li class="linkedin">
-                                    <a href="https://www.linkedin.com/company/jean-and-alexander-heard-libraries" target="_blank" rel="noopener">
-                                        <i title="follow us on linkedin" class="fab fa-linkedin-in fa-fw"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <section class="vu-footer__yourvu col-sm-3 clearfix"><h4 class="vu-footer__title">Your Vanderbilt</h4>
-                        <ul>
-                            <li><a href="https://www.vanderbilt.edu/alumni/">Alumni</a></li>
-                            <li><a href="https://www.vanderbilt.edu/student/">Current Students</a></li>
-                            <li><a href="https://www.vanderbilt.edu/faculty-staff/">Faculty &amp; Staff</a></li>
-                            <li><a href="https://www.vanderbilt.edu/isss/">International Students</a></li>
-                            <li><a href="https://news.vanderbilt.edu/for-media/">Media</a></li>
-                            <li><a href="https://www.vanderbilt.edu/families/">Parents &amp; Family</a></li>
-                            <li><a href="https://www.vanderbilt.edu/prospective/">Prospective Students</a></li>
-                            <li><a href="https://www.vanderbilt.edu/academics/research/">Researchers</a></li>
-                            <li><a href="https://www.vucommodores.com">Sports Fans</a></li>
-                            <li><a href="https://www.vanderbilt.edu/community/">Visitors &amp; Neighbors</a></li>
-                        </ul>
-                    </section>
-                    <section class="vu-footer__map col-sm-6 clearfix">
-                        <div class="embed-responsive embed-responsive-16by9"><!--<p><iframe src="https://www.youtube.com/embed/videoseries?list=PLB1EPeYUwa4kR8T8GEPHayPR7sDTo85X0&amp;rel=0&amp;controls=0&amp;showinfo=0" width="300" height="150" frameborder="0"></iframe></p>-->
-
-                        <h4 class="vu-footer__title">Support the Jean and Alexander Heard Libraries</h4>
-                        <div class="row">
-                            <div class="col-xs-3 col-sm-4 col-lg-3">
-                                <a href="https://webapp.mis.vanderbilt.edu/olga/pub/landing?appealCode=Q13A8" class="give-now"><img src="https://www.library.vanderbilt.edu/images/giveNow-ccc.png" alt="Support the Library...Give Now" title="Support the Library...Give Now"></a>
-                            </div>
-                            <p class="col-xs-12 col-sm-8 col-lg-9">
-                                Gifts to the Libraries support the learning and research needs of the entire Vanderbilt community. <a href="https://www.library.vanderbilt.edu/giving/">Learn more about giving to the Libraries.</a>
-                            </p>
-                        </div>
-                                <div class="friend">
-                                    <a href="https://www.library.vanderbilt.edu/friends/" class="btn btn-primary" style="color: #333;">
-                                        <i class="fas fa-heart fa-fw" style="margin-right: 5px;"></i>Become a Friend of the Libraries
-                                    </a>
-                                </div>
-                            </div>
-                    </section>
-                    <section class="vu-footer__popular col-sm-3 clearfix"><h4 class="vu-footer__title">Quick Links</h4>
-                        <ul>
-                            <li><a href="https://www.library.vanderbilt.edu/hours.php">Hours</a></li>
-                            <li><a href="https://www.library.vanderbilt.edu/about">About</a></li>
-                            <li><a href="https://www.library.vanderbilt.edu/about/employment.php">Employment</a></li>
-                            <li><a href="https://www.library.vanderbilt.edu/staff">Staff Directory</a></li>
-                            <li><a href="https://www.library.vanderbilt.edu/about/accessibility.php">Accessibility Services</a></li>
-                            <li><a href="https://www.library.vanderbilt.edu/about/contact.php">Contact</a></li>
-                            <li><a href="https://www.vanderbilt.edu">Vanderbilt University</a></li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-            <section class="credits">
-                <div class="container">
-                    <div class="col-lg-12 text-center">
-                        <p id="library-address">
-                            <a href="https://www.library.vanderbilt.edu">Jean and Alexander Heard Libraries</a> &middot; 419 21st Avenue South &middot; Nashville, TN 37203 &middot; <a href="https://www.library.vanderbilt.edu/about/contact.php">Phone</a>&nbsp;&nbsp;<img src="https://www.library.vanderbilt.edu/images/USA_Federal_depository_library_logo.svg.png" title="Vanderbilt is a US Federal Depository Library" alt="Vanderbilt is a US Federal Depository Library" class="depository-logo">
-                        </p>            
-                        <p>
-                            <small>
-                                <span>&copy;</span>&nbsp;Vanderbilt University &middot; All rights reserved. Site Development: <a href="https://web.vanderbilt.edu/">Digital Strategies (Division of Communications)</a> &amp; <a href="https://ltds.library.vanderbilt.edu/">Library Technology and Digital Services</a>.
-                                <br>
-                                Vanderbilt University is committed to principles of equal opportunity and affirmative action. <a class="credits__link" href="https://www.vanderbilt.edu/about/accessibility/">Accessibility information</a>. <a class="credits__link" href="https://www.vanderbilt.edu/about/privacy">Privacy Policy</a>. <br>Vanderbilt&reg;, Vanderbilt University&reg;, V Oak Leaf Design&reg;, Star V Design&reg; and Anchor Down&reg; are trademarks of The Vanderbilt University
-                            </small>
-                        </p>
-                    </div>
-                </div>
-            </section>
-        `;
-        shadowRoot.appendChild(footer);
-
-        var link = document.createElement('link');
-        link.setAttribute('rel', 'stylesheet');
-        link.setAttribute('href', stylesheet);
-        shadowRoot.appendChild(link);
-    }
-}
+  return VulFooter;
+}( /*#__PURE__*/_wrapNativeSuper(HTMLElement));
 
 customElements.define('vul-footer', VulFooter);
+/******/ })()
+;

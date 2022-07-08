@@ -6,7 +6,7 @@ class VulBanner extends HTMLElement {
 
     connectedCallback() {
         const { shadowRoot } = this;
-        let stylesheet = this.hasAttribute('stylesheet') ? this.getAttribute('stylesheet') : '../css/vul-pw-header.css';
+        let stylesheet = document.querySelector('link[href*="vul-pw-header.css"]').href;
         let division = this.hasAttribute('division') ? this.getAttribute('division') : 'Jean &amp; Alexander Heard Libraries';
         let url = this.hasAttribute('url') ? this.getAttribute('url') : 'https://www.library.vanderbilt.edu';
         

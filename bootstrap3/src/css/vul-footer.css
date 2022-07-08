@@ -1,9 +1,12 @@
+/*! vul-footer.css */
+
 /*
 |--------------------------------------------------------------------------
 | Global
 |--------------------------------------------------------------------------
 */
 
+/*! purgecss ignore */
 :host {
 	all: initial;
 }
@@ -36,6 +39,10 @@
 	font-size: 1.2rem;
 	margin-right: 0;
 	margin-left: 0;
+}
+
+.vu-footer .social-icons.h2 {
+	font-size: 30px;
 }
 
 .vu-footer__social .social-icons li {

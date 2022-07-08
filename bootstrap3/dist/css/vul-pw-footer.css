@@ -916,37 +916,10 @@ ul ul {
 }
 
 
+/*! vu-main-2019-footer.css */
+
 * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box; }
-  
-  html {
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; }
-  
-  @media (min-width: 480px) {
-    html {
-      font-size: 14px; } }
-  
-  @media (min-width: 768px) {
-    html {
-      font-size: 16px; } }
-  
-  body {
-    font-size: 1rem;
-    line-height: 1.6em;
-    font-weight: 300;
-    color: #222;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background-color: #fff; }
-    body.fresh {
-      background-color: #fff; }
   
   .container {
     width: 100%;
@@ -977,79 +950,9 @@ ul ul {
     .footer {
       padding-bottom: 50px; } }
   
-  .get-social__list .get-social__item {
-    text-align: center; }
-    .get-social__list .get-social__item .get-social__link {
-      padding: 5px 0; }
-  
   .vu-social {
     background: rgba(34, 34, 34, 0.5);
     margin: -1.5em 0 1.5em; }
-  
-  .get-social {
-    background: #000;
-    padding-bottom: 1em; }
-    .get-social__title {
-      color: #d8ab4c;
-      font-family: Vollkorn, serif; }
-    .get-social__list {
-      display: inline-block;
-      list-style-type: none;
-      margin: 0;
-      padding: 0; }
-      .get-social__list li {
-        float: left;
-        display: block;
-        padding-right: 10px;
-        margin-bottom: 10px; }
-        .get-social__list li a {
-          color: #fff;
-          display: block;
-          height: 45px;
-          width: 45px;
-          text-indent: -9999px;
-          background-image: url(https://cdn.vanderbilt.edu/vu-www4/i/social-icons.png);
-          border-radius: 20px;
-          border-width: initial;
-          border-style: none;
-          border-color: initial;
-          border-image: initial;
-          text-decoration: none; }
-      .get-social__list .socialfacebook a {
-        background-position: 0 0; }
-      .get-social__list .socialtwitter a {
-        background-position: 0 -1330px; }
-      .get-social__list .socialpinterest a {
-        background-position: 0 -760px; }
-      .get-social__list .socialinstagram a {
-        background-position: 0 -380px; }
-      .get-social__list .socialyoutube a {
-        background-position: 0 -1520px; }
-      .get-social__list .socialflickr a {
-        background-position: 0 -95px; }
-      .get-social__list .socialtumblr a {
-        background-position: 0 -1235px; }
-      .get-social__list .socialfoursquare a {
-        background-position: 0 -190px; }
-      .get-social__list .socialgplus a {
-        background-position: 0 -285px; }
-      .get-social__list .socialrss a {
-        background-position: 0 -855px; }
-      .get-social__list .sociallinkedin a {
-        background-position: 0 -570px; }
-      .get-social__list .socialsnapchat a {
-        background-position: 0 -1615px; }
-      .get-social__list .socialrenren a {
-        background-position: 0 -1710px; }
-      .get-social__list .socialweibo a {
-        background-position: 0 -1805px; }
-      .get-social__list .socialemail a {
-        background-position: 0 -1900px; }
-      .get-social__list .socialwechat a {
-        background-position: 0 -1995px; }
-    .get-social__item {
-      display: inline-block;
-      margin: 0 .5em; }
   
   .vu-footer {
     background: #333 url("https://cdn.vanderbilt.edu/vu-www4/omni/i/VUfooterphoto.jpg") no-repeat top center/cover;
@@ -1075,12 +978,6 @@ ul ul {
       list-style-type: none;
       margin-right: 0;
       padding: 0; }
-    .vu-footer__social .get-social__list {
-      margin-right: 0; }
-    .vu-footer__social .get-social__item {
-      display: inline-block;
-      margin: 0 .5em .5em 0;
-      text-align: left; }
     .vu-footer__title {
       margin: 15px 0px;
       color: #d8ab4c;
@@ -1090,12 +987,6 @@ ul ul {
         color: #d8ab4c; }
         .vu-footer__title a:hover {
           color: #ccc; }
-    .vu-footer .flickr_badge_image {
-      border: 1px solid #666;
-      padding: 2px;
-      background: #222;
-      float: left;
-      margin: 0px 10px 10px 0px; }
   
   .credits {
     background: #000;
@@ -1112,14 +1003,15 @@ ul ul {
   @media print {
     a[href]:after {
       font-size: 0.8rem; } }
-  /*# sourceMappingURL=map/vu-main-2019.css.map */
   
+
+/*! vul-footer.css */
+
 /*
 |--------------------------------------------------------------------------
 | Global
 |--------------------------------------------------------------------------
 */
-
 :host {
 	all: initial;
 }
@@ -1152,6 +1044,10 @@ ul ul {
 	font-size: 1.2rem;
 	margin-right: 0;
 	margin-left: 0;
+}
+
+.vu-footer .social-icons.h2 {
+	font-size: 30px;
 }
 
 .vu-footer__social .social-icons li {
@@ -1245,13 +1141,16 @@ ul ul {
 }
 
 .credits a { 
-	text-decoration: underline transparent;
+	-webkit-text-decoration: underline transparent; 
+	        text-decoration: underline transparent;
 }
 
 .credits a:hover {
-	text-decoration-color: #d8ab4c;
+	-webkit-text-decoration-color: #d8ab4c;
+	        text-decoration-color: #d8ab4c;
 }
 
 .credits .depository-logo {
 	width: 30px;
 }
+

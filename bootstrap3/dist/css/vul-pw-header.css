@@ -916,6 +916,8 @@ ul ul {
 }
 
 
+/*! vu-brandbar.css */
+
 /* -----------------------------------
 NAVIGATION
 ----------------------------------- */
@@ -924,21 +926,6 @@ NAVIGATION
     margin: 0 !important;
     border-radius: 0 !important;
     z-index: 1000;
-}
-
-#main_navbar .vumcbrandbar {
-	padding: 10px 0px;
-}
-
-.vu-navbar-form input {
-    background: #444;
-    border: 1px solid #666;
-    color: #000;
-}
-
-.vu-navbar-form button {
-    background: #444;
-    border: 1px solid #666;color: #FC6;
 }
 
 ul.dropdown-menu {
@@ -951,10 +938,6 @@ ul.dropdown-menu li a {
 
 .vu-navbar .vu-navbar-brand {
     padding: 8px 0 0px 10px;
-}
-
-.vumcbrandbar .vu-navbar-brand {
-    padding: 0px 0 0px 10px;  height: auto;
 }
 
 .vu-navbar-brand img {
@@ -974,77 +957,6 @@ ul.dropdown-menu li a {
     z-index: 300;
 }
 
-.vubrandbar form input.form-control {
-	padding-left: 10px;
-	color: #BBB !important;
-}
-
-li.searchdropdown label {
-  display: inline;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: 1.42857143;
-  color: #FFF;
-  white-space: nowrap;
-}
-
-li.searchdropdown {
-	padding: 5px 5px 5px 10px;
-}
-
-li.searchdropdown label:hover,
-li.searchdropdown label:focus {
-  text-decoration: none;
-  background-color: transparent;
-}
-
-li.searchdropdown input:checked ~ label,
-li.searchdropdown input:checked ~ label:hover,
-li.searchdropdown input:checked ~ label:focus,
-li.searchdropdown .active > label,
-li.searchdropdown .active > label:hover,
-li.searchdropdown .active > label:focus {
-  color: #FC6;
-  text-decoration: none;
-  outline: 0;
-  background-color: transparent;
-
-}
-
-li.searchdropdown label {
-  margin-bottom: 0;
-  cursor: pointer;
-}
-
-li.searchdropdown input[type="radio"] {
-	display: inline;
-	background: #222;
-	border: 0;
-	padding: 0;
-}
-
-li.searchdropdown label:focus,
-li.searchdropdown input:focus ~ label {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
-li.doswordmark {
-	border-right: 0 !important;
-	margin-left: 40px;
-	margin-right: 25px;
-}
-
-li.doswordmark a {
-	background: url('../images/DOS-grey.png') top left no-repeat !important;
-	text-indent: -9999px;
-	width: 100px;
-	height: 45px;
-	padding: 0 !important;
-}
-
 /* -----------------------------------
 RESPONSIVE
 ----------------------------------- */
@@ -1056,25 +968,13 @@ RESPONSIVE
         display: block;
     }
 
-    .nav-visibility {
-        visibility: visible;
-    }
-
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
 
-    .vu-navbar.vu-navbar-inverse-light {
-        background: #444 !important;
-    }
-
-}
+/*! vu-main-2019-header.css */
 
 * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box; }
-  
   html {
     font-size: 12px;
     margin: 0;
@@ -1101,7 +1001,7 @@ RESPONSIVE
     background-color: #fff; }
     body.fresh {
       background-color: #fff; }
-  
+
   .container {
     width: 100%;
     width: calc(100% - 30px);
@@ -1125,34 +1025,12 @@ RESPONSIVE
     .vu-navbar {
       font-size: 1rem; } }
   
-  .vu-navbar.vu-navbar-inverse-light {
-    background: rgba(85, 85, 85, 0.8);
-    z-index: 250; }
-  
-  .nav-visibility {
-    visibility: hidden; }
-  
-  .vu-navbar.vu-navbar-inverse-light .vu-navbar-collapse {
-    background: transparent; }
-  
-  .vu-navbar.vu-navbar-inverse-light .vu-navbar-nav > li > a {
-    background: transparent; }
-  
   .vumainmenu__text--gold {
     color: #d8ab4c; }
     .vumainmenu__text--gold a {
       color: #d8ab4c !important; }
   
-  .vumainmenu__text--right {
-    text-align: right; }
-  
-  .vumainmenu__social li {
-    float: left; }
-  
   @media (max-width: 767px) {
-    .vu-navbar.vu-navbar-inverse .vubrandbar #VanderbiltSearch {
-      margin-right: 0;
-      margin-left: 0; }
     .vu-navbar.vu-navbar-inverse .vu-navbar-brand {
       height: 22px;
       padding: 0;
@@ -1163,22 +1041,6 @@ RESPONSIVE
       .vu-navbar.vu-navbar-inverse .vu-navbar-toggle:focus {
         border: 1px dotted #fff !important;
         padding: 2px; } }
-  
-  .vu-navbar.vu-navbar-inverse-light .dropdown-menu .vumainmenu__button,
-  .vu-navbar.vu-navbar-inverse .dropdown-menu .vubrandbar__button {
-    background: #333;
-    text-transform: uppercase; }
-  
-  .vu-navbar-inverse-light .vumainmenu .vumainmenu__button--gold,
-  .vu-navbar-inverse .vubrandbar .vubrandbar__button--gold {
-    color: #d8ab4c; }
-  
-  .vumainmenu__button:hover,
-  .vubrandbar__button:hover {
-    background: #222 !important; }
-  
-  .linobg a:hover {
-    background-color: none !important; }
   
   .btn {
     font-family: 'Roboto', sans-serif; }
@@ -1195,19 +1057,6 @@ RESPONSIVE
     a.btn-primary:hover {
       color: #000; }
   
-  .vu-site-wrapper {
-    margin: 55% auto 0;
-    overflow: visible; }
-  
-  .nohead {
-    margin: 0 auto; }
-  
-  .static-wrapper {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 30%; }
-  
   @media (max-width: 480px) {
     .footer {
       padding-bottom: 50px; } }
@@ -1215,54 +1064,21 @@ RESPONSIVE
   /**
    * Flex Box Row Sizing
    */
-  .row-flex,
-  .row-flex > div[class*='col-'] {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex: 1 1 auto; }
-  
-  .row-flex-wrap {
-    -webkit-flex-flow: row wrap;
-    align-content: flex-start;
-    flex: 0; }
-  
-  .row-flex > div[class*='col-'],
-  .container-flex > div[class*='col-'] {
-    margin: -.2px;
-    /* hack adjust for wrapping */ }
-  
-  .container-flex > div[class*='col-'] div,
-  .row-flex > div[class*='col-'] div {
-    width: 100%; }
-  
-  .flex-col {
-    display: flex;
-    display: -webkit-flex;
-    flex: 1 100%;
-    flex-flow: column nowrap; }
-  
-  .flex-grow {
-    display: flex;
-    -webkit-flex: 2;
-    flex: 2; }
   
   .vu-header .vu-navbar {
     display: none; }
   
-  .graphic-header,
+  
   .header-background {
     background-color: #ccc; }
-    .graphic-header img,
+    
     .header-background img {
       width: 100%; }
     @media screen and (max-width: 767px) {
-      .graphic-header,
+      
       .header-background {
         background-color: #000; }
-        .graphic-header img,
+        
         .header-background img {
           display: none; } }
   
@@ -1297,8 +1113,6 @@ RESPONSIVE
       /* Small Devices, Tablets */
       /* Extra Small Devices, Phones */
       /* Custom, iPhone Retina */ }
-      .header-background .livetextheader strong {
-        font-weight: 700; }
       .header-background .livetextheader small {
         color: #fff;
         float: none;
@@ -1335,12 +1149,10 @@ RESPONSIVE
       text-decoration: none;
       border: 0; }
   
-  .graphic-header__title,
-  .header-background__title {
+  .graphic-header__title {
     display: none; }
     @media screen and (max-width: 767px) {
-      .graphic-header__title,
-      .header-background__title {
+      .graphic-header__title {
         color: #fff;
         display: block;
         font-weight: 200; } }
@@ -1357,13 +1169,6 @@ RESPONSIVE
   #main_navbar .icon-bar {
     background-color: #d8ab4c !important; }
   
-  .vu-navbar.menu-lg .vu-navbar-brand {
-    background-color: transparent;
-    height: 62px;
-    padding: 10px 0 10px 10px; }
-    .vu-navbar.menu-lg .vu-navbar-brand:hover {
-      background-color: transparent; }
-  
   .vu-navbar-brand img {
     max-width: 220px;
     display: inline; }
@@ -1376,40 +1181,13 @@ RESPONSIVE
     background-color: #484848 !important;
     outline: #5e9ed7 auto 5px; }
   
-  .vu-navbar.vu-navbar-inverse-light .vu-navbar-nav .dropdown-menu li:not(.list-group) > a:focus {
-    background-color: #555; }
-  
-  .dropdown-submenu {
-    position: relative; }
-    .dropdown-submenu > .dropdown-menu {
-      top: 0;
-      left: 100%;
-      margin-top: -6px;
-      margin-left: -1px; }
-    .dropdown-submenu > a:after {
-      display: block;
-      content: " ";
-      float: right;
-      width: 0;
-      height: 0;
-      border-color: transparent;
-      border-style: solid;
-      border-width: 5px 0 5px 5px;
-      border-left-color: #cccccc;
-      margin-top: 5px;
-      margin-right: -10px; }
-    .dropdown-submenu:hover > a:after {
-      border-left-color: #ffffff; }
-    .dropdown-submenu.pull-left {
-      float: none; }
-      .dropdown-submenu.pull-left > .dropdown-menu {
-        left: -100%;
-        margin-left: 10px; }
-  
   @media print {
     a[href]:after {
       font-size: 0.8rem; } }
   
+
+/*! vul-header.css */
+
 /*
 |--------------------------------------------------------------------------
 | Global
@@ -1455,14 +1233,6 @@ i {
 	margin: 0;
 }
 
-.graphic-header__small {
-	color: #fff;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1.5em;
-	line-height: 1.25;
-	text-transform: uppercase;
-}
-
 .header-background .graphic-header__title {
 	font-size: 2.25em;
 	margin: 0.5rem 0 0 0;
@@ -1472,22 +1242,14 @@ i {
 	.header-background .graphic-header__title {
 		font-size: 3.25rem;
 	}
-	
-	.graphic-header__small {
-		font-size: 1.75rem;
-	}
 }
 
 @media only screen and (min-width: 62em) {
 	.header-background .graphic-header__title {
 		font-size: 4rem;
 	}
-	
-	.graphic-header__small {
-		font-size: 2em;
-	}
 }
-
 .emergencybar h3 {
 	font-weight: 500; /* Needed when no external Bootstrap styling exists */
 }
+
