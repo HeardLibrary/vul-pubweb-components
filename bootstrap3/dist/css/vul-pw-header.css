@@ -1225,6 +1225,46 @@ i {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.library.vanderbilt.edu/images/banners/banner-heard.jpg") top center / cover no-repeat;
 }
 
+.img-banner.header-background[data-div*="Biomedical"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-biomedical.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Central"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-central.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Digital Scholarship and Communications"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-disc.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Divinity"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-divinity.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Gallery"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-gallery.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Law"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-law.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Management"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-management.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Music"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-music.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Peabody"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-peabody.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Science"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-science.jpg') top center / cover no-repeat;
+}
+
 .img-banner.header-background[data-div*="Special Collections"] {
 	background: url('https://www.library.vanderbilt.edu/images/banners/banner-specialcollections.jpg') top center / cover no-repeat;
 }
