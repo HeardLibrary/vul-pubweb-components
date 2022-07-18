@@ -58,6 +58,7 @@ i {
 	margin: 0;
 }
 
+.header-background .graphic-header__small + a .graphic-header__title,
 .header-background .graphic-header__small + .graphic-header__title {
 	margin: 0.5rem 0 0 0;
 }
