@@ -7,7 +7,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     fontFace: true,
     keyframes: true,
     variables: true,
-    safelist: ['open', 'collapsing', 'in', 'fa', 'fa-plus-square', 'fa-external-link-square']
+    safelist: ['open', 'collapsing', 'in', 'fa', 'fa-plus-square', 'fa-external-link-square', 'graphic-header__small']
 });
 
 mix.less('src/bootstrap-3.4.1/less/bootstrap.less', 'postcss')
@@ -51,6 +51,7 @@ mix.js([
         'src/js/vul-brandbar.js', 
         'src/js/vul-header.js', 
         'src/js/vul-banner.js',
+        'src/js/vul-banner-alt.js',
         'src/js/vul-navigation.js'
     ], 'dist/js/vul-pw-header.js')
     .js('src/js/vul-footer.js', 'js/vul-pw-footer.js');

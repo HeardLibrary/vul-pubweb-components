@@ -1,4 +1,4 @@
-class VulBanner extends HTMLElement {
+class VulBannerAlt extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
@@ -17,6 +17,29 @@ class VulBanner extends HTMLElement {
             <div class="container container--banner">
         `;
 
+        if (this.hasAttribute('graphic-header-small-url')) {
+            html += `
+                <a href="${this.getAttribute('graphic-header-small-url')}" class="graphic-header__small">
+                    <small>
+                        <slot name="graphic-header-small">
+                            Jean &amp; Alexander Heard <b>Libraries</b>
+                        </slot>
+                    </small>
+                    <span class="sr-only">Home</span>
+                </a>
+            `;
+        } else {
+            html += `
+                <div class="graphic-header__small">
+                    <small>
+                        <slot name="graphic-header-small">
+                            Jean &amp; Alexander Heard <b>Libraries</b>
+                        </slot>
+                    </small>
+                </div>
+            `;
+        } 
+        
         if (this.hasAttribute('graphic-header-title-url')) {
             html += `
                 <a href="${this.getAttribute('graphic-header-title-url')}">
@@ -28,7 +51,8 @@ class VulBanner extends HTMLElement {
                     <span class="sr-only">Home</span>
                 </a>
             `;
-        } else {
+        }
+        else {
             html += `
                 <h1 class="graphic-header__title livetextheader">
                     <slot name="graphic-header-title">
@@ -42,7 +66,7 @@ class VulBanner extends HTMLElement {
             </div>
         </div>
         `;
-        
+
         banner.innerHTML = html;
         shadowRoot.appendChild(banner);
 
@@ -53,4 +77,4 @@ class VulBanner extends HTMLElement {
     }
 }
 
-customElements.define('vul-banner', VulBanner);
+customElements.define('vul-banner-alt', VulBannerAlt);

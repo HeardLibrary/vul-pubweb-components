@@ -4,6 +4,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
 
 footer,
 header,
@@ -85,6 +90,10 @@ button::-moz-focus-inner {
 *:before,
 *:after {
   box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 button {
@@ -1229,12 +1238,24 @@ i {
 	padding: 2.8125rem 1.875rem;
 }
 
-.img-banner.header-background[data-div*="Heard"] .graphic-header__title {
+/* .img-banner.header-background[data-div*="Heard"] .graphic-header__title {
 	margin: 0;
+} */
+
+.graphic-header__small {
+	color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.5em;
+	line-height: 1.25;
+	text-transform: uppercase;
 }
 
 .header-background .graphic-header__title {
 	font-size: 2.25em;
+	margin: 0;
+}
+
+.header-background .graphic-header__small + .graphic-header__title {
 	margin: 0.5rem 0 0 0;
 }
 
@@ -1242,11 +1263,19 @@ i {
 	.header-background .graphic-header__title {
 		font-size: 3.25rem;
 	}
+	
+	.graphic-header__small {
+		font-size: 1.75rem;
+	}
 }
 
 @media only screen and (min-width: 62em) {
 	.header-background .graphic-header__title {
 		font-size: 4rem;
+	}
+	
+	.graphic-header__small {
+		font-size: 2em;
 	}
 }
 .emergencybar h3 {

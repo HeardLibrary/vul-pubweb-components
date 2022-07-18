@@ -41,9 +41,9 @@ i {
 	padding: 2.8125rem 1.875rem;
 }
 
-.img-banner.header-background[data-div*="Heard"] .graphic-header__title {
+/* .img-banner.header-background[data-div*="Heard"] .graphic-header__title {
 	margin: 0;
-}
+} */
 
 .graphic-header__small {
 	color: #fff;
@@ -55,6 +55,10 @@ i {
 
 .header-background .graphic-header__title {
 	font-size: 2.25em;
+	margin: 0;
+}
+
+.header-background .graphic-header__small + .graphic-header__title {
 	margin: 0.5rem 0 0 0;
 }
 

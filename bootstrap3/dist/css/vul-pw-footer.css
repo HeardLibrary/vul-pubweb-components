@@ -4,6 +4,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
 
 footer,
 header,
@@ -85,6 +90,10 @@ button::-moz-focus-inner {
 *:before,
 *:after {
   box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 button {
@@ -920,6 +929,20 @@ ul ul {
 
 * {
     box-sizing: border-box; }
+  
+  html {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; }
+  
+  @media (min-width: 480px) {
+    html {
+      font-size: 14px; } }
+  
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px; } }
   
   .container {
     width: 100%;
