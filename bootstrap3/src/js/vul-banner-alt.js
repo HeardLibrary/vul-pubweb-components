@@ -6,13 +6,9 @@ class VulBannerAlt extends HTMLElement {
 
     connectedCallback() {
         const { shadowRoot } = this;
-        let stylesheet = document.querySelector('link[href*="vul-pw-header.css"]').href;
-        let division = this.hasAttribute('division') ? this.getAttribute('division') : 'Jean &amp; Alexander Heard Libraries';
-        
-        const banner = document.createElement('div');
-        banner.classList.add('img-banner', 'header-background');
 
-        var html = `
+        let division = this.hasAttribute('division') ? this.getAttribute('division') : 'Jean &amp; Alexander Heard Libraries';
+        let html = `
         <div class="img-banner header-background" data-div="${division}">
             <div class="container container--banner">
         `;
@@ -67,11 +63,14 @@ class VulBannerAlt extends HTMLElement {
         </div>
         `;
 
+        const banner = document.createElement('div');
+        banner.classList.add('img-banner', 'header-background');
         banner.innerHTML = html;
         shadowRoot.appendChild(banner);
 
         if (this.hasAttribute('image')) {
             let style = document.createElement('style');
+
             style.innerHTML = `
                 .header-background {
                     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("${this.getAttribute('image')}") top center / cover no-repeat !important;
@@ -81,7 +80,8 @@ class VulBannerAlt extends HTMLElement {
             shadowRoot.appendChild(style);
         }
 
-        var link = document.createElement('link');
+        let stylesheet = document.querySelector('link[href*="vul-pw-header.css"]').href;
+        let link = document.createElement('link');
         link.setAttribute('rel', 'stylesheet');
         link.setAttribute('href', stylesheet);
         shadowRoot.appendChild(link);

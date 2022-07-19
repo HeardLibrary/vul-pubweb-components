@@ -58,10 +58,7 @@ var VulBannerAlt = /*#__PURE__*/function (_HTMLElement) {
     key: "connectedCallback",
     value: function connectedCallback() {
       var shadowRoot = this.shadowRoot;
-      var stylesheet = document.querySelector('link[href*="vul-pw-header.css"]').href;
       var division = this.hasAttribute('division') ? this.getAttribute('division') : 'Jean &amp; Alexander Heard Libraries';
-      var banner = document.createElement('div');
-      banner.classList.add('img-banner', 'header-background');
       var html = "\n        <div class=\"img-banner header-background\" data-div=\"".concat(division, "\">\n            <div class=\"container container--banner\">\n        ");
 
       if (this.hasAttribute('graphic-header-small-url')) {
@@ -77,6 +74,8 @@ var VulBannerAlt = /*#__PURE__*/function (_HTMLElement) {
       }
 
       html += "\n            </div>\n        </div>\n        ";
+      var banner = document.createElement('div');
+      banner.classList.add('img-banner', 'header-background');
       banner.innerHTML = html;
       shadowRoot.appendChild(banner);
 
@@ -86,6 +85,7 @@ var VulBannerAlt = /*#__PURE__*/function (_HTMLElement) {
         shadowRoot.appendChild(style);
       }
 
+      var stylesheet = document.querySelector('link[href*="vul-pw-header.css"]').href;
       var link = document.createElement('link');
       link.setAttribute('rel', 'stylesheet');
       link.setAttribute('href', stylesheet);
@@ -157,10 +157,7 @@ var VulBanner = /*#__PURE__*/function (_HTMLElement) {
     key: "connectedCallback",
     value: function connectedCallback() {
       var shadowRoot = this.shadowRoot;
-      var stylesheet = document.querySelector('link[href*="vul-pw-header.css"]').href;
       var division = this.hasAttribute('division') ? this.getAttribute('division') : 'Jean &amp; Alexander Heard Libraries';
-      var banner = document.createElement('div');
-      banner.classList.add('img-banner', 'header-background');
       var html = "\n        <div class=\"img-banner header-background\" data-div=\"".concat(division, "\">\n            <div class=\"container container--banner\">\n        ");
 
       if (this.hasAttribute('graphic-header-title-url')) {
@@ -170,6 +167,8 @@ var VulBanner = /*#__PURE__*/function (_HTMLElement) {
       }
 
       html += "\n            </div>\n        </div>\n        ";
+      var banner = document.createElement('div');
+      banner.classList.add('img-banner', 'header-background');
       banner.innerHTML = html;
       shadowRoot.appendChild(banner);
 
@@ -179,6 +178,7 @@ var VulBanner = /*#__PURE__*/function (_HTMLElement) {
         shadowRoot.appendChild(style);
       }
 
+      var stylesheet = document.querySelector('link[href*="vul-pw-header.css"]').href;
       var link = document.createElement('link');
       link.setAttribute('rel', 'stylesheet');
       link.setAttribute('href', stylesheet);
@@ -316,10 +316,10 @@ var VulHeader = /*#__PURE__*/function (_HTMLElement) {
     value: function connectedCallback() {
       var shadowRoot = this.shadowRoot;
       var header = document.createElement('header');
-      var stylesheet = document.querySelector('link[href*="vul-pw-header.css"]').href;
       header.classList.add('vu-header');
       header.innerHTML = "\n            <a class=\"sr-only sr-only-focusable\" href=\"#maincontent\">Skip to main content</a>\n            <slot></slot>\n        ";
       shadowRoot.appendChild(header);
+      var stylesheet = document.querySelector('link[href*="vul-pw-header.css"]').href;
       var link = document.createElement('link');
       link.setAttribute('rel', 'stylesheet');
       link.setAttribute('href', stylesheet);

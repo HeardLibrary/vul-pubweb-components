@@ -9,7 +9,6 @@ class VulBrandbar extends HTMLElement {
         brandbar.id = 'main_navbar';
         brandbar.setAttribute('role', 'navigation');
         brandbar.setAttribute('aria-label', 'Vanderbilt University');
-
         brandbar.innerHTML = `
             <div class="container">
                 <div class="vu-navbar-header">
@@ -78,7 +77,6 @@ class VulBrandbar extends HTMLElement {
                 </div>
             </div>
         `;
-
         this.appendChild(brandbar);
     }
 }

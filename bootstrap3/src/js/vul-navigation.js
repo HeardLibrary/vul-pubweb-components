@@ -6,7 +6,6 @@ class VulNavigation extends HTMLElement {
     connectedCallback() {
         const vuNav = document.createElement('div');
         vuNav.classList.add('vu-navbar', 'vu-navbar-inverse', 'no-border-radius');
-
         vuNav.innerHTML = `
             <div class="container">
                 <nav class="vumainmenu vu-navbar-collapse collapse" aria-label="Library" aria-expanded="false">
@@ -111,7 +110,6 @@ class VulNavigation extends HTMLElement {
                 </nav>
             </div>
         `;
-
         this.appendChild(vuNav);
     }
 }

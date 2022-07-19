@@ -6,9 +6,8 @@ class VulFooter extends HTMLElement {
 
     connectedCallback() {
         const { shadowRoot } = this;
-        const footer = document.createElement('footer');
-        let stylesheet = document.querySelector('link[href*="vul-pw-header.css"]').href.replace('header', 'footer');
 
+        const footer = document.createElement('footer');
         footer.id = 'vu-footer';
         footer.classList.add('vu-footer', 'fresh');
         footer.innerHTML = `
@@ -124,7 +123,8 @@ class VulFooter extends HTMLElement {
         `;
         shadowRoot.appendChild(footer);
 
-        var link = document.createElement('link');
+        let stylesheet = document.querySelector('link[href*="vul-pw-header.css"]').href.replace('header', 'footer');
+        let link = document.createElement('link');
         link.setAttribute('rel', 'stylesheet');
         link.setAttribute('href', stylesheet);
         shadowRoot.appendChild(link);
