@@ -70,6 +70,17 @@ class VulBannerAlt extends HTMLElement {
         banner.innerHTML = html;
         shadowRoot.appendChild(banner);
 
+        if (this.hasAttribute('image')) {
+            let style = document.createElement('style');
+            style.innerHTML = `
+                .header-background {
+                    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("${this.getAttribute('image')}") top center / cover no-repeat !important;
+                }
+            `;
+
+            shadowRoot.appendChild(style);
+        }
+
         var link = document.createElement('link');
         link.setAttribute('rel', 'stylesheet');
         link.setAttribute('href', stylesheet);

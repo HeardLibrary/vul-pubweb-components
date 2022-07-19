@@ -79,6 +79,13 @@ var VulBannerAlt = /*#__PURE__*/function (_HTMLElement) {
       html += "\n            </div>\n        </div>\n        ";
       banner.innerHTML = html;
       shadowRoot.appendChild(banner);
+
+      if (this.hasAttribute('image')) {
+        var style = document.createElement('style');
+        style.innerHTML = "\n                .header-background {\n                    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(\"".concat(this.getAttribute('image'), "\") top center / cover no-repeat !important;\n                }\n            ");
+        shadowRoot.appendChild(style);
+      }
+
       var link = document.createElement('link');
       link.setAttribute('rel', 'stylesheet');
       link.setAttribute('href', stylesheet);
@@ -165,6 +172,13 @@ var VulBanner = /*#__PURE__*/function (_HTMLElement) {
       html += "\n            </div>\n        </div>\n        ";
       banner.innerHTML = html;
       shadowRoot.appendChild(banner);
+
+      if (this.hasAttribute('image')) {
+        var style = document.createElement('style');
+        style.innerHTML = "\n                .header-background {\n                    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(\"".concat(this.getAttribute('image'), "\") top center / cover no-repeat !important;\n                }\n            ");
+        shadowRoot.appendChild(style);
+      }
+
       var link = document.createElement('link');
       link.setAttribute('rel', 'stylesheet');
       link.setAttribute('href', stylesheet);
