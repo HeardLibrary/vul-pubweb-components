@@ -4,6 +4,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
 
 footer,
 header,
@@ -85,6 +90,10 @@ button::-moz-focus-inner {
 *:before,
 *:after {
   box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 button {
@@ -462,6 +471,8 @@ ul ul {
   position: relative;
   display: block;
   padding: 10px 15px;
+  text-transform: none !important;
+  letter-spacing: normal !important;
 }
 .vu-nav > li > a:hover,
 .vu-nav > li > button:hover,
@@ -542,6 +553,7 @@ ul ul {
 }
 .vu-navbar-brand > img {
   display: block;
+  height: 90%;
 }
 @media (min-width: 768px) {
   .vu-navbar > .container .vu-navbar-brand {
@@ -907,6 +919,8 @@ ul ul {
 }
 
 
+/*! vu-brandbar.css */
+
 /* -----------------------------------
 NAVIGATION
 ----------------------------------- */
@@ -915,17 +929,6 @@ NAVIGATION
     margin: 0 !important;
     border-radius: 0 !important;
     z-index: 1000;
-}
-
-.vu-navbar-form input {
-    background: #444;
-    border: 1px solid #666;
-    color: #000;
-}
-
-.vu-navbar-form button {
-    background: #444;
-    border: 1px solid #666;color: #FC6;
 }
 
 .vu-nav .dropdown .dropdown-toggle {
@@ -977,11 +980,6 @@ NAVIGATION
     z-index: 300;
 }
 
-.vubrandbar form input.form-control {
-	padding-left: 10px;
-	color: #BBB !important;
-}
-
 /* -----------------------------------
 RESPONSIVE
 ----------------------------------- */
@@ -993,29 +991,17 @@ RESPONSIVE
         display: block;
     }
 
-    .nav-visibility {
-        visibility: visible;
-    }
-
     .vu-nav .dropdown .dropdown-toggle {
         padding: 14px; /* To account for transparent border */
     }
 
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
 
-    .vu-navbar.vu-navbar-inverse-light {
-        background: #444 !important;
-    }
-
-}
+/*! vu-main-2019-header.css */
 
 * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box; }
-  
   html {
     font-size: 12px;
     margin: 0;
@@ -1066,34 +1052,12 @@ RESPONSIVE
     .vu-navbar {
       font-size: 1rem; } }
   
-  .vu-navbar.vu-navbar-inverse-light {
-    background: rgba(85, 85, 85, 0.8);
-    z-index: 250; }
-  
-  .nav-visibility {
-    visibility: hidden; }
-  
-  .vu-navbar.vu-navbar-inverse-light .vu-navbar-collapse {
-    background: transparent; }
-  
-  .vu-navbar.vu-navbar-inverse-light .vu-navbar-nav > li > a {
-    background: transparent; }
-  
   .vumainmenu__text--gold {
     color: #d8ab4c; }
     .vumainmenu__text--gold a {
       color: #d8ab4c !important; }
   
-  .vumainmenu__text--right {
-    text-align: right; }
-  
-  .vumainmenu__social li {
-    float: left; }
-  
   @media (max-width: 767px) {
-    .vu-navbar.vu-navbar-inverse .vubrandbar #VanderbiltSearch {
-      margin-right: 0;
-      margin-left: 0; }
     .vu-navbar.vu-navbar-inverse .vu-navbar-brand {
       height: 22px;
       padding: 0;
@@ -1110,22 +1074,6 @@ RESPONSIVE
       text-align: left;
     } }
   
-  .vu-navbar.vu-navbar-inverse-light .dropdown-menu .vumainmenu__button,
-  .vu-navbar.vu-navbar-inverse .dropdown-menu .vubrandbar__button {
-    background: #333;
-    text-transform: uppercase; }
-  
-  .vu-navbar-inverse-light .vumainmenu .vumainmenu__button--gold,
-  .vu-navbar-inverse .vubrandbar .vubrandbar__button--gold {
-    color: #d8ab4c; }
-  
-  .vumainmenu__button:hover,
-  .vubrandbar__button:hover {
-    background: #222 !important; }
-  
-  .linobg a:hover {
-    background-color: none !important; }
-  
   .btn {
     font-family: 'Roboto', sans-serif; }
     .btn-primary {
@@ -1141,19 +1089,6 @@ RESPONSIVE
     a.btn-primary:hover {
       color: #000; }
   
-  .vu-site-wrapper {
-    margin: 55% auto 0;
-    overflow: visible; }
-  
-  .nohead {
-    margin: 0 auto; }
-  
-  .static-wrapper {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 30%; }
-  
   @media (max-width: 480px) {
     .footer {
       padding-bottom: 50px; } }
@@ -1161,54 +1096,21 @@ RESPONSIVE
   /**
    * Flex Box Row Sizing
    */
-  .row-flex,
-  .row-flex > div[class*='col-'] {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex: 1 1 auto; }
-  
-  .row-flex-wrap {
-    -webkit-flex-flow: row wrap;
-    align-content: flex-start;
-    flex: 0; }
-  
-  .row-flex > div[class*='col-'],
-  .container-flex > div[class*='col-'] {
-    margin: -.2px;
-    /* hack adjust for wrapping */ }
-  
-  .container-flex > div[class*='col-'] div,
-  .row-flex > div[class*='col-'] div {
-    width: 100%; }
-  
-  .flex-col {
-    display: flex;
-    display: -webkit-flex;
-    flex: 1 100%;
-    flex-flow: column nowrap; }
-  
-  .flex-grow {
-    display: flex;
-    -webkit-flex: 2;
-    flex: 2; }
   
   .vu-header .vu-navbar {
     display: none; }
   
-  .graphic-header,
+  
   .header-background {
     background-color: #ccc; }
-    .graphic-header img,
+    
     .header-background img {
       width: 100%; }
     @media screen and (max-width: 767px) {
-      .graphic-header,
+      
       .header-background {
         background-color: #000; }
-        .graphic-header img,
+        
         .header-background img {
           display: none; } }
   
@@ -1239,8 +1141,6 @@ RESPONSIVE
       /* Small Devices, Tablets */
       /* Extra Small Devices, Phones */
       /* Custom, iPhone Retina */ }
-      .header-background .livetextheader strong {
-        font-weight: 700; }
       .header-background .livetextheader small {
         color: #fff;
         float: none;
@@ -1277,12 +1177,10 @@ RESPONSIVE
       text-decoration: none;
       border: 0; }
   
-  .graphic-header__title,
-  .header-background__title {
+  .graphic-header__title {
     display: none; }
     @media screen and (max-width: 767px) {
-      .graphic-header__title,
-      .header-background__title {
+      .graphic-header__title {
         color: #fff;
         display: block;
         font-weight: 200; } }
@@ -1298,13 +1196,6 @@ RESPONSIVE
   
   #main_navbar .icon-bar {
     background-color: #d8ab4c !important; }
-  
-  .vu-navbar.menu-lg .vu-navbar-brand {
-    background-color: transparent;
-    height: 62px;
-    padding: 10px 0 10px 10px; }
-    .vu-navbar.menu-lg .vu-navbar-brand:hover {
-      background-color: transparent; }
   
   .vu-navbar-brand img {
     max-width: 220px;
@@ -1324,40 +1215,13 @@ RESPONSIVE
     outline-offset: -2px;
   }
   
-  .vu-navbar.vu-navbar-inverse-light .vu-navbar-nav .dropdown-menu li:not(.list-group) > a:focus {
-    background-color: #555; }
-  
-  .dropdown-submenu {
-    position: relative; }
-    .dropdown-submenu > .dropdown-menu {
-      top: 0;
-      left: 100%;
-      margin-top: -6px;
-      margin-left: -1px; }
-    .dropdown-submenu > a:after {
-      display: block;
-      content: " ";
-      float: right;
-      width: 0;
-      height: 0;
-      border-color: transparent;
-      border-style: solid;
-      border-width: 5px 0 5px 5px;
-      border-left-color: #cccccc;
-      margin-top: 5px;
-      margin-right: -10px; }
-    .dropdown-submenu:hover > a:after {
-      border-left-color: #ffffff; }
-    .dropdown-submenu.pull-left {
-      float: none; }
-      .dropdown-submenu.pull-left > .dropdown-menu {
-        left: -100%;
-        margin-left: 10px; }
-  
   @media print {
     a[href]:after {
       font-size: 0.8rem; } }
   
+
+/*! vul-header.css */
+
 /*
 |--------------------------------------------------------------------------
 | Banner Image
@@ -1374,6 +1238,46 @@ RESPONSIVE
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.library.vanderbilt.edu/images/banners/banner-heard.jpg") top center / cover no-repeat;
 }
 
+.img-banner.header-background[data-div*="Biomedical"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-biomedical.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Central"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-central.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Digital Scholarship and Communications"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-disc.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Divinity"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-divinity.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Gallery"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-gallery.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Law"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-law.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Management"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-management.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Music"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-music.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Peabody"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-peabody.jpg') top center / cover no-repeat;
+}
+
+.img-banner.header-background[data-div*="Science"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-science.jpg') top center / cover no-repeat;
+}
+
 .img-banner.header-background[data-div*="Special Collections"] {
 	background: url('https://www.library.vanderbilt.edu/images/banners/banner-specialcollections.jpg') top center / cover no-repeat;
 }
@@ -1387,10 +1291,6 @@ RESPONSIVE
 	padding: 2.8125rem 1.875rem;
 }
 
-.img-banner.header-background[data-div*="Heard"] .graphic-header__title {
-	margin: 0;
-}
-
 .graphic-header__small {
 	color: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -1401,6 +1301,11 @@ RESPONSIVE
 
 .header-background .graphic-header__title {
 	font-size: 2.25em;
+	margin: 0;
+}
+
+.header-background .graphic-header__small + a .graphic-header__title,
+.header-background .graphic-header__small + .graphic-header__title {
 	margin: 0.5rem 0 0 0;
 }
 
@@ -1423,7 +1328,7 @@ RESPONSIVE
 		font-size: 2em;
 	}
 }
-
 .emergencybar h3 {
 	font-weight: 500; /* Needed when no external Bootstrap styling exists */
 }
+

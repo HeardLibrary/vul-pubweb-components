@@ -78,7 +78,6 @@ class VulBrandbar extends HTMLElement {
                 </div>
             </div>
         `;
-
         this.appendChild(brandbar);
     }
 }

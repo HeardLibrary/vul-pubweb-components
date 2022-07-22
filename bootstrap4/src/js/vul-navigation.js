@@ -6,7 +6,6 @@ class VulNavigation extends HTMLElement {
     connectedCallback() {
         const vuNav = document.createElement('div');
         vuNav.classList.add('vu-navbar', 'vu-navbar-inverse', 'no-border-radius');
-
         vuNav.innerHTML = `
             <div class="container">
                 <nav class="vumainmenu vu-navbar-collapse collapse" aria-label="Library" aria-expanded="false">
@@ -14,7 +13,6 @@ class VulNavigation extends HTMLElement {
                         <li class="home">
                             <a href="/" aria-label="Jean &amp; Alexander Heard Libraries Home">Home</a>
                         </li>
-
                         <li class="about dropdown">
                             <button class="vumainmenu__dropdown dropdown-toggle btn" type="button" id="aboutBtn" data-toggle="dropdown" aria-expanded="false" data-display="static">
                                 About <span class="vumainmenu__text--gold fas fa-caret-down"></span>
@@ -31,7 +29,6 @@ class VulNavigation extends HTMLElement {
                                 <a class="dropdown-item" href="https://www.vanderbilt.edu/coronavirus/fall-2020/fall-2020-visitors-and-suppliers/">Visitor Information</a>
                             </div>
                         </li>
-
                         <li class="services dropdown">
                             <button class="vumainmenu__dropdown dropdown-toggle btn" type="button" id="servicesBtn" data-toggle="dropdown" aria-expanded="false" data-display="static">
                                 Services <span class="vumainmenu__text--gold fas fa-caret-down"></span>
@@ -48,7 +45,6 @@ class VulNavigation extends HTMLElement {
                                 <a class="dropdown-item" href="https://www.library.vanderbilt.edu/technology">Technology</a>
                             </div>
                         </li>
-
                         <li class="research dropdown">
                             <button class="vumainmenu__dropdown dropdown-toggle btn" type="button" id="researchBtn" data-toggle="dropdown" aria-expanded="false" data-display="static">
                                 Research <span class="vumainmenu__text--gold fas fa-caret-down"></span>
@@ -66,7 +62,6 @@ class VulNavigation extends HTMLElement {
                                 <a class="dropdown-item" href="https://tvnews.vanderbilt.edu">Television News Archive</a>
                             </div>
                         </li>
-
                         <li class="help dropdown">
                             <button class="vumainmenu__dropdown dropdown-toggle btn" type="button" id="helpBtn" data-toggle="dropdown" aria-expanded="false" data-display="static">
                                 Help <span class="vumainmenu__text--gold fas fa-caret-down"></span>
@@ -81,7 +76,6 @@ class VulNavigation extends HTMLElement {
                                 <a class="dropdown-item" href="https://researchguides.library.vanderbilt.edu">Research and Course Guides</a>
                             </div>
                         </li>
-
                         <li class="campus-libraries dropdown">
                             <button class="vumainmenu__dropdown dropdown-toggle btn" type="button" id="campusLibrariesBtn" data-toggle="dropdown" aria-expanded="false" data-display="static">
                                 Locations <span class="vumainmenu__text--gold fas fa-caret-down"></span>
@@ -99,11 +93,9 @@ class VulNavigation extends HTMLElement {
                                 <a class="dropdown-item" href="https://www.library.vanderbilt.edu/specialcollections/">Special Collections</a>
                             </div>
                         </li>
-
                         <li class="hours">
                             <a href="https://www.library.vanderbilt.edu/hours.php">Hours</a>
                         </li>
-
                         <li>
                             <a href="https://www.library.vanderbilt.edu/ask-librarian.php">Ask a Librarian</a>
                         </li>
@@ -111,7 +103,6 @@ class VulNavigation extends HTMLElement {
                 </nav>
             </div>
         `;
-
         this.appendChild(vuNav);
     }
 }

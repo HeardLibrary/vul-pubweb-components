@@ -1,8 +1,11 @@
+/*! vu-main-2019-header.css */
+
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
   
+  /*! purgecss start ignore */
   html {
     font-size: 12px;
     margin: 0;
@@ -27,6 +30,7 @@
     background-color: #fff; }
     body.fresh {
       background-color: #fff; }
+  /*! purgecss end ignore */
   
   .container {
     width: 100%;
