@@ -41,6 +41,10 @@
 	margin-left: 0;
 }
 
+.vu-footer .social-icons.h2 {
+	font-size: 30px;
+}
+
 .vu-footer__social .social-icons li {
 	display: inline-block;
 	margin-bottom: 10px;
