@@ -4,16 +4,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
 
 footer,
 header,
-main,
-nav,
 section {
   display: block;
 }
@@ -24,13 +17,6 @@ a:active,
 a:hover {
   outline: 0;
 }
-b {
-  font-weight: bold;
-}
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
 small {
   font-size: 80%;
 }
@@ -40,66 +26,12 @@ img {
 svg:not(:root) {
   overflow: hidden;
 }
-button {
-  color: inherit;
-  font: inherit;
-  margin: 0;
-}
-button {
-  overflow: visible;
-}
-button {
-  text-transform: none;
-}
-button {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-@font-face {
-  font-family: "Glyphicons Halflings";
-  src: url("../fonts/glyphicons-halflings-regular.eot");
-  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
-}
-.glyphicon {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: "Glyphicons Halflings";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.glyphicon-th:before {
-  content: "\e011";
-}
-.glyphicon-cog:before {
-  content: "\e019";
-}
-.glyphicon-lock:before {
-  content: "\e033";
-}
 * {
   box-sizing: border-box;
 }
 *:before,
 *:after {
   box-sizing: border-box;
-}
-html {
-  font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-button {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
 }
 a {
   color: #337ab7;
@@ -117,32 +49,9 @@ a:focus {
 img {
   vertical-align: middle;
 }
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  clip: auto;
-}
-[role="button"] {
-  cursor: pointer;
-}
-h1,
+
 h2,
 h4,
-.h1,
 .h2,
 .h4 {
   font-family: inherit;
@@ -150,35 +59,28 @@ h4,
   line-height: 1.1;
   color: inherit;
 }
-h1 small,
+
 h2 small,
 h4 small,
-.h1 small,
 .h2 small,
 .h4 small,
-h1 .small,
 h2 .small,
 h4 .small,
-.h1 .small,
 .h2 .small,
 .h4 .small {
   font-weight: 400;
   line-height: 1;
   color: #777777;
 }
-h1,
-.h1,
+
 h2,
 .h2 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-h1 small,
-.h1 small,
+
 h2 small,
 .h2 small,
-h1 .small,
-.h1 .small,
 h2 .small,
 .h2 .small {
   font-size: 65%;
@@ -193,10 +95,6 @@ h4 small,
 h4 .small,
 .h4 .small {
   font-size: 75%;
-}
-h1,
-.h1 {
-  font-size: 36px;
 }
 h2,
 .h2 {
@@ -363,370 +261,33 @@ ul ul {
   background-color: #286090;
   border-color: #204d74;
 }
-.btn-primary:active,
-.open > .dropdown-toggle.btn-primary {
+.btn-primary:active {
   color: #fff;
   background-color: #286090;
   background-image: none;
   border-color: #204d74;
 }
 .btn-primary:active:hover,
-.open > .dropdown-toggle.btn-primary:hover,
-.btn-primary:active:focus,
-.open > .dropdown-toggle.btn-primary:focus {
+.btn-primary:active:focus {
   color: #fff;
   background-color: #204d74;
   border-color: #122b40;
 }
-.collapse {
-  display: none;
-}
-.collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  transition-property: height, visibility;
-  transition-duration: 0.35s;
-  transition-timing-function: ease;
-}
-.caret {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 2px;
-  vertical-align: middle;
-  border-top: 4px dashed;
-  border-top: 4px solid \9;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-}
-
-.dropdown {
-  position: relative;
-}
-.dropdown-toggle:focus {
-  outline: 0;
-}
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 160px;
-  padding: 5px 0 !important;
-  margin: 2px 0 0;
-  font-size: 14px !important;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-}
-.dropdown-menu > li > a {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: 400;
-  line-height: 1.42857143;
-  color: #333333;
-  white-space: nowrap;
-}
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-  color: #262626;
-  text-decoration: none;
-  background-color: #f5f5f5;
-}
-.open > .dropdown-menu {
-  display: block;
-}
 .open > a {
   outline: 0;
-}
-@media (min-width: 768px) {
-  .vu-navbar-right .dropdown-menu {
-    right: 0;
-    left: auto;
-  }
-}
-.vu-navbar .dropdown-toggle::after {
-  content: none !important;
-}
-.vu-nav {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-.vu-nav > li {
-  position: relative;
-  display: block;
-}
-.vu-nav > li > a,
-.vu-nav > li > button {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-  text-transform: none !important;
-  letter-spacing: normal !important;
-}
-.vu-nav > li > a:hover,
-.vu-nav > li > button:hover,
-.vu-nav > li > a:focus,
-.vu-nav > li > button:focus {
-  text-decoration: none;
-  background-color: #eeeeee;
-}
-.vu-nav .show > button,
-.vu-nav .show > button:hover,
-.vu-nav .show > button:focus {
-  background-color: #eeeeee;
-  border-color: #337ab7;
-}
-.vu-nav > li > a > img,
-.vu-nav > li > button > img {
-  max-width: none;
-}
-.vu-navbar {
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
-}
-@media (min-width: 768px) {
-  .vu-navbar {
-    border-radius: 4px;
-  }
-}
-@media (min-width: 768px) {
-  .vu-navbar-header {
-    float: left;
-  }
-}
-.vu-navbar-collapse {
-  padding-right: 15px;
-  padding-left: 15px;
-  overflow-x: visible;
-  border-top: 1px solid transparent;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  -webkit-overflow-scrolling: touch;
-}
-@media (min-width: 768px) {
-  .vu-navbar-collapse {
-    width: auto;
-    border-top: 0;
-    box-shadow: none;
-  }
-  .vu-navbar-collapse.collapse {
-    display: block !important;
-    height: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
-  }
-}
-.container > .vu-navbar-header,
-.container > .vu-navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-@media (min-width: 768px) {
-  .container > .vu-navbar-header,
-  .container > .vu-navbar-collapse {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-.vu-navbar-brand {
-  float: left;
-  height: 50px;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
-}
-.vu-navbar-brand:hover,
-.vu-navbar-brand:focus {
-  text-decoration: none;
-}
-.vu-navbar-brand > img {
-  display: block;
-  height: 90%;
-}
-@media (min-width: 768px) {
-  .vu-navbar > .container .vu-navbar-brand {
-    margin-left: -15px;
-  }
-}
-.vu-navbar-toggle {
-  position: relative;
-  float: right;
-  padding: 9px 10px;
-  margin-right: 15px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-.vu-navbar-toggle:focus {
-  outline: 0;
-}
-.vu-navbar-toggle .icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  border-radius: 1px;
-}
-.vu-navbar-toggle .icon-bar + .icon-bar {
-  margin-top: 4px;
-}
-@media (min-width: 768px) {
-  .vu-navbar-toggle {
-    display: none;
-  }
-}
-.vu-navbar-nav {
-  margin: 7.5px -15px;
-}
-.vu-navbar-nav > li > a,
-.vu-navbar-nav > li > button {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 20px;
-}
-@media (max-width: 767px) {
-  .vu-navbar-nav .show .dropdown-menu {
-    position: static !important;
-    float: none;
-    width: auto;
-    margin-top: 0;
-    background-color: transparent;
-    border: 0;
-    box-shadow: none;
-    transform: initial !important;
-  }
-  .vu-navbar-nav .show .dropdown-menu > a {
-    padding: 5px 15px 5px 25px;
-  }
-  .vu-navbar-nav .show .dropdown-menu > a {
-    line-height: 20px;
-  }
-  .vu-navbar-nav .show .dropdown-menu > a:hover,
-  .vu-navbar-nav .show .dropdown-menu > a:focus {
-    background-image: none;
-  }
-}
-@media (min-width: 768px) {
-  .vu-navbar-nav {
-    float: left;
-    margin: 0;
-  }
-  .vu-navbar-nav > li {
-    float: left;
-  }
-  .vu-navbar-nav > li > a,
-  .vu-navbar-nav > li > button {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-}
-.vu-navbar-nav > li > .dropdown-menu {
-  margin-top: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-@media (min-width: 768px) {
-  .vu-navbar-left {
-    float: left !important;
-  }
-  .vu-navbar-right {
-    float: right !important;
-    margin-right: -15px;
-  }
-  .vu-navbar-right ~ .vu-navbar-right {
-    margin-right: 0;
-  }
-}
-.vu-navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
-}
-.vu-navbar-inverse .vu-navbar-brand {
-  color: #9d9d9d;
-}
-.vu-navbar-inverse .vu-navbar-brand:hover,
-.vu-navbar-inverse .vu-navbar-brand:focus {
-  color: #fff;
-  background-color: transparent;
-}
-.vu-navbar-inverse .vu-navbar-nav > li > a,
-.vu-navbar-inverse .vu-navbar-nav > li > button {
-  color: #9d9d9d;
-}
-.vu-navbar-inverse .vu-navbar-nav > li > a:hover,
-.vu-navbar-inverse .vu-navbar-nav > li > button:hover,
-.vu-navbar-inverse .vu-navbar-nav > li > a:focus,
-.vu-navbar-inverse .vu-navbar-nav > li > button:focus {
-  color: #fff;
-  background-color: transparent;
-}
-.vu-navbar-inverse .vu-navbar-nav > .show > button,
-.vu-navbar-inverse .vu-navbar-nav > .show > button:hover,
-.vu-navbar-inverse .vu-navbar-nav > .show > button:focus {
-  color: #fff;
-  background-color: #080808;
-}
-@media (max-width: 767px) {
-  .vu-navbar-inverse .vu-navbar-nav .show .dropdown-menu > a {
-    color: #9d9d9d;
-  }
-  .vu-navbar-inverse .vu-navbar-nav .show .dropdown-menu > a:hover,
-  .vu-navbar-inverse .vu-navbar-nav .show .dropdown-menu > a:focus {
-    color: #fff;
-    background-color: transparent;
-  }
-}
-.vu-navbar-inverse .vu-navbar-toggle {
-  border-color: #333;
-}
-.vu-navbar-inverse .vu-navbar-toggle:hover,
-.vu-navbar-inverse .vu-navbar-toggle:focus {
-  background-color: #333;
-}
-.vu-navbar-inverse .vu-navbar-toggle .icon-bar {
-  background-color: #fff;
-}
-.vu-navbar-inverse .vu-navbar-collapse {
-  border-color: #101010;
 }
 .clearfix:before,
 .clearfix:after,
 .container:before,
 .container:after,
 .row:before,
-.row:after,
-.vu-nav:before,
-.vu-nav:after,
-.vu-navbar:before,
-.vu-navbar:after,
-.vu-navbar-header:before,
-.vu-navbar-header:after,
-.vu-navbar-collapse:before,
-.vu-navbar-collapse:after {
+.row:after {
   display: table;
   content: " ";
 }
 .clearfix:after,
 .container:after,
-.row:after,
-.vu-nav:after,
-.vu-navbar:after,
-.vu-navbar-header:after,
-.vu-navbar-collapse:after {
+.row:after {
   clear: both;
 }
 .center-block {
@@ -734,46 +295,8 @@ ul ul {
   margin-right: auto;
   margin-left: auto;
 }
-.show {
-  display: block !important;
-}
 @-ms-viewport {
   width: device-width;
-}
-.visible-xs,
-.visible-sm,
-.visible-md {
-  display: none !important;
-}
-@media (max-width: 767px) {
-  .visible-xs {
-    display: block !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .visible-sm {
-    display: block !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .visible-md {
-    display: block !important;
-  }
-}
-@media (max-width: 767px) {
-  .hidden-xs {
-    display: none !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .hidden-sm {
-    display: none !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .hidden-md {
-    display: none !important;
-  }
 }
 
 
@@ -799,9 +322,6 @@ ul ul {
 }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
-.fa-caret-down:before {
-  content: "\f0d7";
-}
 .fa-facebook-f:before {
   content: "\f39e";
 }
@@ -817,9 +337,6 @@ ul ul {
 .fa-linkedin-in:before {
   content: "\f0e1";
 }
-.fa-plus-square:before {
-  content: "\f0fe";
-}
 .fa-rss:before {
   content: "\f09e";
 }
@@ -828,25 +345,6 @@ ul ul {
 }
 .fa-youtube:before {
   content: "\f167";
-}
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
 }
 
 
@@ -902,9 +400,6 @@ ul ul {
 .fa.fa-facebook-f:before {
   content: "\f39e";
 }
-.fa.fa-external-link-square:before {
-  content: "\f360";
-}
 .fa.fa-youtube {
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400;
@@ -919,24 +414,8 @@ ul ul {
 }
 
 
-/*! vu-main-2019-footer.css */
-
 * {
     box-sizing: border-box; }
-  
-  html {
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; }
-  
-  @media (min-width: 480px) {
-    html {
-      font-size: 14px; } }
-  
-  @media (min-width: 768px) {
-    html {
-      font-size: 16px; } }
   
   .container {
     width: 100%;
@@ -963,9 +442,40 @@ ul ul {
     a.btn-primary:hover {
       color: #000; }
   
+  .footer {
+    min-height: 500px;
+    background: #1a210f;
+    position: relative; }
+  
   @media (max-width: 480px) {
     .footer {
       padding-bottom: 50px; } }
+  
+  /**
+   * Flex Box Row Sizing
+   */
+  
+  /* Accessibility Options */
+  
+  /* Flickr Widget */
+  
+  /* CAROUSEL FADE */
+  
+  /* Pause and Play Button */
+  
+  /* Carousel Controls */
+  
+  /* Classes generated by bootstrap-carousel-accessibility.js */
+  
+  /* Slides */
+  
+  /* GRID PAGE */
+  
+  /* EVENTS */
+  
+  /* Events Widget */
+  
+  /* LW EVENTS DISPLAY */
   
   .vu-social {
     background: rgba(34, 34, 34, 0.5);
