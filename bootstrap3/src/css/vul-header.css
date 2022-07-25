@@ -1,22 +1,50 @@
 /*! vul-header.css */
 
-/*
-|--------------------------------------------------------------------------
-| Global
-|--------------------------------------------------------------------------
-*/
+/*! purgecss ignore */
+.emergencybar h3 {
+	font-weight: 500; /* Needed when no external Bootstrap styling exists */
+}
 
-/* :host {
-	all: initial;
-} */
+.vu-navbar {
+    margin-bottom: 0;
+    min-height: 0;
+    z-index: 300;
+    font-size: 1.2rem; }
+  
+  @media (min-width: 480px) {
+    .vu-navbar {
+      font-size: 1rem; } }
 
-/* a, 
-button, 
-i {
-	transition: background-color 100ms ease-in-out, 
-				color 100ms ease-in-out,
-				text-decoration-color 100ms ease-in-out;
-} */
+.vu-header .vu-navbar {
+	display: none; }
+
+.vu-navbar .no-border-radius, .vu-navbar.no-border-radius,
+.vu-navbar .no-border-radius > * {
+	border-radius: 0 !important;
+	background: rgba(34, 34, 34, 0.9); }
+
+.vu-navbar-toggle {
+	background: #222 !important;
+	border: 0 !important; }
+
+.vu-navbar-brand img {
+	max-width: 220px;
+	display: inline; }
+
+@media (max-width: 767px) {
+    .vu-navbar.vu-navbar-inverse .vubrandbar #VanderbiltSearch {
+      margin-right: 0;
+      margin-left: 0; }
+    .vu-navbar.vu-navbar-inverse .vu-navbar-brand {
+      height: 22px;
+      padding: 0;
+      margin: 14px 0; }
+    .vu-navbar.vu-navbar-inverse .vu-navbar-toggle {
+      padding: 0;
+      margin: 18px 0; }
+      .vu-navbar.vu-navbar-inverse .vu-navbar-toggle:focus {
+        border: 1px dotted #fff !important;
+        padding: 2px; } }
 
 /*
 |--------------------------------------------------------------------------
@@ -81,10 +109,6 @@ i {
 	padding: 2.8125rem 1.875rem;
 }
 
-/* .img-banner.header-background[data-div*="Heard"] .graphic-header__title {
-	margin: 0;
-} */
-
 .graphic-header__small {
 	color: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -121,9 +145,4 @@ i {
 	.graphic-header__small {
 		font-size: 2em;
 	}
-}
-
-/*! purgecss ignore */
-.emergencybar h3 {
-	font-weight: 500; /* Needed when no external Bootstrap styling exists */
 }

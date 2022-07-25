@@ -1,17 +1,16 @@
 {
     "/js/vul-pw-header.js": "/js/vul-pw-header.js",
-    "/js/vul-pw-footer.js": "/js/vul-pw-footer.js",
     "/postcss/v4-shims.css": "/postcss/v4-shims.css",
     "/postcss/brands.css": "/postcss/brands.css",
     "/postcss/solid.css": "/postcss/solid.css",
     "/postcss/fontawesome.css": "/postcss/fontawesome.css",
     "/postcss/bootstrap.css": "/postcss/bootstrap.css",
-    "/postcss/vul-footer.css": "/postcss/vul-footer.css",
-    "/postcss/vu-main-2019-footer.css": "/postcss/vu-main-2019-footer.css",
     "/postcss/vul-header.css": "/postcss/vul-header.css",
-    "/postcss/vu-main-2019-header.css": "/postcss/vu-main-2019-header.css",
+    "/postcss/vu-main-2019.css": "/postcss/vu-main-2019.css",
     "/postcss/vu-brandbar.css": "/postcss/vu-brandbar.css",
     "/postcss/vul-fontawesome.css": "/postcss/vul-fontawesome.css",
     "/css/vul-pw-header.css": "/css/vul-pw-header.css",
+    "/js/vul-pw-footer.js": "/js/vul-pw-footer.js",
+    "/postcss/vul-footer.css": "/postcss/vul-footer.css",
     "/css/vul-pw-footer.css": "/css/vul-pw-footer.css"
 }
