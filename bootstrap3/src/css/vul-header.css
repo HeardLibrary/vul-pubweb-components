@@ -1,6 +1,11 @@
 /*! vul-header.css */
 
 /*! purgecss ignore */
+.dropdown-backdrop {
+	display: none;
+}
+
+/*! purgecss ignore */
 .emergencybar h3 {
 	font-weight: 500; /* Needed when no external Bootstrap styling exists */
 }
