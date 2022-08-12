@@ -12,5 +12,7 @@
     "/css/vul-pw-header.css": "/css/vul-pw-header.css",
     "/js/vul-pw-footer.js": "/js/vul-pw-footer.js",
     "/postcss/vul-footer.css": "/postcss/vul-footer.css",
-    "/css/vul-pw-footer.css": "/css/vul-pw-footer.css"
+    "/css/vul-pw-footer.css": "/css/vul-pw-footer.css",
+    "/vul-pw-fontawesome.css": "/vul-pw-fontawesome.css",
+    "/css/vul-pw-fontawesome.css": "/css/vul-pw-fontawesome.css"
 }

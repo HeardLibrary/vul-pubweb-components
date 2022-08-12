@@ -78,32 +78,6 @@ customElements.define('vul-footer', VulFooter);
 
 /***/ }),
 
-/***/ "./src/css/vu-main-2019.css":
-/*!**********************************!*\
-  !*** ./src/css/vu-main-2019.css ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./src/css/vul-footer.css":
-/*!********************************!*\
-  !*** ./src/css/vul-footer.css ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
 /***/ "./src/bootstrap-3.4.1/less/bootstrap.less":
 /*!*************************************************!*\
   !*** ./src/bootstrap-3.4.1/less/bootstrap.less ***!
@@ -130,10 +104,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/fontawesome-free-5.15.4/less/solid.less":
-/*!*****************************************************!*\
-  !*** ./src/fontawesome-free-5.15.4/less/solid.less ***!
-  \*****************************************************/
+/***/ "./src/css/vu-main-2019.css":
+/*!**********************************!*\
+  !*** ./src/css/vu-main-2019.css ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -143,23 +117,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/fontawesome-free-5.15.4/less/brands.less":
-/*!******************************************************!*\
-  !*** ./src/fontawesome-free-5.15.4/less/brands.less ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./src/fontawesome-free-5.15.4/less/v4-shims.less":
-/*!********************************************************!*\
-  !*** ./src/fontawesome-free-5.15.4/less/v4-shims.less ***!
-  \********************************************************/
+/***/ "./src/css/vul-footer.css":
+/*!********************************!*\
+  !*** ./src/css/vul-footer.css ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -256,13 +217,10 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/vul-pw-footer": 0,
-/******/ 			"postcss/v4-shims": 0,
-/******/ 			"postcss/brands": 0,
-/******/ 			"postcss/solid": 0,
-/******/ 			"postcss/fontawesome": 0,
-/******/ 			"postcss/bootstrap": 0,
 /******/ 			"postcss/vul-footer": 0,
-/******/ 			"postcss/vu-main-2019": 0
+/******/ 			"postcss/vu-main-2019": 0,
+/******/ 			"postcss/fontawesome": 0,
+/******/ 			"postcss/bootstrap": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -312,14 +270,11 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["postcss/v4-shims","postcss/brands","postcss/solid","postcss/fontawesome","postcss/bootstrap","postcss/vul-footer","postcss/vu-main-2019"], () => (__webpack_require__("./src/js/vul-footer.js")))
-/******/ 	__webpack_require__.O(undefined, ["postcss/v4-shims","postcss/brands","postcss/solid","postcss/fontawesome","postcss/bootstrap","postcss/vul-footer","postcss/vu-main-2019"], () => (__webpack_require__("./src/bootstrap-3.4.1/less/bootstrap.less")))
-/******/ 	__webpack_require__.O(undefined, ["postcss/v4-shims","postcss/brands","postcss/solid","postcss/fontawesome","postcss/bootstrap","postcss/vul-footer","postcss/vu-main-2019"], () => (__webpack_require__("./src/fontawesome-free-5.15.4/less/fontawesome.less")))
-/******/ 	__webpack_require__.O(undefined, ["postcss/v4-shims","postcss/brands","postcss/solid","postcss/fontawesome","postcss/bootstrap","postcss/vul-footer","postcss/vu-main-2019"], () => (__webpack_require__("./src/fontawesome-free-5.15.4/less/solid.less")))
-/******/ 	__webpack_require__.O(undefined, ["postcss/v4-shims","postcss/brands","postcss/solid","postcss/fontawesome","postcss/bootstrap","postcss/vul-footer","postcss/vu-main-2019"], () => (__webpack_require__("./src/fontawesome-free-5.15.4/less/brands.less")))
-/******/ 	__webpack_require__.O(undefined, ["postcss/v4-shims","postcss/brands","postcss/solid","postcss/fontawesome","postcss/bootstrap","postcss/vul-footer","postcss/vu-main-2019"], () => (__webpack_require__("./src/fontawesome-free-5.15.4/less/v4-shims.less")))
-/******/ 	__webpack_require__.O(undefined, ["postcss/v4-shims","postcss/brands","postcss/solid","postcss/fontawesome","postcss/bootstrap","postcss/vul-footer","postcss/vu-main-2019"], () => (__webpack_require__("./src/css/vu-main-2019.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["postcss/v4-shims","postcss/brands","postcss/solid","postcss/fontawesome","postcss/bootstrap","postcss/vul-footer","postcss/vu-main-2019"], () => (__webpack_require__("./src/css/vul-footer.css")))
+/******/ 	__webpack_require__.O(undefined, ["postcss/vul-footer","postcss/vu-main-2019","postcss/fontawesome","postcss/bootstrap"], () => (__webpack_require__("./src/js/vul-footer.js")))
+/******/ 	__webpack_require__.O(undefined, ["postcss/vul-footer","postcss/vu-main-2019","postcss/fontawesome","postcss/bootstrap"], () => (__webpack_require__("./src/bootstrap-3.4.1/less/bootstrap.less")))
+/******/ 	__webpack_require__.O(undefined, ["postcss/vul-footer","postcss/vu-main-2019","postcss/fontawesome","postcss/bootstrap"], () => (__webpack_require__("./src/fontawesome-free-5.15.4/less/fontawesome.less")))
+/******/ 	__webpack_require__.O(undefined, ["postcss/vul-footer","postcss/vu-main-2019","postcss/fontawesome","postcss/bootstrap"], () => (__webpack_require__("./src/css/vu-main-2019.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["postcss/vul-footer","postcss/vu-main-2019","postcss/fontawesome","postcss/bootstrap"], () => (__webpack_require__("./src/css/vul-footer.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
