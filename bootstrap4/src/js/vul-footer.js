@@ -123,7 +123,9 @@ class VulFooter extends HTMLElement {
         `;
         shadowRoot.appendChild(footer);
 
-        let stylesheet = document.querySelector('link[href*="vul-pw-header.css"]').href.replace('header', 'footer');
+        let stylesheet = document.querySelector('script[src*="vul-pw-footer.js"]')
+                         .src
+                         .replaceAll('js', 'css');
         let link = document.createElement('link');
         link.setAttribute('rel', 'stylesheet');
         link.setAttribute('href', stylesheet);
