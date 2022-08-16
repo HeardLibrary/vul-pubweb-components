@@ -1,5 +1,18 @@
 /*! vul-header.css */
 
+
+/*!
+ * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * These were added manually since there didn't seem to be a way to get these rules from PurgeCSS without additional unnecessary CSS. --Matt
+ */
+
+ /* v4-shim */
+ /*! purgecss ignore */
+ .fa.fa-external-link-square:before {
+	content: "\f360";
+}
+
 /*! purgecss ignore */
 .emergencybar h3 {
 	font-weight: 500; /* Needed when no external Bootstrap styling exists */
