@@ -522,13 +522,13 @@ ul ul {
 }
 .vu-navbar-inverse .vu-navbar-nav > li > a,
 .vu-navbar-inverse .vu-navbar-nav > li > button {
-  color: #9d9d9d;
+  color: #9d9d9d !important;
 }
 .vu-navbar-inverse .vu-navbar-nav > li > a:hover,
 .vu-navbar-inverse .vu-navbar-nav > li > button:hover,
 .vu-navbar-inverse .vu-navbar-nav > li > a:focus,
 .vu-navbar-inverse .vu-navbar-nav > li > button:focus {
-  color: #fff;
+  color: #fff !important;
   background-color: transparent;
 }
 .vu-navbar-inverse .vu-navbar-nav > .show > button,
@@ -888,7 +888,10 @@ RESPONSIVE
  .fa.fa-external-link-square:before {
 	content: "\f360";
 }
+
+/* End Font Awesome */
 .emergencybar h3 {
+	font-size: 1.2rem !important;
 	font-weight: 500; /* Needed when no external Bootstrap styling exists */
 }
 
@@ -924,7 +927,7 @@ RESPONSIVE
 
 .vumainmenu .vunavigation > li > a,
 .vumainmenu .vunavigation > li > button {
-    color: #bfbfbf; }
+    color: #bfbfbf !important; }
 
 @media (max-width: 767px) {
     .vu-navbar.vu-navbar-inverse .vu-navbar-brand {
@@ -1002,16 +1005,20 @@ RESPONSIVE
 .img-banner.header-background {
 	position: static;
 	margin: 0;
+	font-size: 1rem;
 }
 
 .img-banner .container--banner {
 	padding: 2.8125rem 1.875rem;
+	line-height: initial;
 }
 
 .graphic-header__small {
 	color: #fff;
+	display: inline-block;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1.5em;
+	font-weight: 300;
 	line-height: 1.25;
 	text-transform: uppercase;
 }
