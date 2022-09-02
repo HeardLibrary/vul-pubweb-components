@@ -1,7 +1,7 @@
 {
     "heard": [
         {
-            "text": "<span class='sr-only'>Jean and Alexander Heard Libraries Home</span> Home",
+            "text": "<span class='sr-only'>Jean and Alexander Heard Libraries </span> Home",
             "url": "/"
         },
         {
@@ -220,7 +220,7 @@
     ],
     "specialcollections": [
         {
-            "text": "<span class='sr-only'>Special Collections and University Archives</span> Home",
+            "text": "<span class='sr-only'>Special Collections and University Archives </span> Home",
             "url": "https://www.library.vanderbilt.edu/specialcollections"
         },
         {
