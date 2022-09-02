@@ -42,7 +42,7 @@ class VulNavigation extends HTMLElement {
                         html +=     `</div>`;
                         html += `</li>`;
                     } else {
-                        html += `<li class="dropdown">`;
+                        html += `<li>`;
                         html +=     `<a href="${item.url}">${item.text}</a>`;
                         html += `</li>`;
                     }

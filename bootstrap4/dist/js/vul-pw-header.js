@@ -413,7 +413,7 @@ var VulNavigation = /*#__PURE__*/function (_HTMLElement) {
             html += "</div>";
             html += "</li>";
           } else {
-            html += "<li class=\"dropdown\">";
+            html += "<li>";
             html += "<a href=\"".concat(item.url, "\">").concat(item.text, "</a>");
             html += "</li>";
           }
