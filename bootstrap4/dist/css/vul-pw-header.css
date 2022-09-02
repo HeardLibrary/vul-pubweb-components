@@ -970,6 +970,10 @@ RESPONSIVE
 	background: url('https://www.library.vanderbilt.edu/images/banners/banner-central.jpg') top center / cover no-repeat;
 }
 
+.img-banner.header-background[data-div*="Digital Scholarship and Communications"] {
+	background: url('https://www.library.vanderbilt.edu/images/banners/banner-disc.jpg') top center / cover no-repeat;
+}
+
 .img-banner.header-background[data-div*="Divinity"] {
 	background: url('https://www.library.vanderbilt.edu/images/banners/banner-divinity.jpg') top center / cover no-repeat;
 }
