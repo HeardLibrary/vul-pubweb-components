@@ -243,7 +243,6 @@
     line-height: @line-height-computed;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1rem;
   }
 
   @media (max-width: @grid-float-breakpoint-max) {
@@ -558,11 +557,11 @@
 
   .vu-navbar-nav {
     > li > a {
-      color: @navbar-inverse-link-color;
+      color: @navbar-inverse-link-color !important;
 
       &:hover,
       &:focus {
-        color: @navbar-inverse-link-hover-color;
+        color: @navbar-inverse-link-hover-color !important;
         background-color: @navbar-inverse-link-hover-bg;
       }
     }

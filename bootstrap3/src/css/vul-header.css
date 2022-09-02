@@ -12,6 +12,8 @@
 	content: "\f360";
 }
 
+/* End Font Awesome */
+
 /*! purgecss ignore */
 .dropdown-backdrop {
 	display: none;
@@ -19,6 +21,7 @@
 
 /*! purgecss ignore */
 .emergencybar h3 {
+	font-size: 1.2rem !important;
 	font-weight: 500; /* Needed when no external Bootstrap styling exists */
 }
 
@@ -48,6 +51,9 @@
 	max-width: 220px;
 	display: inline; }
 
+.vumainmenu .vunavigation > li > a {
+	color: #bfbfbf !important; }
+
 @media (max-width: 767px) {
     .vu-navbar.vu-navbar-inverse .vubrandbar #VanderbiltSearch {
       margin-right: 0;
@@ -68,6 +74,7 @@
 | Banner Image
 |--------------------------------------------------------------------------
 */
+/*! purgecss start ignore */
 
 .img-banner.header-background[data-div*="Heard"] {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.library.vanderbilt.edu/images/banners/banner-heard.jpg") top center / cover no-repeat;
@@ -117,19 +124,25 @@
 	background: url('https://www.library.vanderbilt.edu/images/banners/banner-specialcollections.jpg') top center / cover no-repeat;
 }
 
+/*! purgecss end ignore */
+
 .img-banner.header-background {
 	position: static;
 	margin: 0;
+	font-size: 1rem;
 }
 
 .img-banner .container--banner {
 	padding: 2.8125rem 1.875rem;
+	line-height: initial;
 }
 
 .graphic-header__small {
 	color: #fff;
+	display: inline-block;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1.5em;
+	font-weight: 300;
 	line-height: 1.25;
 	text-transform: uppercase;
 }
