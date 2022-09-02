@@ -887,6 +887,12 @@ RESPONSIVE
 |--------------------------------------------------------------------------
 */
 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+    .header-background {
+        text-shadow: 1px 1px 6px #111;
+    }
+}
+
 .img-banner.header-background[data-div*="Heard"] {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.library.vanderbilt.edu/images/banners/banner-heard.jpg") top center / cover no-repeat;
 }

@@ -74,6 +74,12 @@
 | Banner Image
 |--------------------------------------------------------------------------
 */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+    .header-background {
+        text-shadow: 1px 1px 6px #111;
+    }
+}
 /*! purgecss start ignore */
 
 .img-banner.header-background[data-div*="Heard"] {
