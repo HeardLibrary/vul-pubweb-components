@@ -385,7 +385,7 @@ var VulNavigation = /*#__PURE__*/function (_HTMLElement) {
       var division = this.hasAttribute('division') ? this.getAttribute('division') : 'heard';
       var vuNavbar = document.createElement('div');
       vuNavbar.classList.add('vu-navbar', 'vu-navbar-inverse', 'no-border-radius');
-      var resource = 'https://d1opv9heh1fms9.cloudfront.net/vul-navigation.json';
+      var resource = 'https://cdn.library.vanderbilt.edu/pwc/vul-navigation.json';
       var options = {
         method: 'GET',
         mode: 'cors'
