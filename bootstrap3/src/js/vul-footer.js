@@ -117,6 +117,7 @@ class VulFooter extends HTMLElement {
                                 Vanderbilt University is committed to principles of equal opportunity and affirmative action. <a class="credits__link" href="https://www.vanderbilt.edu/about/accessibility/">Accessibility information</a>. <a class="credits__link" href="https://www.vanderbilt.edu/about/privacy">Privacy Policy</a>. <br>Vanderbilt&reg;, Vanderbilt University&reg;, V Oak Leaf Design&reg;, Star V Design&reg; and Anchor Down&reg; are trademarks of The Vanderbilt University
                             </small>
                         </p>
+                        <slot></slot>
                     </div>
                 </div>
             </section>
