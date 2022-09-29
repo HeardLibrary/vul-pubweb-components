@@ -322,6 +322,7 @@ ul ul {
 .vu-nav > li {
   position: relative;
   display: block;
+  margin: 0;
 }
 .vu-nav > li > a,
 .vu-nav > li > button {
@@ -330,6 +331,9 @@ ul ul {
   padding: 10px 15px;
   text-transform: none !important;
   letter-spacing: normal !important;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 .vu-nav > li > a:hover,
 .vu-nav > li > button:hover,
@@ -656,6 +660,7 @@ NAVIGATION
     display: block;
     font-weight: 400;
     white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
 }
 
 .vu-nav .dropdown-menu .dropdown-item:hover,

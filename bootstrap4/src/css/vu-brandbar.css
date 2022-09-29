@@ -40,6 +40,7 @@ NAVIGATION
     display: block;
     font-weight: 400;
     white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
 }
 
 .vu-nav .dropdown-menu .dropdown-item:hover,
