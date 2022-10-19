@@ -4,6 +4,10 @@ class VulBrandbar extends HTMLElement {
     }
 
     connectedCallback() {
+        let lockup = this.hasAttribute('lockup') ? 
+            this.getAttribute('lockup') : 
+            'https://cdn.library.vanderbilt.edu/lockups/vanderbilt/primary-v_vu-white.svg';
+
         const brandbar = document.createElement('nav');
         brandbar.classList.add('vu-navbar', 'vu-navbar-inverse');
         brandbar.id = 'main_navbar';
@@ -19,8 +23,8 @@ class VulBrandbar extends HTMLElement {
                         <span class="icon-bar"></span>
                     </button>
                     <a class="vu-navbar-brand" href="http://www.vanderbilt.edu">
-                        <img class="hidden-xs hidden-sm hidden-md" src="https://www.library.vanderbilt.edu/images/vanderbilt2022.svg" alt="Vanderbilt University">
-                        <img class="visible-xs visible-sm visible-md" src="https://www.library.vanderbilt.edu/images/vanderbilt2022.svg" alt="Vanderbilt University">
+                        <img class="hidden-xs hidden-sm hidden-md" src="${lockup}" alt="Vanderbilt University">
+                        <img class="visible-xs visible-sm visible-md" src="${lockup}" alt="Vanderbilt University">
                     </a>
                 </div>
                 <div class="vubrandbar collapse vu-navbar-collapse">
