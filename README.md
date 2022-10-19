@@ -55,6 +55,15 @@ To add the brandbar:
 
 Yep, it's that easy!
 
+By default, the Vanderbilt University lockup is used. If you want to specify a different lockup:
+
+```html
+<!-- Use one of VUL's primary lockups instead -->
+<body>
+    <vul-brandbar lockup="https://cdn.library.vanderbilt.edu/lockups/heard/primary-v_jah-white.svg"></vul-brandbar>
+</body>
+```
+
 **NOTE:** `<vul-brandbar>` is not encapsulated within a Shadow DOM in order to utilize Bootstrap's dropdown functionality.
 
 #### `<vul-header>`
