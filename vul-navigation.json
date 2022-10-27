@@ -69,12 +69,12 @@
                     "url": "https://www.library.vanderbilt.edu/students"
                 },
                 {
-                    "text": "Interlibrary Loan",
-                    "url": "https://illiad.library.vanderbilt.edu/illiad/logon"
-                },
-                {
                     "text": "My Account",
                     "url": "https://catalog.library.vanderbilt.edu/discovery/account?vid=01VAN_INST:vanui"
+                },
+                {
+                    "text": "Resource Sharing Services",
+                    "url": "https://illiad.library.vanderbilt.edu/illiad/logon"
                 },
                 {
                     "text": "Study Rooms and Carrels",
