@@ -51,7 +51,7 @@ class VulBrandbar extends HTMLElement {
                                 <i class="vubrandbar__icon glyphicon glyphicon-cog"></i>&nbsp; Resources <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="http://vu.edu/directory">PeopleFinder</a></li>
+                                <li><a href="http://vu.edu/directory">SkyVU Directory</a></li>
                                 <li><a href="http://www.library.vanderbilt.edu/">Libraries</a></li>
                                 <li><a href="http://news.vanderbilt.edu">News</a></li>
                                 <li><a href="http://events.vanderbilt.edu">Calendar</a></li>
