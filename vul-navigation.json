@@ -86,6 +86,10 @@
             "text": "Research",
             "dropdown": [
                 {
+                    "text": "Archival Collections",
+                    "url": "https://collections.library.vanderbilt.edu"
+                },
+                {
                     "text": "Buchanan Library Fellows",
                     "url": "https://www.library.vanderbilt.edu/about/fellows"
                 },
