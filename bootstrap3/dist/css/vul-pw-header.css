@@ -785,7 +785,7 @@ RESPONSIVE
     color: #bfbfbf; }
   
   /* Accessibility Options */
-  .dropdown-toggle:focus {
+  .vu-nav .dropdown-toggle:focus {
     background-color: #484848 !important;
     outline: #5e9ed7 auto 5px; }
   
