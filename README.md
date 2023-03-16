@@ -186,6 +186,21 @@ A slot is provided to customize the small text as needed:
 ### Footer Component
 To get started with the footer component, include its JS file. The CSS stylesheet is automatically included by the component.
 
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700|Source+Sans+Pro:200,300,400,700&display=swap">
+    </head>
+    <body>  
+        <!-- ... -->
+
+        <script src="https://cdn.library.vanderbilt.edu/pwc/bootstrap3/dist/js/vul-pw-footer.js"></script>
+    </body>
+</html>
+```
+
 #### `<vul-footer>`
 To add the footer:
 
