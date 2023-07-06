@@ -1,0 +1,249 @@
+/*!
+ * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.eot');
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2') format('woff2'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.ttf') format('truetype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.svg#fontawesome') format('svg');
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Academica";
+    font-style: normal;
+    font-weight: 300;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaLight.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaLight.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Academica";
+    font-style: italic;
+    font-weight: 300;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaLightItalic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaLightItalic.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Academica";
+    font-style: normal;
+    font-weight: 500;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMedium.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMedium.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Academica";
+    font-style: italic;
+    font-weight: 500;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMediumItalic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMediumItalic.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Academica";
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMediumBold.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMediumBold.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Academica";
+    font-style: italic;
+    font-weight: 700;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete//AcademicaMediumBoldItalic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete//AcademicaMediumBoldItalic.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Theinhardt";
+    font-style: normal;
+    font-weight: 300;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Light.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Light.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Theinhardt";
+    font-style: italic;
+    font-weight: 300;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Light-Italic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Light-Italic.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Theinhardt";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Regular.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Regular.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Theinhardt";
+    font-style: italic;
+    font-weight: 400;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Italic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Italic.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Theinhardt";
+    font-style: normal;
+    font-weight: 500;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Medium.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Medium.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Theinhardt";
+    font-style: italic;
+    font-weight: 500;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Medium-Italic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Medium-Italic.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Jannon Display";
+    font-style: normal;
+    font-weight: 300;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Light.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Light.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Jannon Display";
+    font-style: italic;
+    font-weight: 300;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Light-Italic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Light-Italic.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Jannon Display";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Regular.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Regular.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Jannon Display";
+    font-style: italic;
+    font-weight: 400;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Italic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Italic.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Staff";
+    font-style: normal;
+    font-weight: 600;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Staff/complete/StaffXXCondensed-SemiBold.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Staff/complete/StaffXXCondensed-SemiBold.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Staff";
+    font-style: italic;
+    font-weight: 600;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Staff/complete/StaffXXCondensed-SemiBoldItalic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Staff/complete/StaffXXCondensed-SemiBoldItalic.woff") format("woff")
+}
+
+:root,
+[data-theme=light] {
+    --c-bg: #ffffff;
+    --c-accent: #cfae70;
+    --c-text: #1c1c1c;
+    --c-text-muted: #555555;
+    --c-text-strong: #1c1c1c;
+    --c-text-link: #946e24;
+    --c-border: #e0d5c0;
+    --c-border-light: #f5f3ef;
+    --c-btn-bg: #f5f3ef;
+    --c-btn-alt-bg: #ffffff;
+    --c-card-bg: #f5f3ef;
+    --c-card-bg-light: rgba(245, 243, 239, 0.75);
+    --c-card-border: #e0d5c0;
+    --c-card-border-light: rgba(224, 213, 192, 0.75);
+    --c-card-text: #555555;
+    --c-card-text-muted: #777777;
+    --c-card-text-link: #1c1c1c;
+    --c-bright-1: #1c83fc;
+    --c-bright-2: #82c6b8;
+    --c-topper-split-bg: #f5f3ef;
+    --c-gradient-fade: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, white 100%);
+    --c-gradient-fade-vert: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, white 100%)
+}
+
+[data-theme=dark] {
+    --c-bg: #1c1c1c;
+    --c-accent: #cfae70;
+    --c-text: #e0d5c0;
+    --c-text-muted: #b0a8a1;
+    --c-text-strong: #ffffff;
+    --c-text-link: #ffffff;
+    --c-border: rgba(255, 255, 255, 0.3);
+    --c-border-light: rgba(255, 255, 255, 0.05);
+    --c-btn-bg: rgba(224, 213, 192, 0.2);
+    --c-btn-alt-bg: rgba(224, 213, 192, 0.2);
+    --c-card-bg: #f5f3ef;
+    --c-card-bg-light: rgba(245, 243, 239, 0.1);
+    --c-card-border: #e0d5c0;
+    --c-card-border-light: rgba(224, 213, 192, 0.75);
+    --c-card-text: #555555;
+    --c-card-text-muted: #777777;
+    --c-card-text-link: #1c1c1c;
+    --c-bright-1: #86227b;
+    --c-bright-2: #e05968;
+    --c-topper-split-bg: #000000;
+    --c-gradient-fade: linear-gradient(90deg, rgba(28, 28, 28, 0) 0%, rgba(28, 28, 28, 0.75) 50%, #1c1c1c 100%);
+    --c-gradient-fade-vert: linear-gradient(180deg, rgba(28, 28, 28, 0) 0%, rgba(28, 28, 28, 0.75) 50%, #1c1c1c 100%)
+}
+
+[data-theme=tone] {
+    --c-bg: #f5f3ef;
+    --c-accent: #946e24;
+    --c-text: #1c1c1c;
+    --c-text-muted: #555555;
+    --c-text-strong: #1c1c1c;
+    --c-text-link: #6b501a;
+    --c-border: rgba(153, 142, 133, 0.3);
+    --c-border-light: rgba(153, 142, 133, 0.1);
+    --c-btn-bg: #e0d5c0;
+    --c-btn-alt-bg: #f5f3ef;
+    --c-card-bg: #e0d5c0;
+    --c-card-bg-light: rgba(224, 213, 192, 0.4);
+    --c-card-border: #946e24;
+    --c-card-border-light: rgba(148, 110, 36, 0.6);
+    --c-card-text: #1c1c1c;
+    --c-card-text-muted: #555555;
+    --c-card-text-link: #1c1c1c;
+    --c-bright-1: #cfae70;
+    --c-bright-2: #946e24;
+    --c-topper-split-bg: #e0d5c0;
+    --c-gradient-fade: linear-gradient(90deg, rgba(245, 243, 239, 0) 0%, rgba(245, 243, 239, 0.75) 50%, #f5f3ef 100%);
+    --c-gradient-fade-vert: linear-gradient(180deg, rgba(245, 243, 239, 0) 0%, rgba(245, 243, 239, 0.75) 50%, #f5f3ef 100%)
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit
+}

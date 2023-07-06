@@ -1,0 +1,316 @@
+/*
+ * DESIGN SYSTEM > _nav.scss
+ */
+
+/* Edit */
+.primary-nav .primary-nav__search-input {
+    width: 100px;
+}
+.primary-nav .primary-nav__search-input::placeholder {
+    font-weight: 500;
+}
+
+/* New color variable */
+[data-theme="light"] {
+    --c-overlay: rgba(153, 142, 133, 0.2);
+    /* --c-overlay: #e8e4e3; */
+}
+[data-theme="tone"] {
+    --c-overlay: rgba(107, 80, 26, 0.3);
+    /* --c-overlay: #c5baa7; */
+}
+[data-theme="dark"] {
+    --c-overlay: rgba(255, 255, 255, 0.3);
+    /* --c-overlay: #555555; */
+}
+
+/* Defaults */
+@media (min-width: 1816px) {
+    .primary-nav {
+        padding-left: calc(50vw - 900px);
+        padding-right: calc(50vw - 900px);
+        max-width: none;
+    }
+}
+
+/* Sticky navigation bar */
+.primary-nav.primary-nav--sticky {
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all 0.5s linear;
+}
+@media (min-width: 1816px) {
+    .primary-nav.primary-nav--sticky {
+        padding-left: calc(50vw - 900px);
+        padding-right: calc(50vw - 900px);
+        max-width: none;
+    }
+}
+.primary-nav.primary-nav--sticky.primary-nav--sticky-above {
+    position: sticky;
+    background: var(--c-bg);
+}
+body.wp-user .primary-nav.primary-nav--sticky.primary-nav--sticky-above.sticky {
+    /* Accomodate the WP toolbar for editors */
+    padding-top: 32px;
+}
+.primary-nav.primary-nav--sticky.primary-nav--sticky-over {
+    position: fixed;
+    background: transparent;
+}
+body.wp-user .primary-nav.primary-nav--sticky.primary-nav--sticky-over {
+    /* Accomodate the WP toolbar for editors */
+    padding-top: 32px;
+}
+.primary-nav.primary-nav--sticky.primary-nav--sticky-over.sticky {
+    background: var(--c-bg);
+}
+
+/* Child navigation */
+.primary-nav.primary-nav--over {
+    transition: all 0.5s linear;
+}
+.primary-nav.primary-nav--above,
+.primary-nav.primary-nav--above
+    .primary-nav__has-children
+    .primary-nav__has-children--list {
+    background: var(--c-bg);
+}
+.primary-nav.primary-nav--over,
+.primary-nav.primary-nav--over
+    .primary-nav__has-children
+    .primary-nav__has-children--list {
+    background: transparent;
+}
+.primary-nav.primary-nav--over.open,
+.primary-nav.primary-nav--over.open
+    .primary-nav__has-children
+    .primary-nav__has-children--list {
+    background: var(--c-bg);
+}
+.primary-nav .primary-nav__has-children .primary-nav__has-children--list {
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.primary-nav .primary-nav__has-children.open .primary-nav__has-children--list {
+    max-height: 800px;
+    overflow: visible;
+    opacity: 1;
+}
+.primary-nav
+    .primary-nav__links
+    .primary-nav__has-children
+    .primary-nav__has-children--toggle {
+    position: relative;
+    margin-right: 14px;
+}
+.primary-nav
+    .primary-nav__links
+    .primary-nav__has-children.open
+    .primary-nav__has-children--toggle {
+    color: var(--c-text-link);
+}
+.primary-nav
+    .primary-nav__links
+    .primary-nav__has-children
+    .primary-nav__has-children--toggle::after {
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    padding-left: 5px;
+    font-size: 14px;
+    color: var(--c-accent);
+}
+.primary-nav
+    .primary-nav__links
+    .primary-nav__has-children.open
+    .primary-nav__has-children--toggle::after {
+    content: "\f077";
+}
+.primary-nav
+    .primary-nav__links
+    .primary-nav__has-children
+    .primary-nav__has-children--list {
+    position: absolute;
+    margin: 18px 0 0 -10px;
+    padding: 0 10px;
+    border-radius: 0 0 4px 4px;
+}
+.primary-nav:not(.primary-nav--minimal)
+    .primary-nav__links
+    .primary-nav__links--item:last-child
+    .primary-nav__has-children--list {
+    right: 0;
+}
+.primary-nav
+    .primary-nav__links
+    .primary-nav__has-children--list
+    .primary-nav__has-children--item {
+    margin: 0;
+    padding: 0;
+}
+.primary-nav
+    .primary-nav__links
+    .primary-nav__has-children--list
+    .primary-nav__has-children--item:not(:last-child) {
+    border-bottom: 1px solid var(--c-border-light);
+}
+.primary-nav
+    .primary-nav__links
+    .primary-nav__has-children--list
+    .primary-nav__has-children--item:not(:last-child):hover {
+    border-bottom: 1px solid var(--c-border);
+}
+.primary-nav
+    .primary-nav__links
+    .primary-nav__has-children--list
+    .primary-nav__has-children--item
+    a {
+    margin: 6px 0;
+    padding: 6px 0;
+    font-weight: 500;
+}
+
+/* Sticky and child navigation combined */
+.primary-nav.primary-nav--sticky-over
+    .primary-nav__has-children
+    .primary-nav__has-children--list {
+    background: transparent;
+}
+.primary-nav.primary-nav--sticky-above
+    .primary-nav__has-children
+    .primary-nav__has-children--list {
+    background: var(--c-bg);
+}
+.primary-nav.primary-nav--sticky-over.sticky
+    .primary-nav__has-children
+    .primary-nav__has-children--list {
+    background: var(--c-bg);
+}
+
+/* Overlay */
+body > #overlay {
+    display: none;
+}
+@media (min-width: 1070px) {
+    body > #overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 40;
+        background: var(--c-overlay);
+    }
+}
+
+/* Adjustments for certain page template + topper combinations */
+.sticky-page__nav--wrapper {
+    /* */
+}
+.normal-page__nav--wrapper {
+    /* */
+}
+
+/* Adjustments for Jump Links */
+.primary-nav.primary-nav--sticky ~ div [data-jumplink="true"]::before {
+    height: 140px;
+    margin-top: -140px;
+    content: "";
+    display: block;
+}
+.primary-nav.primary-nav--sticky ~ div .details-page__col-1 {
+    display: none;
+}
+@media (min-width: 768px) {
+    .primary-nav.primary-nav--sticky ~ div .details-page__col-1 {
+        display: block;
+        position: sticky;
+        top: 176px;
+    }
+}
+
+/*
+ * DESIGN SYSTEM > _mega-menu.scss
+ */
+
+/*
+<ul class="mega-menu__list js-mega-menu-list">
+    <li class="mega-menu__list-item">
+        <a class="mega-menu__list-item-link">LINK</a>
+    </li>
+    <li class="mega-menu__list-item mega-menu__list-item--has-submenu open">
+        <a class="mega-menu__list-item-link">LINK</a>
+        <ul class="mega-menu__submenu js-mega-menu-submenu">
+            <li>
+                <a>SUB LINK</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+*/
+
+@media (max-width: 1069px) {
+    .mega-menu
+        .mega-menu__list
+        .mega-menu__list-item.mega-menu__list-item--has-submenu
+        .mega-menu__submenu {
+        display: block;
+        pointer-events: auto;
+        margin: 0;
+        transition: all 0.5s ease;
+        max-height: 0px;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .mega-menu
+        .mega-menu__list
+        .mega-menu__list-item.mega-menu__list-item--has-submenu.open
+        .mega-menu__submenu {
+        max-height: 800px;
+        overflow: visible;
+        opacity: 1;
+    }
+    .mega-menu
+        .mega-menu__list
+        .mega-menu__list-item.mega-menu__list-item--has-submenu.open
+        a {
+        color: var(--c-text-strong);
+    }
+    .mega-menu
+        .mega-menu__list
+        .mega-menu__list-item.mega-menu__list-item--has-submenu.open
+        a:hover,
+    .mega-menu
+        .mega-menu__list
+        .mega-menu__list-item.mega-menu__list-item--has-submenu.open
+        a:focus,
+    .mega-menu
+        .mega-menu__list
+        .mega-menu__list-item.mega-menu__list-item--has-submenu.open
+        a:active {
+        color: var(--c-accent);
+    }
+    .mega-menu
+        .mega-menu__list
+        .mega-menu__list-item.mega-menu__list-item--has-submenu
+        .mega-menu__list-item-link::after {
+        content: "\f078";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        right: 0;
+        font-size: 18px;
+        color: var(--c-accent);
+    }
+    .mega-menu
+        .mega-menu__list
+        .mega-menu__list-item.mega-menu__list-item--has-submenu.open
+        .mega-menu__list-item-link::after {
+        content: "\f077";
+    }
+}
