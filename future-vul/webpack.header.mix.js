@@ -16,9 +16,9 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 
 mix
     .css('src/css/vu.css', 'postcss/vul-header.css')
-    .css('src/css/primary-nav-children.css', 'postcss/vul-primary-nav-children.css')
     .styles(
         [
+            'src/css/primary-nav-children.css',
             'dist/postcss/vul-header.css',
             'dist/postcss/vul-primary-nav-children.css'
         ], 

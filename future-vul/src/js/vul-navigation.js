@@ -1,13 +1,19 @@
 class VulNavigation extends HTMLElement {
     constructor() {
         super();
-        this.attachShadow({ mode: 'open' });
     }
 
     connectedCallback() {
-        const { shadowRoot } = this;
+        let overlay = document.createElement('div');
+            overlay.setAttribute('id', 'overlay')
+        document.body.append(overlay);
 
-        shadowRoot.innerHTML = `
+        const nav = document.createElement('nav');
+              nav.classList.add('primary-nav', 'primary-nav--details', 'primary-nav--above', 'js-site-nav');
+              nav.setAttribute('data-component', 'Site Navigation');
+              nav.setAttribute('data-theme', 'light');
+
+        nav.innerHTML = `
             <svg display="none" width="0" height="0" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
                     <symbol id="x" viewBox="0 0 8 8">
@@ -42,19 +48,14 @@ class VulNavigation extends HTMLElement {
             link.setAttribute('rel', 'stylesheet');
             link.setAttribute('href', stylesheet);
         
-        shadowRoot.prepend(link);
+        nav.prepend(link);
 
-        const nav = document.createElement('nav');
-              nav.classList.add('primary-nav', 'primary-nav--details', 'primary-nav--above', 'js-site-nav');
-              nav.setAttribute('data-component', 'Site Navigation');
-              nav.setAttribute('data-theme', 'light');
-
-        nav.innerHTML = `
+        nav.innerHTML += `
             <vul-primary-nav></vul-primary-nav>
             <vul-mega-menu></vul-mega-menu>
         `;
 
-        shadowRoot.appendChild(nav);
+        this.appendChild(nav);
     }
 }
 

@@ -1,3 +1,7 @@
+/* Changes to Digital Strategies' original primary-nav-children.css:
+    - Moved CSS variables to vul-pwc-common-styles.css
+*/
+
 /*
  * DESIGN SYSTEM > _nav.scss
  */
@@ -8,20 +12,6 @@
 }
 .primary-nav .primary-nav__search-input::placeholder {
     font-weight: 500;
-}
-
-/* New color variable */
-[data-theme="light"] {
-    --c-overlay: rgba(153, 142, 133, 0.2);
-    /* --c-overlay: #e8e4e3; */
-}
-[data-theme="tone"] {
-    --c-overlay: rgba(107, 80, 26, 0.3);
-    /* --c-overlay: #c5baa7; */
-}
-[data-theme="dark"] {
-    --c-overlay: rgba(255, 255, 255, 0.3);
-    /* --c-overlay: #555555; */
 }
 
 /* Defaults */
