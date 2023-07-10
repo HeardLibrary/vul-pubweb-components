@@ -40,7 +40,7 @@ class VulNavigation extends HTMLElement {
             </svg>
         `;
 
-        let stylesheet = document.querySelector('script[src*="vul-pwc-header.js"]')
+        let stylesheet = document.querySelector('script[src*="vul-pwc-navigation.js"]')
                         .src
                         .replaceAll('js', 'css');
 
