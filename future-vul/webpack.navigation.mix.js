@@ -18,9 +18,9 @@ mix
     .css('src/css/vu.css', 'postcss/vul-header.css')
     .styles(
         [
-            'src/css/primary-nav-children.css',
             'dist/postcss/vul-header.css',
-            'dist/postcss/vul-primary-nav-children.css'
+            'src/css/primary-nav-children.css',
+            'src/css/vul-harden.css',
         ], 
         'dist/css/vul-pwc-header.css')
     .js(
