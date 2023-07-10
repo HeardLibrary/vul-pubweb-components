@@ -174,7 +174,7 @@ class VulFooter extends HTMLElement {
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="site-footer__social-link" href="http://www.instagram.com/vandylibraries/">
+                                            <a class="site-footer__social-link" href="https://www.instagram.com/vandylibraries/">
                                                 <span class="visually-hidden">Instagram</span>
                                                 <svg><use xlink:href="#instagram"></use></svg>
                                             </a>

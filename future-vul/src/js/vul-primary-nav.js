@@ -53,7 +53,7 @@ class VulPrimaryNav extends HTMLElement {
 							<svg aria-hidden="true" focusable="false">
 								<use xlink:href="#search"></use>
 							</svg>
-							<form action="/site-search/" class="js-nav-search-form" method="get" role="search">
+							<form action="https://www.library.vanderbilt.edu/site-search/" class="js-nav-search-form" method="get" role="search">
 								<input class="primary-nav__search-input js-nav-search-input" type="text" placeholder="Search this site" name="q" aria-label="Search this site">
 							</form>
 						</div>
@@ -74,7 +74,7 @@ class VulPrimaryNav extends HTMLElement {
 							<a class="primary-nav__has-children--toggle ">About</a>
 							<ul class="primary-nav__has-children--list">
 								<li class="primary-nav__has-children--item">
-									<a href="https://dev-library2023.library.vanderbilt.edu/about/">About the Libraries</a>
+									<a href="https://www.library.vanderbilt.edu/about/">About the Libraries</a>
 								</li>
 								<li class="primary-nav__has-children--item">
 									<a href="https://strategy.library.vanderbilt.edu">Strategic Plan</a>
@@ -86,13 +86,13 @@ class VulPrimaryNav extends HTMLElement {
 									<a href="#">Departments</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="https://dev-library2023.library.vanderbilt.edu/staff/">Staff Directory</a>
+									<a href="https://www.library.vanderbilt.edu/staff/">Staff Directory</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="https://dev-library2023.library.vanderbilt.edu/about/library-policies/">Policies</a>
+									<a href="https://www.library.vanderbilt.edu/about/library-policies/">Policies</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="https://dev-library2023.library.vanderbilt.edu/hours/">Hours</a>
+									<a href="https://www.library.vanderbilt.edu/hours/">Hours</a>
 								</li>
 							</ul>
 						</li>
@@ -100,34 +100,34 @@ class VulPrimaryNav extends HTMLElement {
 							<a class="primary-nav__has-children--toggle ">Locations</a>
 							<ul class="primary-nav__has-children--list">
 								<li class="primary-nav__has-children--item">
-									<a href="/biomedical">Biomedical</a>
+									<a href="https://www.library.vanderbilt.edu/biomedical/">Biomedical</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="/central">Central</a>
+									<a href="https://www.library.vanderbilt.edu/central/">Central</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="/divinity">Divinity</a>
+									<a href="https://www.library.vanderbilt.edu/divinity/">Divinity</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="/gallery">Fine Arts Gallery</a>
+									<a href="https://www.library.vanderbilt.edu/gallery/">Fine Arts Gallery</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="/law">Law</a>
+									<a href="https://www.library.vanderbilt.edu/law/">Law</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="/management">Management</a>
+									<a href="https://www.library.vanderbilt.edu/management/">Management</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="/music">Music</a>
+									<a href="https://www.library.vanderbilt.edu/music/">Music</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="/peabody">Peabody</a>
+									<a href="https://www.library.vanderbilt.edu/peabody/">Peabody</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="/science">Science and Engineering</a>
+									<a href="https://www.library.vanderbilt.edu/science/">Science and Engineering</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="/specialcollections">Special Collections</a>
+									<a href="https://www.library.vanderbilt.edu/specialcollections/">Special Collections</a>
 								</li>
 							</ul>
 						</li>
@@ -138,13 +138,13 @@ class VulPrimaryNav extends HTMLElement {
 									<a href="https://catalog.library.vanderbilt.edu/">Search Collections</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="https://dev-library2023.library.vanderbilt.edu/subject-specialists/">Subject Specialists</a>
+									<a href="https://www.library.vanderbilt.edu/staff/subject-specialists/">Subject Specialists</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="/digitalcommons">Digital Commons</a>
+									<a href="https://www.library.vanderbilt.edu/digitalcommons/">Digital Commons</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="/disc">Digital Scholarship</a>
+									<a href="https://www.library.vanderbilt.edu/disc/">Digital Scholarship</a>
 								</li>
 								<li class="primary-nav__has-children--item">
 									<a href="#">Special Collections &amp; Archives</a>
@@ -170,7 +170,7 @@ class VulPrimaryNav extends HTMLElement {
 									<a href="https://illiad.library.vanderbilt.edu/illiad/logon/">Resource Sharing Services</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="https://dev-library2023.library.vanderbilt.edu/technology/">Technology</a>
+									<a href="https://www.library.vanderbilt.edu/technology/">Technology</a>
 								</li>
 								<li class="primary-nav__has-children--item">
 									<a href="#">Classroom Instruction</a>
@@ -187,7 +187,7 @@ class VulPrimaryNav extends HTMLElement {
 									<a href="https://events.vanderbilt.edu/view/month/tags/library">Events</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="https://dev-library2023.library.vanderbilt.edu/exhibits/">Exhibits</a>
+									<a href="https://www.library.vanderbilt.edu/exhibits/">Exhibits</a>
 								</li>
 								<li class="primary-nav__has-children--item">
 									<a href="https://newsonline.library.vanderbilt.edu/">News</a>
@@ -198,16 +198,16 @@ class VulPrimaryNav extends HTMLElement {
 							<a class="primary-nav__has-children--toggle ">Help</a>
 							<ul class="primary-nav__has-children--list">
 								<li class="primary-nav__has-children--item">
-									<a href="https://dev-library2023.library.vanderbilt.edu/about/accessibility/">Accessibility</a>
+									<a href="https://www.library.vanderbilt.edu/about/accessibility/">Accessibility</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="https://dev-library2023.library.vanderbilt.edu/ask-librarian/">Ask a Librarian</a>
+									<a href="https://www.library.vanderbilt.edu/ask-librarian/">Ask a Librarian</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="https://dev-library2023.library.vanderbilt.edu/about/contact/">Contact</a>
+									<a href="https://www.library.vanderbilt.edu/about/contact/">Contact</a>
 								</li>
 								<li class="primary-nav__has-children--item">
-									<a href="https://dev-library2023.library.vanderbilt.edu/feedback/">Report a Problem</a>
+									<a href="https://www.library.vanderbilt.edu/feedback/">Report a Problem</a>
 								</li>
 							</ul>
 						</li>

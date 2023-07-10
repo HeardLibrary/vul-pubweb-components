@@ -52,7 +52,7 @@ class VulMegaMenu extends HTMLElement {
 					<svg aria-hidden="true" focusable="false">
 						<use xlink:href="#search"></use>
 					</svg>
-					<form action="https://dev.vanderbilt.edu/top-levels/search/" class="mega-menu__search-form js-mega-menu-search-form" method="get" role="search">
+					<form action="https://www.library.vanderbilt.edu/site-search/" class="mega-menu__search-form js-mega-menu-search-form" method="get" role="search">
 						<input class="mega-menu__search-input js-mega-menu-search-input" type="text" placeholder="Search" name="q" aria-label="Search">
 					</form>
 				</div>
@@ -72,37 +72,37 @@ class VulMegaMenu extends HTMLElement {
 								<li class="mega-menu__list-item mega-menu__list-item--has-submenu">
 									<a class="mega-menu__list-item-link" aria-haspopup="true">About</a>
 									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
-										<li><a href="https://dev-library2023.library.vanderbilt.edu/about/">About the Libraries</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/about/">About the Libraries</a></li>
 										<li><a href="https://strategy.library.vanderbilt.edu">Strategic Plan</a></li>
 										<li><a href="#">Leadership</a></li>
 										<li><a href="#">Departments</a></li>
-										<li><a href="https://dev-library2023.library.vanderbilt.edu/staff/">Staff Directory</a></li>
-										<li><a href="https://dev-library2023.library.vanderbilt.edu/about/library-policies/">Policies</a></li>
-										<li><a href="https://dev-library2023.library.vanderbilt.edu/hours/">Hours</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/staff/">Staff Directory</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/about/library-policies/">Policies</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/hours/">Hours</a></li>
 									</ul>
 								</li>
 								<li class="mega-menu__list-item mega-menu__list-item--has-submenu">
 									<a class="mega-menu__list-item-link" aria-haspopup="true">Locations</a>
 									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
-										<li><a href="/biomedical">Biomedical</a></li>
-										<li><a href="/central">Central</a></li>
-										<li><a href="/divinity">Divinity</a></li>
-										<li><a href="/gallery">Fine Arts Gallery</a></li>
-										<li><a href="/law">Law</a></li>
-										<li><a href="/management">Management</a></li>
-										<li><a href="/music">Music</a></li>
-										<li><a href="/peabody">Peabody</a></li>
-										<li><a href="/science">Science and Engineering</a></li>
-										<li><a href="/specialcollections">Special Collections</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/biomedical/">Biomedical</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/central/">Central</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/divinity/">Divinity</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/gallery/">Fine Arts Gallery</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/law/">Law</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/management/">Management</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/music/">Music</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/peabody/">Peabody</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/science/">Science and Engineering</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/specialcollections/">Special Collections</a></li>
 									</ul>
 								</li>
 								<li class="mega-menu__list-item mega-menu__list-item--has-submenu">
 									<a class="mega-menu__list-item-link" aria-haspopup="true">Research</a>
 									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
 										<li><a href="https://catalog.library.vanderbilt.edu/">Search Collections</a></li>
-										<li><a href="https://dev-library2023.library.vanderbilt.edu/subject-specialists/">Subject Specialists</a></li>
-										<li><a href="/digitalcommons">Digital Commons</a></li>
-										<li><a href="/disc">Digital Scholarship</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/staff/subject-specialists/">Subject Specialists</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/digitalcommons/">Digital Commons</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/disc/">Digital Scholarship</a></li>
 										<li><a href="#">Special Collections &amp; Archives</a></li>
 										<li><a href="https://researchguides.library.vanderbilt.edu/">Research Guides</a></li>
 										<li><a href="https://ir.vanderbilt.edu/">Institutional Repository</a></li>
@@ -114,7 +114,7 @@ class VulMegaMenu extends HTMLElement {
 										<li><a href="https://catalog.library.vanderbilt.edu/discovery/account?vid=01VAN_INST:vanui">My Account</a></li>
 										<li><a href="#">Course Reserves</a></li>
 										<li><a href="https://illiad.library.vanderbilt.edu/illiad/logon/">Resource Sharing Services</a></li>
-										<li><a href="https://dev-library2023.library.vanderbilt.edu/technology/">Technology</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/technology/">Technology</a></li>
 										<li><a href="#">Classroom Instruction</a></li>
 										<li><a href="#">Room Reservations</a></li>
 									</ul>
@@ -123,17 +123,17 @@ class VulMegaMenu extends HTMLElement {
 									<a class="mega-menu__list-item-link" aria-haspopup="true">News &amp; Events</a>
 									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
 										<li><a href="https://events.vanderbilt.edu/view/month/tags/library">Events</a></li>
-										<li><a href="https://dev-library2023.library.vanderbilt.edu/exhibits/">Exhibits</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/exhibits/">Exhibits</a></li>
 										<li><a href="https://newsonline.library.vanderbilt.edu/">News</a></li>
 									</ul>
 								</li>
 								<li class="mega-menu__list-item mega-menu__list-item--has-submenu">
 									<a class="mega-menu__list-item-link" aria-haspopup="true">Help</a>
 									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
-										<li><a href="https://dev-library2023.library.vanderbilt.edu/about/accessibility/">Accessibility</a></li>
-										<li><a href="https://dev-library2023.library.vanderbilt.edu/ask-librarian/">Ask a Librarian</a></li>
-										<li><a href="https://dev-library2023.library.vanderbilt.edu/about/contact/">Contact</a></li>
-										<li><a href="https://dev-library2023.library.vanderbilt.edu/feedback/">Report a Problem</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/about/accessibility/">Accessibility</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/ask-librarian/">Ask a Librarian</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/about/contact/">Contact</a></li>
+										<li><a href="https://www.library.vanderbilt.edu/feedback/">Report a Problem</a></li>
 									</ul>
 								</li>
 							</ul>
