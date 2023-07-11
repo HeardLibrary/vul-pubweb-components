@@ -1,13 +1,11 @@
 class VulMegaMenu extends HTMLElement {
     constructor() {
         super();
-    }
 
-    connectedCallback() {
-        const megaMenu = document.createElement('div');
-              megaMenu.classList.add('mega-menu', 'js-mega-menu');
-              megaMenu.setAttribute('data-theme', 'dark');
-              megaMenu.setAttribute('role', 'dialog');
+		const megaMenu = document.createElement('div');
+			  megaMenu.classList.add('mega-menu', 'js-mega-menu');
+			  megaMenu.setAttribute('data-theme', 'dark');
+			  megaMenu.setAttribute('role', 'dialog');
 
 		html = `
 			<div class="mega-menu__inner">
@@ -139,8 +137,6 @@ class VulMegaMenu extends HTMLElement {
 							</ul>
 						</div>
 
-
-
 						<div class="mega-menu__panel " id="panel-all-vanderbilt" role="tabpanel" tabindex="0" aria-labelledby="all-vanderbilt" hidden="">
 							<ul class="mega-menu__list js-mega-menu-list">
 								<li class="mega-menu__list-item ">
@@ -212,7 +208,7 @@ class VulMegaMenu extends HTMLElement {
 
 		megaMenu.innerHTML = html;
 
-        this.appendChild(megaMenu);
+		this.append(megaMenu);
     }
 }
 

@@ -1,10 +1,7 @@
 {
-    "/css/vul-pwc-header.css": "/css/vul-pwc-header.css",
-    "/js/vul-pwc-header.js": "/js/vul-pwc-header.js",
-    "/postcss/vul-header.css": "/postcss/vul-header.css",
+    "/css/vul-pwc-navigation.css": "/css/vul-pwc-navigation.css",
     "/js/vul-pwc-navigation.js": "/js/vul-pwc-navigation.js",
     "/postcss/vul-navigation.css": "/postcss/vul-navigation.css",
-    "/css/vul-pwc-navigation.css": "/css/vul-pwc-navigation.css",
     "/js/vul-pwc-footer.js": "/js/vul-pwc-footer.js",
     "/postcss/vul-footer.css": "/postcss/vul-footer.css",
     "/css/vul-pwc-footer.css": "/css/vul-pwc-footer.css"

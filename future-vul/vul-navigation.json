@@ -1,0 +1,750 @@
+{
+    "heard": [
+        {
+            "text": "<span class='sr-only'>Jean and Alexander Heard Libraries </span> Home",
+            "url": "/"
+        },
+        {
+            "text": "About",
+            "dropdown": [
+                {
+                    "text": "About the Heard Libraries",
+                    "url": "https://www.library.vanderbilt.edu/about"
+                },
+                {
+                    "text": "Access and Use",
+                    "url": "https://www.library.vanderbilt.edu/about/accessanduse.php"
+                },
+                {
+                    "text": "Guide to Libraries",
+                    "url": "https://www.library.vanderbilt.edu/about/guidetolibraries.php"
+                },
+                {
+                    "text": "Library Events Calendar",
+                    "url": "https://events.vanderbilt.edu/view/month/tags/library"
+                },
+                {
+                    "text": "Library Policies",
+                    "url": "https://www.library.vanderbilt.edu/policies"
+                },
+                {
+                    "text": "Library Programs",
+                    "url": "https://www.library.vanderbilt.edu/about/programs.php"
+                },
+                {
+                    "text": "Staff and Departments",
+                    "url": "https://www.library.vanderbilt.edu/staff"
+                },
+                {
+                    "text": "Support the Libraries",
+                    "url": "https://www.library.vanderbilt.edu/giving"
+                }
+            ]
+        },
+        {
+            "text": "Services",
+            "dropdown": [
+                {
+                    "text": "Course Reserves",
+                    "url": "https://www.library.vanderbilt.edu/services/reserves.php"
+                },
+                {
+                    "text": "Digital Scholarship",
+                    "url": "https://www.library.vanderbilt.edu/disc"
+                },
+                {
+                    "text": "For Alumni",
+                    "url": "https://www.library.vanderbilt.edu/alumni"
+                },
+                {
+                    "text": "For Faculty and Staff",
+                    "url": "https://www.library.vanderbilt.edu/faculty-staff"
+                },
+                {
+                    "text": "For Students",
+                    "url": "https://www.library.vanderbilt.edu/students"
+                },
+                {
+                    "text": "My Account",
+                    "url": "https://catalog.library.vanderbilt.edu/discovery/account?vid=01VAN_INST:vanui"
+                },
+                {
+                    "text": "Resource Sharing Services",
+                    "url": "https://illiad.library.vanderbilt.edu/illiad/logon"
+                },
+                {
+                    "text": "Study Rooms and Carrels",
+                    "url": "https://www.library.vanderbilt.edu/services/studyrooms.php"
+                },
+                {
+                    "text": "Technology",
+                    "url": "https://www.library.vanderbilt.edu/technology"
+                }
+            ]
+        },
+        {
+            "text": "Research",
+            "dropdown": [
+                {
+                    "text": "Archival Collections",
+                    "url": "https://collections.library.vanderbilt.edu"
+                },
+                {
+                    "text": "Buchanan Library Fellows",
+                    "url": "https://www.library.vanderbilt.edu/about/fellows"
+                },
+                {
+                    "text": "Databases A-Z",
+                    "url": "https://researchguides.library.vanderbilt.edu/az.php"
+                },
+                {
+                    "text": "Exhibitions",
+                    "url": "https://www.library.vanderbilt.edu/exhibits"
+                },
+                {
+                    "text": "Immersion Resources",
+                    "url": "https://www.library.vanderbilt.edu/immersion.php"
+                },
+                {
+                    "text": "Institutional Repository",
+                    "url": "https://ir.vanderbilt.edu"
+                },
+                {
+                    "text": "Journals",
+                    "url": "https://catalog.library.vanderbilt.edu/discovery/jsearch?vid=01VAN_INST:vanui"
+                },
+                {
+                    "text": "Librarians by Subject",
+                    "url": "https://www.library.vanderbilt.edu/subject-specialists.php"
+                },
+                {
+                    "text": "Library Catalog",
+                    "url": "https://catalog.library.vanderbilt.edu/discovery/search?vid=01VAN_INST:vanui"
+                },
+                {
+                    "text": "Research and Course Guides",
+                    "url": "https://researchguides.library.vanderbilt.edu"
+                },
+                {
+                    "text": "Television News Archive",
+                    "url": "https://tvnews.vanderbilt.edu"
+                }
+            ]
+        },
+        {
+            "text": "Help",
+            "dropdown": [
+                {
+                    "text": "Accessibility Services",
+                    "url": "https://www.library.vanderbilt.edu/about/accessibility.php"
+                },
+                {
+                    "text": "Ask a Librarian",
+                    "url": "https://www.library.vanderbilt.edu/ask-librarian.php"
+                },
+                {
+                    "text": "Contact Us",
+                    "url": "https://www.library.vanderbilt.edu/about/contact.php"
+                },
+                {
+                    "text": "Copyright",
+                    "url": "https://www.library.vanderbilt.edu/disc/copyright.php"
+                },
+                {
+                    "text": "How to Search the Catalog",
+                    "url": "https://researchguides.library.vanderbilt.edu/search/searching_the_library_catalog"
+                },
+                {
+                    "text": "Librarians by Subject",
+                    "url": "https://www.library.vanderbilt.edu/subject-specialists.php"
+                },
+                {
+                    "text": "Research and Course Guides",
+                    "url": "https://researchguides.library.vanderbilt.edu"
+                }
+            ]
+        },
+        {
+            "text": "Locations",
+            "dropdown": [
+                {
+                    "text": "Biomedical",
+                    "url": "https://www.library.vanderbilt.edu/biomedical"
+                },
+                {
+                    "text": "Central",
+                    "url": "https://www.library.vanderbilt.edu/central"
+                },
+                {
+                    "text": "Divinity",
+                    "url": "https://www.library.vanderbilt.edu/divinity"
+                },
+                {
+                    "text": "Fine Arts Gallery",
+                    "url": "https://www.library.vanderbilt.edu/gallery"
+                },
+                {
+                    "text": "Law",
+                    "url": "https://www.library.vanderbilt.edu/law"
+                },
+                {
+                    "text": "Management",
+                    "url": "https://www.library.vanderbilt.edu/management"
+                },
+                {
+                    "text": "Music",
+                    "url": "https://www.library.vanderbilt.edu/music"
+                },
+                {
+                    "text": "Peabody",
+                    "url": "https://www.library.vanderbilt.edu/peabody"
+                },
+                {
+                    "text": "Science &amp; Engineering",
+                    "url": "https://www.library.vanderbilt.edu/science"
+                },
+                {
+                    "text": "Special Collections",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections"
+                }
+            ]
+        },
+        {
+            "text": "Hours",
+            "url": "https://www.library.vanderbilt.edu/hours.php"
+        },
+        {
+            "text": "Ask a Librarian",
+            "url": "https://www.library.vanderbilt.edu/ask-librarian.php"
+        }
+    ],
+    "biomedical": [
+        {
+            "text": "<span class='sr-only'>Biomedical </span> Home",
+            "url": "https://www.library.vanderbilt.edu/biomedical"
+        },
+        {
+            "text": "About",
+            "dropdown": [
+                {
+                    "text": "About the Biomedical Library",
+                    "url": "https://www.library.vanderbilt.edu/biomedical/about"
+                },
+                {
+                    "text": "Library Policies",
+                    "url": "https://www.library.vanderbilt.edu/biomedical/policies"
+                },
+                {
+                    "text": "Access and Use",
+                    "url": "https://www.library.vanderbilt.edu/about/accessanduse.php"
+                },
+                {
+                    "text": "Staff and Departments",
+                    "url": "https://www.library.vanderbilt.edu/staff"
+                },
+                {
+                    "text": "Library News",
+                    "url": "https://newsonline.library.vanderbilt.edu/category/biomedical-library"
+                },
+                {
+                    "text": "Library Events",
+                    "url": "https://events.vanderbilt.edu/view/month/tags/biomedical-library"
+                },
+                {
+                    "text": "Visitor Information",
+                    "url": "https://www.library.vanderbilt.edu/biomedical/visitors"
+                },
+                {
+                    "text": "Exhibits",
+                    "url": "https://www.library.vanderbilt.edu/exhibits"
+                },
+                {
+                    "text": "Support the Libraries",
+                    "url": "https://www.library.vanderbilt.edu/giving"
+                }
+            ]
+        },
+        {
+            "text": "Services",
+            "dropdown": [
+                {
+                    "text": "Borrowing and Access",
+                    "url": "https://researchguides.library.vanderbilt.edu/Access_and_Borrowing"
+                },
+                {
+                    "text": "Ask Biomedical",
+                    "url": "https://redcap.link/askbiomed"
+                },
+                {
+                    "text": "Study Rooms",
+                    "url": "https://www.library.vanderbilt.edu/services/studyrooms.php"
+                },
+                {
+                    "text": "Technology",
+                    "url": "https://www.library.vanderbilt.edu/biomedical/technology"
+                },
+                {
+                    "text": "Document Delivery",
+                    "url": "https://illiad.library.vanderbilt.edu/illiad/biomed/"
+                },
+                {
+                    "text": "Training",
+                    "url": "https://researchguides.library.vanderbilt.edu/biomedtraining"
+                },
+                {
+                    "text": "Purchase Request",
+                    "url": "https://www.library.vanderbilt.edu/restricted/forms/purchase.php"
+                },
+                {
+                    "text": "Course Reserves",
+                    "url": "https://www.library.vanderbilt.edu/services/reserves.php"
+                }
+            ]
+        },
+        {
+            "text": "Research",
+            "dropdown": [
+                {
+                    "text": "Library Catalog",
+                    "url": "https://catalog.library.vanderbilt.edu/discovery/search?vid=01VAN_INST:BIOMED"
+                },
+                {
+                    "text": "Databases A-Z",
+                    "url": "https://researchguides.library.vanderbilt.edu/az.php?t=31991"
+                },
+                {
+                    "text": "Journals",
+                    "url": "https://catalog.library.vanderbilt.edu/discovery/jsearch?vid=01VAN_INST:BIOMED"
+                },
+                {
+                    "text": "Ask Biomedical",
+                    "url": "https://redcap.link/askbiomed"
+                },
+                {
+                    "text": "Writing Styles",
+                    "url": "https://researchguides.library.vanderbilt.edu/StyleGuides"
+                },
+                {
+                    "text": "Citation Management",
+                    "url": "https://researchguides.library.vanderbilt.edu/citation-management"
+                },
+                {
+                    "text": "Scholarly Communications",
+                    "url": "https://www.library.vanderbilt.edu/disc"
+                }
+            ]
+        },
+        {
+            "text": "Help",
+            "dropdown": [
+                {
+                    "text": "Ask Biomedical",
+                    "url": "https://redcap.link/askbiomed"
+                },
+                {
+                    "text": "Contact Us",
+                    "url": "https://www.library.vanderbilt.edu/about/contact.php"
+                },
+                {
+                    "text": "Librarians by Subject",
+                    "url": "https://www.library.vanderbilt.edu/subject-specialists.php"
+                },
+                {
+                    "text": "Research and Course Guides",
+                    "url": "https://researchguides.library.vanderbilt.edu/biomedical"
+                },
+                {
+                    "text": "Accessibility Services",
+                    "url": "https://www.library.vanderbilt.edu/about/accessibility.php"
+                }
+            ]
+        },
+        {
+            "text": "Locations",
+            "dropdown": [
+                {
+                    "text": "Biomedical",
+                    "url": "https://www.library.vanderbilt.edu/biomedical"
+                },
+                {
+                    "text": "Central",
+                    "url": "https://www.library.vanderbilt.edu/central"
+                },
+                {
+                    "text": "Divinity",
+                    "url": "https://www.library.vanderbilt.edu/divinity"
+                },
+                {
+                    "text": "Fine Arts Gallery",
+                    "url": "https://www.library.vanderbilt.edu/gallery"
+                },
+                {
+                    "text": "Law",
+                    "url": "https://www.library.vanderbilt.edu/law"
+                },
+                {
+                    "text": "Management",
+                    "url": "https://www.library.vanderbilt.edu/management"
+                },
+                {
+                    "text": "Music",
+                    "url": "https://www.library.vanderbilt.edu/music"
+                },
+                {
+                    "text": "Peabody",
+                    "url": "https://www.library.vanderbilt.edu/peabody"
+                },
+                {
+                    "text": "Science &amp; Engineering",
+                    "url": "https://www.library.vanderbilt.edu/science"
+                },
+                {
+                    "text": "Special Collections",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections"
+                }
+            ]
+        },
+        {
+            "text": "Hours",
+            "url": "https://www.library.vanderbilt.edu/biomedical/hours.php"
+        }
+    ],
+    "law": [
+        {
+            "text": "<span class='sr-only'>Massey Law Library </span> Home",
+            "url": "https://www.library.vanderbilt.edu/law"
+        },
+        {
+            "text": "About",
+            "dropdown": [
+                {
+                    "text": "Contact Us",
+                    "url": "https://www.library.vanderbilt.edu/law/contact-us.php"
+                },
+                {
+                    "text": "Maps and Parking",
+                    "url": "https://www.library.vanderbilt.edu/about/mapsparking.php"
+                },
+                {
+                    "text": "About Massey Law Library",
+                    "url": "https://www.library.vanderbilt.edu/law/services/massey.php"
+                }
+            ]
+        },
+        {
+            "text": "Services",
+            "dropdown": [
+                {
+                    "text": "Student Services",
+                    "url": "https://www.library.vanderbilt.edu/law/students/lawstudentservices.php"
+                },
+                {
+                    "text": "Faculty Services",
+                    "url": "https://www.library.vanderbilt.edu/law/faculty-staff/lawfacservices.php"
+                },
+                {
+                    "text": "Interlibrary Loan",
+                    "url": "https://illiad.library.vanderbilt.edu/illiad/lawils/"
+                },
+                {
+                    "text": "Law Journal Support",
+                    "url": "https://researchguides.library.vanderbilt.edu/guideforvulawjournals"
+                },
+                {
+                    "text": "Study Rooms and Carrels",
+                    "url": "https://www.library.vanderbilt.edu/services/studyrooms.php"
+                },
+                {
+                    "text": "Technology",
+                    "url": "https://law.vanderbilt.edu/about-the-school/information-technology/"
+                },
+                {
+                    "text": "Brightspace Login",
+                    "url": "https://brightspace.vanderbilt.edu/"
+                }
+            ]
+        },
+        {
+            "text": "Research",
+            "dropdown": [
+                {
+                    "text": "Ask a Librarian/Reference Services",
+                    "url": "https://www.library.vanderbilt.edu/law/ask-librarian.php"
+                },
+                {
+                    "text": "Law Databases",
+                    "url": "https://researchguides.library.vanderbilt.edu/az.php?t=31993"
+                },
+                {
+                    "text": "Research Guides",
+                    "url": "https://researchguides.library.vanderbilt.edu/law"
+                }
+            ]
+        },
+        {
+            "text": "Help",
+            "dropdown": [
+                {
+                    "text": "Ask Law",
+                    "url": "https://www.library.vanderbilt.edu/law/ask-librarian.php"
+                },
+                {
+                    "text": "Contact Us",
+                    "url": "https://www.library.vanderbilt.edu/law/contact-us.php"
+                },
+                {
+                    "text": "Librarians by Subject",
+                    "url": "https://www.library.vanderbilt.edu/subject-specialists.php"
+                },
+                {
+                    "text": "Research and Course Guides",
+                    "url": "https://researchguides.library.vanderbilt.edu/law"
+                },
+                {
+                    "text": "Accessibility Services",
+                    "url": "https://www.library.vanderbilt.edu/about/accessibility.php"
+                }
+            ]
+        },
+        {
+            "text": "Locations",
+            "dropdown": [
+                {
+                    "text": "Biomedical",
+                    "url": "https://www.library.vanderbilt.edu/biomedical"
+                },
+                {
+                    "text": "Central",
+                    "url": "https://www.library.vanderbilt.edu/central"
+                },
+                {
+                    "text": "Divinity",
+                    "url": "https://www.library.vanderbilt.edu/divinity"
+                },
+                {
+                    "text": "Fine Arts Gallery",
+                    "url": "https://www.library.vanderbilt.edu/gallery"
+                },
+                {
+                    "text": "Law",
+                    "url": "https://www.library.vanderbilt.edu/law"
+                },
+                {
+                    "text": "Management",
+                    "url": "https://www.library.vanderbilt.edu/management"
+                },
+                {
+                    "text": "Music",
+                    "url": "https://www.library.vanderbilt.edu/music"
+                },
+                {
+                    "text": "Peabody",
+                    "url": "https://www.library.vanderbilt.edu/peabody"
+                },
+                {
+                    "text": "Science &amp; Engineering",
+                    "url": "https://www.library.vanderbilt.edu/science"
+                },
+                {
+                    "text": "Special Collections",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections"
+                }
+            ]
+        },
+        {
+            "text": "Hours",
+            "url": "https://www.library.vanderbilt.edu/law/hours.php"
+        }
+    ],
+    "specialcollections": [
+        {
+            "text": "<span class='sr-only'>Special Collections and University Archives </span> Home",
+            "url": "https://www.library.vanderbilt.edu/specialcollections"
+        },
+        {
+            "text": "About",
+            "dropdown": [
+                {
+                    "text": "About Special Collections",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/about"
+                },
+                {
+                    "text": "Visit Us",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/visitors.php"
+                },
+                {
+                    "text": "Exhibits",
+                    "url": "https://www.library.vanderbilt.edu/exhibits"
+                },
+                {
+                    "text": "Events",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/events.php"
+                },
+                {
+                    "text": "Library Policies",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/policies"
+                },
+                {
+                    "text": "Access and Use",
+                    "url": "https://www.library.vanderbilt.edu/about/accessanduse.php"
+                },
+                {
+                    "text": "Ask Special Collections",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/ask-librarian.php"
+                },
+                {
+                    "text": "Gifts and Donations",
+                    "url": "https://www.library.vanderbilt.edu/giving"
+                }
+            ]
+        },
+        {
+            "text": "Services",
+            "dropdown": [
+                {
+                    "text": "My Account",
+                    "url": "https://catalog.library.vanderbilt.edu/discovery/account?vid=01VAN_INST:vanui"
+                },
+                {
+                    "text": "Ask Special Collections",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/ask-librarian.php"
+                },
+                {
+                    "text": "Visit Us",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/visitors.php"
+                },
+                {
+                    "text": "Schedule a Class",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/classes"
+                },
+                {
+                    "text": "Teaching with Digital Collections",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/classes/digital-collections.php"
+                },
+                {
+                    "text": "Request Materials",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/request-materials.php"
+                },
+                {
+                    "text": "Alumni Services",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/alumni"
+                }
+            ]
+        },
+        {
+            "text": "Research",
+            "dropdown": [
+                {
+                    "text": "Starting Your Research",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/starting-research.php"
+                },
+                {
+                    "text": "Collection Overview",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/collections"
+                },
+                {
+                    "text": "Library Catalog",
+                    "url": "https://catalog.library.vanderbilt.edu/discovery/search?vid=01VAN_INST:SPECCOLL"
+                },
+                {
+                    "text": "Collection Finding Aids",
+                    "url": "https://collections.library.vanderbilt.edu"
+                },
+                {
+                    "text": "Digital Collections",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/digital-collections"
+                },
+                {
+                    "text": "Request Materials",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/request-materials.php"
+                },
+                {
+                    "text": "Visit Us",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/visitors.php"
+                },
+                {
+                    "text": "Research and Course Guides",
+                    "url": "https://researchguides.library.vanderbilt.edu/specialcollections"
+                },
+                {
+                    "text": "Rights and Permissions",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/policies/rights.php"
+                }
+            ]
+        },
+        {
+            "text": "Help",
+            "dropdown": [
+                {
+                    "text": "Ask Special Collections",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections/ask-librarian.php"
+                },
+                {
+                    "text": "Contact Us",
+                    "url": "https://www.library.vanderbilt.edu/about/contact.php"
+                },
+                {
+                    "text": "Librarians by Subject",
+                    "url": "https://www.library.vanderbilt.edu/subject-specialists.php"
+                },
+                {
+                    "text": "Research and Course Guides",
+                    "url": "https://researchguides.library.vanderbilt.edu/specialcollections"
+                },
+                {
+                    "text": "Accessibility Services",
+                    "url": "https://www.library.vanderbilt.edu/about/accessibility.php"
+                }
+            ]
+        },
+        {
+            "text": "Locations",
+            "dropdown": [
+                {
+                    "text": "Biomedical",
+                    "url": "https://www.library.vanderbilt.edu/biomedical"
+                },
+                {
+                    "text": "Central",
+                    "url": "https://www.library.vanderbilt.edu/central"
+                },
+                {
+                    "text": "Divinity",
+                    "url": "https://www.library.vanderbilt.edu/divinity"
+                },
+                {
+                    "text": "Fine Arts Gallery",
+                    "url": "https://www.library.vanderbilt.edu/gallery"
+                },
+                {
+                    "text": "Law",
+                    "url": "https://www.library.vanderbilt.edu/law"
+                },
+                {
+                    "text": "Management",
+                    "url": "https://www.library.vanderbilt.edu/management"
+                },
+                {
+                    "text": "Music",
+                    "url": "https://www.library.vanderbilt.edu/music"
+                },
+                {
+                    "text": "Peabody",
+                    "url": "https://www.library.vanderbilt.edu/peabody"
+                },
+                {
+                    "text": "Science &amp; Engineering",
+                    "url": "https://www.library.vanderbilt.edu/science"
+                },
+                {
+                    "text": "Special Collections",
+                    "url": "https://www.library.vanderbilt.edu/specialcollections"
+                }
+            ]
+        },
+        {
+            "text": "Hours",
+            "url": "https://www.library.vanderbilt.edu/specialcollections/hours.php"
+        }
+    ]
+}

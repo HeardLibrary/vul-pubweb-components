@@ -1,11 +1,9 @@
 class VulPrimaryNav extends HTMLElement {
     constructor() {
         super();
-    }
 
-    connectedCallback() {
-        const primaryNav = document.createElement('div');
-              primaryNav.classList.add('primary-nav__inner');
+		const primaryNav = document.createElement('div');
+			  primaryNav.classList.add('primary-nav__inner');
 
 		var html = `
 			<div class="primary-nav__logo">
@@ -218,7 +216,7 @@ class VulPrimaryNav extends HTMLElement {
 
 		primaryNav.innerHTML = html;
 
-        this.appendChild(primaryNav);
+		this.append(primaryNav);
     }
 }
 
