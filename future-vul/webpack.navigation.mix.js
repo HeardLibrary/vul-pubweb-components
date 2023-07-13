@@ -21,7 +21,7 @@ mix
         [
             'dist/postcss/vul-navigation.css',
             'src/css/primary-nav-children.css',
-            'src/css/vul-harden.css',
+            'src/css/vul.css',
         ], 
         'dist/css/vul-pwc-navigation.css')
     .js(
