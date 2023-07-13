@@ -15,6 +15,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 });
 
 mix
+    .sourceMaps(true, 'source-map')
     .css('src/css/vu.css', 'postcss/vul-navigation.css')
     .styles(
         [

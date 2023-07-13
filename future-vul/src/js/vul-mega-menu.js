@@ -1,3 +1,5 @@
+import MegaMenu from './components/MegaMenu';
+
 class VulMegaMenu extends HTMLElement {
     constructor() {
         super();
@@ -7,7 +9,7 @@ class VulMegaMenu extends HTMLElement {
 			  megaMenu.setAttribute('data-theme', 'dark');
 			  megaMenu.setAttribute('role', 'dialog');
 
-		html = `
+		var html = `
 			<div class="mega-menu__inner">
 				<button class="mega-menu__close-btn js-mega-menu-close">
 					<svg>
@@ -66,75 +68,6 @@ class VulMegaMenu extends HTMLElement {
 					</div>
 					<div class="mega-menu__panels">
 						<div class="mega-menu__panel mega-menu__panel-local" id="panel-heard-libraries" role="tabpanel" tabindex="0" aria-labelledby="heard-libraries">
-							<ul class="mega-menu__list js-mega-menu-list">
-								<li class="mega-menu__list-item mega-menu__list-item--has-submenu">
-									<a class="mega-menu__list-item-link" aria-haspopup="true">About</a>
-									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
-										<li><a href="https://www.library.vanderbilt.edu/about/">About the Libraries</a></li>
-										<li><a href="https://strategy.library.vanderbilt.edu">Strategic Plan</a></li>
-										<li><a href="#">Leadership</a></li>
-										<li><a href="#">Departments</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/staff/">Staff Directory</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/about/library-policies/">Policies</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/hours/">Hours</a></li>
-									</ul>
-								</li>
-								<li class="mega-menu__list-item mega-menu__list-item--has-submenu">
-									<a class="mega-menu__list-item-link" aria-haspopup="true">Locations</a>
-									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
-										<li><a href="https://www.library.vanderbilt.edu/biomedical/">Biomedical</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/central/">Central</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/divinity/">Divinity</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/gallery/">Fine Arts Gallery</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/law/">Law</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/management/">Management</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/music/">Music</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/peabody/">Peabody</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/science/">Science and Engineering</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/specialcollections/">Special Collections</a></li>
-									</ul>
-								</li>
-								<li class="mega-menu__list-item mega-menu__list-item--has-submenu">
-									<a class="mega-menu__list-item-link" aria-haspopup="true">Research</a>
-									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
-										<li><a href="https://catalog.library.vanderbilt.edu/">Search Collections</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/staff/subject-specialists/">Subject Specialists</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/digitalcommons/">Digital Commons</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/disc/">Digital Scholarship</a></li>
-										<li><a href="#">Special Collections &amp; Archives</a></li>
-										<li><a href="https://researchguides.library.vanderbilt.edu/">Research Guides</a></li>
-										<li><a href="https://ir.vanderbilt.edu/">Institutional Repository</a></li>
-									</ul>
-								</li>
-								<li class="mega-menu__list-item mega-menu__list-item--has-submenu">
-									<a class="mega-menu__list-item-link" aria-haspopup="true">Services</a>
-									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
-										<li><a href="https://catalog.library.vanderbilt.edu/discovery/account?vid=01VAN_INST:vanui">My Account</a></li>
-										<li><a href="#">Course Reserves</a></li>
-										<li><a href="https://illiad.library.vanderbilt.edu/illiad/logon/">Resource Sharing Services</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/technology/">Technology</a></li>
-										<li><a href="#">Classroom Instruction</a></li>
-										<li><a href="#">Room Reservations</a></li>
-									</ul>
-								</li>
-								<li class="mega-menu__list-item mega-menu__list-item--has-submenu">
-									<a class="mega-menu__list-item-link" aria-haspopup="true">News &amp; Events</a>
-									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
-										<li><a href="https://events.vanderbilt.edu/view/month/tags/library">Events</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/exhibits/">Exhibits</a></li>
-										<li><a href="https://newsonline.library.vanderbilt.edu/">News</a></li>
-									</ul>
-								</li>
-								<li class="mega-menu__list-item mega-menu__list-item--has-submenu">
-									<a class="mega-menu__list-item-link" aria-haspopup="true">Help</a>
-									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
-										<li><a href="https://www.library.vanderbilt.edu/about/accessibility/">Accessibility</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/ask-librarian/">Ask a Librarian</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/about/contact/">Contact</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/feedback/">Report a Problem</a></li>
-									</ul>
-								</li>
-							</ul>
 						</div>
 
 						<div class="mega-menu__panel " id="panel-all-vanderbilt" role="tabpanel" tabindex="0" aria-labelledby="all-vanderbilt" hidden="">
@@ -210,6 +143,74 @@ class VulMegaMenu extends HTMLElement {
 
 		this.append(megaMenu);
     }
+
+	connectedCallback() {
+		var resource = 'http://127.0.0.1:5500/future-vul/vul-navigation.json';
+
+        fetch(resource)
+            .then((response) => response.json())
+			.then((data) => {
+				let panelHeardLibraries = document.getElementById('panel-heard-libraries');
+
+				let megaMenuList = document.createElement('ul');
+					megaMenuList.classList.add('mega-menu__list', 'js-mega-menu-list');
+
+				data.forEach(item => {
+					if (item.hasOwnProperty('dropdown')) {
+						let megaMenuListItem = document.createElement('li');
+							megaMenuListItem.classList.add('mega-menu__list-item', 'mega-menu__list-item--has-submenu');
+
+						let megaMenuListItemLink = document.createElement('a');
+							megaMenuListItemLink.setAttribute('aria-haspopup', 'true');
+							megaMenuListItemLink.classList.add('mega-menu__list-item-link');
+							megaMenuListItemLink.innerText = item.text;
+
+						let megaMenuSubmenu = document.createElement('ul');
+							megaMenuSubmenu.setAttribute('aria-label', 'submenu');
+							megaMenuSubmenu.classList.add('mega-menu__submenu', 'js-mega-menu-submenu');
+
+						item.dropdown.forEach(link => {
+							let megaMenuSubmenuItem = document.createElement('li');
+
+							let a = document.createElement('a');
+								a.href = link.url;
+								a.innerText = link.text
+							
+							megaMenuSubmenuItem.append(a);
+							megaMenuSubmenu.append(megaMenuSubmenuItem);
+						});
+
+						megaMenuListItem.append(megaMenuListItemLink);
+						megaMenuListItem.append(megaMenuSubmenu);
+						megaMenuList.append(megaMenuListItem);
+						panelHeardLibraries.append(megaMenuList);
+					} else {
+						let megaMenuListItem = document.createElement('li');
+							megaMenuListItem.classList.add('mega-menu__list-item');
+						
+						let a = document.createElement('a');
+							a.href = item.url;
+							a.innerText = item.text;
+
+						megaMenuListItem.append(a);
+						megaMenuList.append(megaMenuListItem);
+					}
+				});
+
+				// Nav Mega Menus
+				const navs = Array.from(document.querySelectorAll('.js-site-nav'));
+				if (navs.length) {
+					navs.forEach(nav => {
+						const openButton = nav.querySelector('.js-mega-menu-open');
+						const closeButton = nav.querySelector('.js-mega-menu-close');
+						const modalElem = nav.querySelector('.js-mega-menu');
+
+						new MegaMenu(openButton, closeButton, modalElem);
+					});
+				}
+			})
+			.catch(console.error);
+	}
 }
 
 customElements.define('vul-mega-menu', VulMegaMenu);

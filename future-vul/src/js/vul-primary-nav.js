@@ -1,3 +1,5 @@
+import PrimaryNav from './components/PrimaryNav';
+
 class VulPrimaryNav extends HTMLElement {
     constructor() {
         super();
@@ -67,149 +69,6 @@ class VulPrimaryNav extends HTMLElement {
 					<a href="/" class="primary-nav__site-link">
 						<span>Heard Libraries</span>
 					</a>
-					<ul class="primary-nav__links">
-						<li class="primary-nav__links--item primary-nav__has-children">
-							<a class="primary-nav__has-children--toggle ">About</a>
-							<ul class="primary-nav__has-children--list">
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/about/">About the Libraries</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://strategy.library.vanderbilt.edu">Strategic Plan</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="#">Leadership</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="#">Departments</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/staff/">Staff Directory</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/about/library-policies/">Policies</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/hours/">Hours</a>
-								</li>
-							</ul>
-						</li>
-						<li class="primary-nav__links--item primary-nav__has-children">
-							<a class="primary-nav__has-children--toggle ">Locations</a>
-							<ul class="primary-nav__has-children--list">
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/biomedical/">Biomedical</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/central/">Central</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/divinity/">Divinity</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/gallery/">Fine Arts Gallery</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/law/">Law</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/management/">Management</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/music/">Music</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/peabody/">Peabody</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/science/">Science and Engineering</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/specialcollections/">Special Collections</a>
-								</li>
-							</ul>
-						</li>
-						<li class="primary-nav__links--item primary-nav__has-children">
-							<a class="primary-nav__has-children--toggle ">Research</a>
-							<ul class="primary-nav__has-children--list">
-								<li class="primary-nav__has-children--item">
-									<a href="https://catalog.library.vanderbilt.edu/">Search Collections</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/staff/subject-specialists/">Subject Specialists</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/digitalcommons/">Digital Commons</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/disc/">Digital Scholarship</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="#">Special Collections &amp; Archives</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://researchguides.library.vanderbilt.edu/">Research Guides</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://ir.vanderbilt.edu/">Institutional Repository</a>
-								</li>
-							</ul>
-						</li>
-						<li class="primary-nav__links--item primary-nav__has-children">
-							<a class="primary-nav__has-children--toggle ">Services</a>
-							<ul class="primary-nav__has-children--list">
-								<li class="primary-nav__has-children--item">
-									<a href="https://catalog.library.vanderbilt.edu/discovery/account?vid=01VAN_INST:vanui">My Account</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="#">Course Reserves</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://illiad.library.vanderbilt.edu/illiad/logon/">Resource Sharing Services</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/technology/">Technology</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="#">Classroom Instruction</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="#">Room Reservations</a>
-								</li>
-							</ul>
-						</li>
-						<li class="primary-nav__links--item primary-nav__has-children">
-							<a class="primary-nav__has-children--toggle ">News &amp; Events</a>
-							<ul class="primary-nav__has-children--list">
-								<li class="primary-nav__has-children--item">
-									<a href="https://events.vanderbilt.edu/view/month/tags/library">Events</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/exhibits/">Exhibits</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://newsonline.library.vanderbilt.edu/">News</a>
-								</li>
-							</ul>
-						</li>
-						<li class="primary-nav__links--item primary-nav__has-children">
-							<a class="primary-nav__has-children--toggle ">Help</a>
-							<ul class="primary-nav__has-children--list">
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/about/accessibility/">Accessibility</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/ask-librarian/">Ask a Librarian</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/about/contact/">Contact</a>
-								</li>
-								<li class="primary-nav__has-children--item">
-									<a href="https://www.library.vanderbilt.edu/feedback/">Report a Problem</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
 				</div>
 			</div>
 		</div>`;
@@ -218,6 +77,66 @@ class VulPrimaryNav extends HTMLElement {
 
 		this.append(primaryNav);
     }
+
+	connectedCallback() {
+		var resource = 'http://127.0.0.1:5500/future-vul/vul-navigation.json';
+
+        fetch(resource)
+            .then((response) => response.json())
+			.then((data) => {
+				let primaryNavBottom = document.querySelector('.primary-nav__bottom');
+
+				let primaryNavLinks = document.createElement('ul');
+					primaryNavLinks.classList.add('primary-nav__links');
+
+				data.forEach(item => {
+					if (item.hasOwnProperty('dropdown')) {
+						let primaryNavLinksItem = document.createElement('li');
+							primaryNavLinksItem.classList.add('primary-nav__links--item', 'primary-nav__has-children');
+
+						let primaryNavHasChildrenToggle = document.createElement('a');
+							primaryNavHasChildrenToggle.classList.add('primary-nav__has-children--toggle');
+							primaryNavHasChildrenToggle.innerText = item.text;
+
+						let primaryNavHasChildrenList = document.createElement('ul');
+							primaryNavHasChildrenList.classList.add('primary-nav__has-children--list');
+
+						item.dropdown.forEach(link => {
+							let primaryNavHasChildrenItem = document.createElement('li');
+								primaryNavHasChildrenItem.classList.add('primary-nav__has-children--item');
+
+							let a = document.createElement('a');
+								a.href = link.url;
+								a.innerText = link.text
+							
+							primaryNavHasChildrenItem.append(a);
+							primaryNavHasChildrenList.append(primaryNavHasChildrenItem);
+						});
+
+						primaryNavLinksItem.append(primaryNavHasChildrenToggle);
+						primaryNavLinksItem.append(primaryNavHasChildrenList);
+						primaryNavLinks.append(primaryNavLinksItem);
+						primaryNavBottom.append(primaryNavLinks);
+					} else {
+						let primaryNavLinksItem = document.createElement('li');
+							primaryNavLinksItem.classList.add('primary-nav__links--item');
+						
+						let a = document.createElement('a');
+							a.href = item.url;
+							a.innerText = item.text;
+
+						primaryNavLinksItem.append(a);
+						primaryNavLinks.append(primaryNavLinksItem);
+					}
+				});
+
+				const primaryNavigation = document.querySelector('.primary-nav');
+				if (primaryNavigation) {
+					new PrimaryNav(primaryNavigation);
+				}
+			})
+			.catch(console.error);
+	}
 }
 
 customElements.define('vul-primary-nav', VulPrimaryNav);
