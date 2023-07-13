@@ -22,10 +22,10 @@ class PrimaryNav {
         let activeParents = this.menu.getElementsByClassName("open");
 
         if (activeParents.length > 0) {
-            jQuery(target).fadeIn();
+            target.classList.add('show');
             this.menu.classList.add("open");
         } else {
-            jQuery(target).fadeOut();
+            target.classList.remove('show');
             this.menu.classList.remove("open");
         }
     }

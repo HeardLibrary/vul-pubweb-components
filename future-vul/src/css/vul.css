@@ -1,0 +1,23 @@
+/* Harden against outside CSS */
+.alert-bar h2,
+.alert-bar h3 {
+    margin: revert;
+    font-size: revert;
+    line-height: revert;
+    font-weight: revert;
+}
+
+/* Remove jQuery fadeIn/fadeOut dependency. Derived from https://stackoverflow.com/a/50546888. */
+body > #overlay {
+    display: block;
+    overflow: hidden;  /* Hide the element content, while height = 0 */
+    height: 0;
+    opacity: 0;
+    transition: height 0ms 400ms, opacity 400ms 0ms;
+}
+
+body > #overlay.show {
+    height: 100%; 
+    opacity: 1;
+    transition: height 0ms 0ms, opacity 400ms 0ms;
+}

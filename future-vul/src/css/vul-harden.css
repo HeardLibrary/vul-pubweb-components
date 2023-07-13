@@ -1,9 +1,0 @@
-/* Styles specifically for hardening PWC styles from outside interference. */
-
-.alert-bar h2,
-.alert-bar h3 {
-    margin: revert;
-    font-size: revert;
-    line-height: revert;
-    font-weight: revert;
-}
