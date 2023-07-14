@@ -57,7 +57,7 @@ class VulFooter extends HTMLElement {
                             </ul>
                         </div><!-- site-footer__link-sets -->
                         <div class="site-footer__contact">
-                            <p>419 21st Avenue South •&nbsp;Nashville, TN 37203</p><p><a href="/contact">Contact Us</a> <img src="/static/img/USA_Federal_depository_library_logo.png" class="depository-logo" title="Vanderbilt is a US Federal Depository Library" alt="Vanderbilt is a US Federal Depository Library"></p>
+                            <p>419 21st Avenue South •&nbsp;Nashville, TN 37203</p><p><a href="/contact">Contact Us</a> <img src="../../future-vul/src/images/USA_Federal_depository_library_logo.png" class="depository-logo" title="Vanderbilt is a US Federal Depository Library" alt="Vanderbilt is a US Federal Depository Library"></p>
                             <p><a href="https://www.vanderbilt.edu/about/privacy/">Vanderbilt University's Online Privacy Notice</a></p>
                         </div>
                         <div class="site-footer__comm-links">

@@ -150,7 +150,8 @@ class VulMegaMenu extends HTMLElement {
         fetch(resource)
             .then((response) => response.json())
 			.then((data) => {
-				let panelHeardLibraries = document.getElementById('panel-heard-libraries');
+				let panelHeardLibraries = document.querySelector('vul-navigation').shadowRoot
+											.getElementById('panel-heard-libraries');
 
 				let megaMenuList = document.createElement('ul');
 					megaMenuList.classList.add('mega-menu__list', 'js-mega-menu-list');
@@ -198,7 +199,10 @@ class VulMegaMenu extends HTMLElement {
 				});
 
 				// Nav Mega Menus
-				const navs = Array.from(document.querySelectorAll('.js-site-nav'));
+				const navs = Array.from(
+					document.querySelector('vul-navigation').shadowRoot
+						.querySelectorAll('.js-site-nav')
+				);
 				if (navs.length) {
 					navs.forEach(nav => {
 						const openButton = nav.querySelector('.js-mega-menu-open');

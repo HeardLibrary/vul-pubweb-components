@@ -1,9 +1,10 @@
 class VulNavigation extends HTMLElement {
     constructor() {
         super();
+        this.attachShadow({ mode: 'open' });
 
         this.insertStylesheet();
-        this.innerHTML += this.svgDefinitions();
+        this.shadowRoot.innerHTML += this.svgDefinitions();
 
         const nav = document.createElement('nav');
               nav.classList.add('primary-nav', 'primary-nav--details', 'primary-nav--above', 'js-site-nav');
@@ -15,7 +16,7 @@ class VulNavigation extends HTMLElement {
                   <vul-mega-menu></vul-mega-menu>
               `;
 
-        this.append(nav);
+        this.shadowRoot.append(nav);
 
         this.addOverlay();
     }
@@ -130,10 +131,61 @@ class VulNavigation extends HTMLElement {
             link.setAttribute('rel', 'stylesheet');
             link.setAttribute('href', stylesheet);
         
-        this.prepend(link);
+        this.shadowRoot.prepend(link);
     }
 
     addOverlay() {
+        let style = document.createElement('style');
+        let rules = `
+            /* New color variable */
+            [data-theme="light"] {
+                --c-overlay: rgba(153, 142, 133, 0.2);
+                /* --c-overlay: #e8e4e3; */
+            }
+            [data-theme="tone"] {
+                --c-overlay: rgba(107, 80, 26, 0.3);
+                /* --c-overlay: #c5baa7; */
+            }
+            [data-theme="dark"] {
+                --c-overlay: rgba(255, 255, 255, 0.3);
+                /* --c-overlay: #555555; */
+            }
+
+            body > #overlay {
+                display: none;
+            }
+
+            @media (min-width: 1070px) {
+                body > #overlay {
+                    position: fixed;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 40;
+                    background: var(--c-overlay);
+                }
+            }
+
+            /* Remove jQuery fadeIn/fadeOut dependency. Derived from https://stackoverflow.com/a/50546888. */
+            body > #overlay {
+                display: block;
+                overflow: hidden;  /* Hide the element content, while height = 0 */
+                height: 0;
+                opacity: 0;
+                transition: height 0ms 400ms, opacity 400ms 0ms;
+            }
+            body > #overlay.show {
+                height: 100%; 
+                opacity: 1;
+                transition: height 0ms 0ms, opacity 400ms 0ms;
+            }
+        `;
+
+        style.insertAdjacentHTML('afterbegin', rules);
+        document.head.append(style);
+        document.body.setAttribute('data-theme', 'light');
+
         let overlay = document.createElement('div');
             overlay.setAttribute('id', 'overlay')
 

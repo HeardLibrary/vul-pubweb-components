@@ -13,7 +13,10 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 mix
     .css('src/css/vu.css', 'postcss/vul-footer.css')
     .styles(
-        ['dist/postcss/vul-footer.css'], 
+        [
+            'dist/postcss/vul-footer.css',
+            'src/css/vul.css',
+        ], 
         'dist/css/vul-pwc-footer.css')
     .js(
         'src/js/vul-footer.js', 

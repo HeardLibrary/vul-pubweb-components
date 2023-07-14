@@ -42,7 +42,8 @@ class MegaMenu extends BaseMenu {
       });
     }
 
-    let localTab = document.querySelector(".mega-menu__panel-local");
+    let localTab = document.querySelector('vul-navigation').shadowRoot
+      .querySelector(".mega-menu__panel-local");
 
     if (localTab) {
       let parents = localTab.querySelectorAll(".mega-menu__list-item--has-submenu");

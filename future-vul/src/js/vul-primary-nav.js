@@ -84,7 +84,8 @@ class VulPrimaryNav extends HTMLElement {
         fetch(resource)
             .then((response) => response.json())
 			.then((data) => {
-				let primaryNavBottom = document.querySelector('.primary-nav__bottom');
+				let primaryNavBottom = document.querySelector('vul-navigation').shadowRoot
+										.querySelector('.primary-nav__bottom');
 
 				let primaryNavLinks = document.createElement('ul');
 					primaryNavLinks.classList.add('primary-nav__links');
@@ -130,7 +131,8 @@ class VulPrimaryNav extends HTMLElement {
 					}
 				});
 
-				const primaryNavigation = document.querySelector('.primary-nav');
+				const primaryNavigation = document.querySelector('vul-navigation').shadowRoot
+											.querySelector('.primary-nav');
 				if (primaryNavigation) {
 					new PrimaryNav(primaryNavigation);
 				}
