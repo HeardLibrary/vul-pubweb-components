@@ -12,6 +12,8 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     fontFace: true,
     keyframes: true,
     variables: true,
+    safelist: ['mega-menu', 'alert'],
+    dynamicAttributes: ['data-selected-tab-index']
 });
 
 mix

@@ -3055,7 +3055,6 @@ a.plyr__control::before {
     font-size: inherit
 }
 
-/*! purgecss start ignore */
 .alert-bar {
     font-family: Theinhardt, system-ui, sans-serif;
     font-size: 15px;
@@ -3101,7 +3100,6 @@ a.plyr__control::before {
     box-shadow: inset 0 -1px #fff;
     color: #fff
 }
-/*! purgecss end ignore */
 
 .announcement-tease {
     padding-left: 8px;
@@ -10533,7 +10531,6 @@ a.button-block {
     border-bottom: solid 1px var(--c-border)
 }
 
-/*! purgecss start ignore */
 .mega-menu {
     position: fixed;
     top: 0;
@@ -11164,7 +11161,6 @@ a.button-block {
     color: var(--c-text-muted)
 }
 
-/*! purgecss end ignore */
 .primary-nav {
     padding-left: 8px;
     padding-right: 8px;
