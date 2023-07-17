@@ -155,3 +155,49 @@
     font-weight: 600;
     src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Staff/complete/StaffXXCondensed-SemiBoldItalic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Staff/complete/StaffXXCondensed-SemiBoldItalic.woff") format("woff")
 }
+
+.alert-bar {
+    font-family: Theinhardt, system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.35;
+    font-weight: 400;
+    background-color: #bf0f0f;
+    color: #fff;
+    padding: 15px 18px 12px;
+    width: 100%
+}
+
+.alert-bar b,
+.alert-bar strong {
+    font-weight: 500
+}
+
+.alert-bar em,
+.alert-bar i {
+    font-style: italic
+}
+
+.alert-bar p:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 1em
+}
+
+@media(min-width: 600px) {
+    .alert-bar {
+        font-size: 17px;
+        line-height: 1.4
+    }
+}
+
+.alert-bar a {
+    box-shadow: inset 0 -1px rgba(255, 255, 255, .5);
+    color: #fff;
+    cursor: pointer;
+    transition: box-shadow .2s cubic-bezier(0.645, 0.045, 0.355, 1), color .2s cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+
+.alert-bar a:hover,
+.alert-bar a:focus {
+    box-shadow: inset 0 -1px #fff;
+    color: #fff
+}

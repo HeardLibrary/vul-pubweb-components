@@ -12,7 +12,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     fontFace: true,
     keyframes: true,
     variables: true,
-    safelist: ['mega-menu', 'alert'],
+    safelist: ['mega-menu'],
     dynamicAttributes: ['data-selected-tab-index']
 });
 

@@ -5,7 +5,8 @@ class PrimaryNav {
             this.menu.querySelectorAll(".primary-nav__has-children")
         );
         if (this.parents) {
-            this.overlay = document.getElementById("overlay");
+            this.overlay = document.querySelector('vul-navigation').shadowRoot
+                            .getElementById("overlay");
         }
         this.init();
     }
