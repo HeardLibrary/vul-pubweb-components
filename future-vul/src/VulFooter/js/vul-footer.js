@@ -119,6 +119,7 @@ class VulFooter extends HTMLElement {
         const footer = document.createElement('footer');
               footer.classList.add('site-footer', 'site-footer--standard');
               footer.setAttribute('data-component', 'Site Footer');
+              footer.setAttribute('data-theme', 'light');
               footer.insertAdjacentHTML('afterbegin', html);
 
         this.shadowRoot.append(footer);

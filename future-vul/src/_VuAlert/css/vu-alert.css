@@ -1,0 +1,8 @@
+/* Harden against outside CSS */
+.alert-bar h2,
+.alert-bar h3 {
+    margin: revert;
+    font-size: revert;
+    line-height: revert;
+    font-weight: revert;
+}

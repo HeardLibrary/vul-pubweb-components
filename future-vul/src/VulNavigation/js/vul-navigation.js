@@ -135,7 +135,7 @@ class VulNavigation extends HTMLElement {
     }
 
     addOverlay() {
-        document.body.setAttribute('data-theme', 'light');
+        this.setAttribute('data-theme', 'light');
 
         let overlay = document.createElement('div');
             overlay.setAttribute('id', 'overlay');
