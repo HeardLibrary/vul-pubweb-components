@@ -42,11 +42,11 @@ class VulFooter extends HTMLElement {
                     <div class="site-footer__links">
                         <div class="site-footer__link-sets">
                             <ul class="site-footer__link-set site-footer__link-set--1">
-                                <li class="site-footer__link-set-item"><a href="/hours">Library Hours</a></li>
-                                <li class="site-footer__link-set-item"><a href="/about">About the Libraries</a></li>
-                                <li class="site-footer__link-set-item"><a href="/about/employment">Employment</a></li>
-                                <li class="site-footer__link-set-item"><a href="/staff">Staff Directory</a></li>
-                                <li class="site-footer__link-set-item"><a href="/about/accessibility">Accessibility Services</a></li>
+                                <li class="site-footer__link-set-item"><a href="https://www.library.vanderbilt.edu/hours/">Library Hours</a></li>
+                                <li class="site-footer__link-set-item"><a href="https://www.library.vanderbilt.edu/about/">About the Libraries</a></li>
+                                <li class="site-footer__link-set-item"><a href="https://www.library.vanderbilt.edu/about/employment/">Employment</a></li>
+                                <li class="site-footer__link-set-item"><a href="https://www.library.vanderbilt.edu/staff/">Staff Directory</a></li>
+                                <li class="site-footer__link-set-item"><a href="https://www.library.vanderbilt.edu/about/accessibility/">Accessibility Services</a></li>
                             </ul>
                             <ul class="site-footer__link-set site-footer__link-set--2">
                                 <li class="site-footer__link-set-item"><a href="https://www.vanderbilt.edu/work-at-vanderbilt/">Working at Vanderbilt</a></li>
@@ -57,7 +57,7 @@ class VulFooter extends HTMLElement {
                             </ul>
                         </div><!-- site-footer__link-sets -->
                         <div class="site-footer__contact">
-                            <p>419 21st Avenue South •&nbsp;Nashville, TN 37203</p><p><a href="/contact">Contact Us</a> <img src="../../future-vul/src/images/USA_Federal_depository_library_logo.png" class="depository-logo" title="Vanderbilt is a US Federal Depository Library" alt="Vanderbilt is a US Federal Depository Library"></p>
+                            <p>419 21st Avenue South •&nbsp;Nashville, TN 37203</p><p><a href="https://www.library.vanderbilt.edu/contact/">Contact Us</a> <img src="https://www.library.vanderbilt.edu/static/img/USA_Federal_depository_library_logo.png" class="depository-logo" title="Vanderbilt is a US Federal Depository Library" alt="Vanderbilt is a US Federal Depository Library"></p>
                             <p><a href="https://www.vanderbilt.edu/about/privacy/">Vanderbilt University's Online Privacy Notice</a></p>
                         </div>
                         <div class="site-footer__comm-links">
@@ -110,7 +110,7 @@ class VulFooter extends HTMLElement {
                 </div> <!-- site-footer__primary -->
                 <div class="site-footer__secondary">
                     <div class="site-footer__universal">
-                        <p>Vanderbilt University is committed to principles of equal opportunity and affirmative action. Vanderbilt University does not discriminate against individuals on the basis of their race, sex, sexual orientation, gender identity, religion, color, national or ethnic origin, age, disability, military service, or genetic information in its administration of educational policies, programs, or activities; admissions policies; scholarship and loan programs; athletic or other University-administered programs; or employment. <a href="https://www.vanderbilt.edu/about/accessibility/">Accessibility information</a>. Vanderbilt®, Vanderbilt University® and the Vanderbilt logos are trademarks of The Vanderbilt University. Site Development: <a href="https://web.vanderbilt.edu/">Digital Strategies (Communications and Marketing)</a> and <a href="https://ltds.library.vanderbilt.edu/">Library Technology and Digital Services</a>. <a href="https://dev-library2023.library.vanderbilt.edu/wp-login.php?redirect_to=https%3A%2F%2Fdev-library2023.library.vanderbilt.edu%2Flibrary-reserve-form%2F">©</a> 2023</p>
+                        <p>Vanderbilt University is committed to principles of equal opportunity and affirmative action. Vanderbilt University does not discriminate against individuals on the basis of their race, sex, sexual orientation, gender identity, religion, color, national or ethnic origin, age, disability, military service, or genetic information in its administration of educational policies, programs, or activities; admissions policies; scholarship and loan programs; athletic or other University-administered programs; or employment. <a href="https://www.vanderbilt.edu/about/accessibility/">Accessibility information</a>. Vanderbilt®, Vanderbilt University® and the Vanderbilt logos are trademarks of The Vanderbilt University. Site Development: <a href="https://web.vanderbilt.edu/">Digital Strategies (Communications and Marketing)</a> and <a href="https://ltds.library.vanderbilt.edu/">Library Technology and Digital Services</a>. © 2023</p>
                     </div>
                 </div> <!-- site-footer__secondary -->
             </div>
