@@ -1,4 +1,4 @@
-import { alertBar } from './utils';
+import { alertBar } from '../../future-vu/js/utils';
 
 class VulNavigation extends HTMLElement {
     constructor() {

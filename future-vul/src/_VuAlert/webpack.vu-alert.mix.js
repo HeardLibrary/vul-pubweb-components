@@ -4,7 +4,7 @@ require('laravel-mix-merge-manifest');
 
 mix
     .setPublicPath(publicDir)
-    .css('../vu.css', 'temp/postcss.css')
+    .css('../future-vu/css/vu.css', 'temp/postcss.css')
     .styles(
         [
             publicDir + 'temp/postcss.css',

@@ -1,4 +1,4 @@
-import { externalLinks } from './utils';
+import { externalLinks } from '../../future-vu/js/utils';
 
 class VulFooter extends HTMLElement {
     constructor() {

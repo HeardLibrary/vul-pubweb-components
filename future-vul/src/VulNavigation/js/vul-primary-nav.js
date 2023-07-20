@@ -1,5 +1,5 @@
-import PrimaryNav from './components/PrimaryNav';
-import { externalLinks } from './utils';
+import PrimaryNav from '../../future-vu/js/components/PrimaryNav';
+import { externalLinks } from '../../future-vu/js/utils';
 
 class VulPrimaryNav extends HTMLElement {
     constructor() {

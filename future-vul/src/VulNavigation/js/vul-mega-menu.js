@@ -1,5 +1,5 @@
-import MegaMenu from './components/MegaMenu';
-import { externalLinks } from './utils';
+import MegaMenu from '../../future-vu/js/components/MegaMenu';
+import { externalLinks } from '../../future-vu/js/utils';
 
 class VulMegaMenu extends HTMLElement {
     constructor() {

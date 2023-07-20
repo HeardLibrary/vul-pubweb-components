@@ -5,11 +5,11 @@ require('laravel-mix-merge-manifest');
 mix
     .setPublicPath(publicDir)
     .sourceMaps(true, 'source-map')
-    .css('../vu.css', 'temp/postcss.css')
+    .css('../future-vu/css/vu.css', 'temp/postcss.css')
     .styles(
         [
             publicDir + 'temp/postcss.css',
-            'css/primary-nav-children.css',
+            '../future-vu/css/primary-nav-children.css',
             'css/vul-navigation.css',
         ], 
         publicDir + 'css/vul-pwc-navigation.css')
