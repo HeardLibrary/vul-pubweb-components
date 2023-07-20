@@ -1,3 +1,5 @@
+import { alertBar } from './utils';
+
 class VulNavigation extends HTMLElement {
     constructor() {
         super();
@@ -18,7 +20,8 @@ class VulNavigation extends HTMLElement {
 
         this.shadowRoot.append(nav);
 
-        this.addOverlay();
+        this.overlay();
+        alertBar();
     }
 
     svgDefinitions() {
@@ -134,7 +137,7 @@ class VulNavigation extends HTMLElement {
         this.shadowRoot.prepend(link);
     }
 
-    addOverlay() {
+    overlay() {
         this.setAttribute('data-theme', 'light');
 
         let overlay = document.createElement('div');

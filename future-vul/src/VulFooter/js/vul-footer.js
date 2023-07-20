@@ -1,3 +1,5 @@
+import { externalLinks } from './utils';
+
 class VulFooter extends HTMLElement {
     constructor() {
         super();
@@ -123,6 +125,8 @@ class VulFooter extends HTMLElement {
               footer.insertAdjacentHTML('afterbegin', html);
 
         this.shadowRoot.append(footer);
+
+        externalLinks(this.shadowRoot);
     }
 
     svgDefinitions() {

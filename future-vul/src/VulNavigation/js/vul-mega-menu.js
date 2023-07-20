@@ -1,4 +1,5 @@
 import MegaMenu from './components/MegaMenu';
+import { externalLinks } from './utils';
 
 class VulMegaMenu extends HTMLElement {
     constructor() {
@@ -212,6 +213,8 @@ class VulMegaMenu extends HTMLElement {
 						new MegaMenu(openButton, closeButton, modalElem);
 					});
 				}
+
+				externalLinks(this);
 			})
 			.catch(console.error);
 	}

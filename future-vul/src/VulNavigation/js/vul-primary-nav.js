@@ -1,4 +1,5 @@
 import PrimaryNav from './components/PrimaryNav';
+import { externalLinks } from './utils';
 
 class VulPrimaryNav extends HTMLElement {
     constructor() {
@@ -66,7 +67,7 @@ class VulPrimaryNav extends HTMLElement {
 					</div>
 				</div>
 				<div class="primary-nav__bottom">
-					<a href="/" class="primary-nav__site-link">
+					<a href="https://www.library.vanderbilt.edu" class="primary-nav__site-link">
 						<span>Heard Libraries</span>
 					</a>
 				</div>
@@ -136,6 +137,8 @@ class VulPrimaryNav extends HTMLElement {
 				if (primaryNavigation) {
 					new PrimaryNav(primaryNavigation);
 				}
+
+				externalLinks(this);
 			})
 			.catch(console.error);
 	}
