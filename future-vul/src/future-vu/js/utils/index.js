@@ -43,6 +43,12 @@ export const alertBar = () => {
   vuEmergency.type = 'text/javascript';
   vuEmergency.src = 'https://cdn.vanderbilt.edu/vu-www4/brandbar/emergency-fv.js';
   document.body.appendChild(vuEmergency);
+
+  // Pulls in PWC Alert Bar styles
+  const vuEmergencyCss = document.createElement('link');
+  vuEmergencyCss.setAttribute('rel', 'stylesheet');
+  vuEmergencyCss.setAttribute('href', 'https://cdn.library.vanderbilt.edu/pwc/future-vul/dist/css/vu-alert.css');
+  document.head.append(vuEmergencyCss);
 };
 
 export const initJumpLinks = () => {
