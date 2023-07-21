@@ -1,5 +1,5 @@
 import { alertBar } from '../../future-vu/js/utils';
-import { vulNavigationSvgs, insertStylesheet } from '../../_VulPwc/js/utils';
+import { vulNavigationSvgs, insertStylesheet } from '../../vul-pwc/js/utils';
 
 class VulNavigation extends HTMLElement {
     constructor() {

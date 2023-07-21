@@ -12,12 +12,12 @@ mix
         ], 
         distDir + 'css/vul-footer.css')
     .js(
-        'js/vul-footer.js', 
+        'js/VulFooter.js', 
         distDir + 'js/vul-footer.js')
     .mergeManifest();
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
-    content: ['js/vul-footer.js'],
+    content: ['js/VulFooter.js'],
     fontFace: true,
     keyframes: true,
     variables: true,

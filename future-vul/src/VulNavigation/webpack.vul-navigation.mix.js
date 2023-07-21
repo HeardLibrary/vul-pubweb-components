@@ -15,18 +15,18 @@ mix
         distDir + 'css/vul-navigation.css')
     .js(
         [
-            'js/vul-navigation.js',
-            'js/vul-primary-nav.js',
-            'js/vul-mega-menu.js'
+            'js/VulNavigation.js',
+            'js/VulPrimaryNav.js',
+            'js/VulMegaMenu.js'
         ], 
         distDir + 'js/vul-navigation.js')
     .mergeManifest();
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
     content: [
-        'js/vul-navigation.js',
-        'js/vul-primary-nav.js',
-        'js/vul-mega-menu.js',
+        'js/VulNavigation.js',
+        'js/VulPrimaryNav.js',
+        'js/VulMegaMenu.js',
     ],
     fontFace: true,
     keyframes: true,
