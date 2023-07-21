@@ -1,12 +1,12 @@
 let mix = require('laravel-mix');
-let publicDir = '../../public/';
+let distDir = '../../dist/';
 require('laravel-mix-merge-manifest');
 
 mix
-    .setPublicPath(publicDir)
+    .setPublicPath(distDir)
     .styles(
         [
             'css/vul-pwc.css'
         ], 
-        publicDir + 'css/vul-pwc.css')
+        distDir + 'css/vul-pwc.css')
     .mergeManifest();

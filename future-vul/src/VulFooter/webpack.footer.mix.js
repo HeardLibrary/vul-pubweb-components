@@ -1,19 +1,19 @@
 let mix = require('laravel-mix');
-let publicDir = '../../public/';
+let distDir = '../../dist/';
 require('laravel-mix-merge-manifest');
 
 mix
-    .setPublicPath(publicDir)
+    .setPublicPath(distDir)
     .css('../future-vu/css/vu.css', 'temp/postcss.css')
     .styles(
         [
-            publicDir + 'temp/postcss.css',
+            distDir + 'temp/postcss.css',
             'css/vul-footer.css',
         ], 
-        publicDir + 'css/vul-pwc-footer.css')
+        distDir + 'css/vul-pwc-footer.css')
     .js(
         'js/vul-footer.js', 
-        publicDir + 'js/vul-pwc-footer.js')
+        distDir + 'js/vul-pwc-footer.js')
     .mergeManifest();
 
 const purgecss = require('@fullhuman/postcss-purgecss')({

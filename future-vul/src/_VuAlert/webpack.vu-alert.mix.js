@@ -1,16 +1,16 @@
 let mix = require('laravel-mix');
-let publicDir = '../../public/';
+let distDir = '../../dist/';
 require('laravel-mix-merge-manifest');
 
 mix
-    .setPublicPath(publicDir)
+    .setPublicPath(distDir)
     .css('../future-vu/css/vu.css', 'temp/postcss.css')
     .styles(
         [
-            publicDir + 'temp/postcss.css',
+            distDir + 'temp/postcss.css',
             'css/vu-alert.css',
         ],
-        publicDir + 'css/vu-alert.css')
+        distDir + 'css/vu-alert.css')
     .mergeManifest();
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
