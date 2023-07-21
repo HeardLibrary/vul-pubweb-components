@@ -10,10 +10,10 @@ mix
             distDir + 'temp/postcss.css',
             'css/vul-footer.css',
         ], 
-        distDir + 'css/vul-pwc-footer.css')
+        distDir + 'css/vul-footer.css')
     .js(
         'js/vul-footer.js', 
-        distDir + 'js/vul-pwc-footer.js')
+        distDir + 'js/vul-footer.js')
     .mergeManifest();
 
 const purgecss = require('@fullhuman/postcss-purgecss')({

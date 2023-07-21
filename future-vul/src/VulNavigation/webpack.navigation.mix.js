@@ -12,14 +12,14 @@ mix
             '../future-vu/css/primary-nav-children.css',
             'css/vul-navigation.css',
         ], 
-        distDir + 'css/vul-pwc-navigation.css')
+        distDir + 'css/vul-navigation.css')
     .js(
         [
             'js/vul-navigation.js',
             'js/vul-primary-nav.js',
             'js/vul-mega-menu.js'
         ], 
-        distDir + 'js/vul-pwc-navigation.js')
+        distDir + 'js/vul-navigation.js')
     .mergeManifest();
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
