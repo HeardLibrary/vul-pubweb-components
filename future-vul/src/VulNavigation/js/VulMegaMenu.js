@@ -54,7 +54,7 @@ class VulMegaMenu extends HTMLElement {
 						<use xlink:href="#search"></use>
 					</svg>
 					<form action="https://www.library.vanderbilt.edu/site-search/" class="mega-menu__search-form js-mega-menu-search-form" method="get" role="search">
-						<input class="mega-menu__search-input js-mega-menu-search-input" type="text" placeholder="Search" name="q" aria-label="Search">
+						<input class="mega-menu__search-input js-mega-menu-search-input" type="text" placeholder="Search the library site" name="q" aria-label="Search the library site">
 					</form>
 				</div>
 

@@ -55,7 +55,7 @@ class VulPrimaryNav extends HTMLElement {
 								<use xlink:href="#search"></use>
 							</svg>
 							<form action="https://www.library.vanderbilt.edu/site-search/" class="js-nav-search-form" method="get" role="search">
-								<input class="primary-nav__search-input js-nav-search-input" type="text" placeholder="Search this site" name="q" aria-label="Search this site">
+								<input class="primary-nav__search-input js-nav-search-input" type="text" placeholder="Search the library site" name="q" aria-label="Search the library site">
 							</form>
 						</div>
 						<button class="primary-nav__menu-btn js-mega-menu-open" aria-label="Open Mega Menu">
