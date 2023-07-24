@@ -1,12 +1,11 @@
-import { alertBar } from '../../future-vu/js/utils';
-import { vulNavigationSvgs, insertStylesheet } from '../../vul-pwc/js/utils';
+import { vulNavigationSvgs, attachPwcStyle } from '../../pwc/utils';
 
 class VulNavigation extends HTMLElement {
     constructor() {
         super();
         const shadow = this.attachShadow({ mode: 'open' });
 
-        insertStylesheet(shadow);
+        attachPwcStyle(shadow);
         shadow.innerHTML += vulNavigationSvgs();
 
         const nav = document.createElement('nav');
@@ -22,7 +21,6 @@ class VulNavigation extends HTMLElement {
         shadow.append(nav);
 
         this.overlay();
-        alertBar();
     }
 
     overlay() {

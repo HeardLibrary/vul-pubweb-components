@@ -1,6 +1,6 @@
 /* Changes to Digital Strategies' original vu.css:
     - Updated cdn.vanderbilt.edu relative links to absolute links 
-    - Moved @font-face rules to vul-pwc-common-styles.css
+    - Moved @font-face rules to pwc.css
     - Added PurgeCSS ignore directives. See https://purgecss.com/safelisting#in-the-css-directly.
 */
 html,

@@ -140,14 +140,12 @@ export const vulFooterSvgs = () => {
     `;
 };
 
-export const insertStylesheet = (elem) => {
-    let fileName = elem.localName || elem.host.localName;
-
-    let stylesheetUrl = document.querySelector(`script[src*="${fileName}.js"]`).src.replaceAll('js', 'css');
+export const attachPwcStyle = (elem) => {
+    let url = document.querySelector('script[src*="pwc.js"]').src.split('js')[0] + 'css/component.css';
 
     let link = document.createElement('link')
         link.rel = 'stylesheet';
-        link.href = stylesheetUrl;
+        link.href = url;
 
     elem.prepend(link);
 }

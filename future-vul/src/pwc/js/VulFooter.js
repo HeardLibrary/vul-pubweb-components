@@ -1,12 +1,12 @@
 import { externalLinks } from '../../future-vu/js/utils';
-import { vulFooterSvgs, insertStylesheet } from '../../vul-pwc/js/utils';
+import { vulFooterSvgs, attachPwcStyle } from '../../pwc/utils';
 
 class VulFooter extends HTMLElement {
     constructor() {
         super();
         const shadow = this.attachShadow({ mode: 'open' });
 
-        insertStylesheet(shadow);
+        attachPwcStyle(shadow);
         shadow.innerHTML += vulFooterSvgs();
 
         let html = `

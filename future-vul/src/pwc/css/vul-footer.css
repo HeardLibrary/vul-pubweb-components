@@ -14,6 +14,11 @@
     text-size-adjust: 100%
 }
 
+/* Not sure why PurgeCSS removes this rule from DS's primary-nav-children.css */
+.primary-nav .primary-nav__search-input {
+    width: 100px;
+}
+
 .depository-logo {
     width: 30px;
 }

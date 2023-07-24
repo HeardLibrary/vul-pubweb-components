@@ -1,13 +1,10 @@
 {
-    "/js/vul-pwc-footer.js": "/js/vul-pwc-footer.js",
-    "/temp/postcss.css": "/temp/postcss.css",
-    "/css/vul-pwc-footer.css": "/css/vul-pwc-footer.css",
-    "/js/vul-pwc-navigation.js": "/js/vul-pwc-navigation.js",
-    "/css/vul-pwc-navigation.css": "/css/vul-pwc-navigation.css",
-    "/css/vu-alert.css": "/css/vu-alert.css",
-    "/css/vul-pwc.css": "/css/vul-pwc.css",
-    "/js/vul-footer.js": "/js/vul-footer.js",
+    "/css/vul-navigation.css": "/css/vul-navigation.css",
     "/css/vul-footer.css": "/css/vul-footer.css",
-    "/js/vul-navigation.js": "/js/vul-navigation.js",
-    "/css/vul-navigation.css": "/css/vul-navigation.css"
+    "/css/vul-pwc.css": "/css/vul-pwc.css",
+    "/css/vu-alert.css": "/css/vu-alert.css",
+    "/js/pwc.js": "/js/pwc.js",
+    "/temp/postcss.css": "/temp/postcss.css",
+    "/css/pwc.css": "/css/pwc.css",
+    "/css/component.css": "/css/component.css"
 }

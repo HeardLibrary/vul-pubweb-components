@@ -8,19 +8,16 @@ mix
     .styles(
         [
             distDir + 'temp/postcss.css',
-            'css/vul-footer.css',
-        ], 
-        distDir + 'css/vul-footer.css')
-    .js(
-        'js/VulFooter.js', 
-        distDir + 'js/vul-footer.js')
+            'vu-alert.css',
+        ],
+        distDir + 'css/vu-alert.css')
     .mergeManifest();
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
-    content: ['js/VulFooter.js'],
     fontFace: true,
     keyframes: true,
     variables: true,
+    safelist: ['alert-bar', 'a'],
 });
 
 mix
