@@ -1,4 +1,4 @@
-import { vulNavigationSvgs, attachPwcStyle } from '../../pwc/utils';
+import { vulNavigationSvgs, attachPwcStyle } from '../../pwc/js/utils';
 
 class VulNavigation extends HTMLElement {
     constructor() {

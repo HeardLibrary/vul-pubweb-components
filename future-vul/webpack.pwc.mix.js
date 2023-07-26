@@ -30,7 +30,7 @@ mix
         distDir + 'css/component.css')
     .js(
         [
-            'src/pwc/jsindex.js',
+            'src/pwc/js/index.js',
             'src/pwc/js/VulNavigation.js',
             'src/pwc/js/VulPrimaryNav.js',
             'src/pwc/js/VulMegaMenu.js',

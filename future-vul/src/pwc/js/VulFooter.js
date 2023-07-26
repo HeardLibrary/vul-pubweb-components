@@ -1,5 +1,5 @@
 import { externalLinks } from '../../future-vu/js/utils';
-import { vulFooterSvgs, attachPwcStyle } from '../../pwc/utils';
+import { vulFooterSvgs, attachPwcStyle } from '../../pwc/js/utils';
 
 class VulFooter extends HTMLElement {
     constructor() {
