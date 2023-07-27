@@ -1,5 +1,6 @@
 import MegaMenu from '../../future-vu/js/components/MegaMenu';
 import { externalLinks } from '../../future-vu/js/utils';
+import { fetchWpMenu } from './utils'
 
 class VulMegaMenu extends HTMLElement {
     constructor() {
@@ -72,68 +73,6 @@ class VulMegaMenu extends HTMLElement {
 						</div>
 
 						<div class="mega-menu__panel " id="panel-all-vanderbilt" role="tabpanel" tabindex="0" aria-labelledby="all-vanderbilt" hidden="">
-							<ul class="mega-menu__list js-mega-menu-list">
-								<li class="mega-menu__list-item ">
-									<a class="mega-menu__list-item-link" href="https://www.vanderbilt.edu/about/" aria-haspopup="true">About</a>
-									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
-										<li><a href="https://www.vanderbilt.edu/this-is-vanderbilt/">This is Vanderbilt</a></li>
-										<li><a href="https://www.vanderbilt.edu/about/quick-facts/">Quick Facts</a></li>
-										<li><a href="https://www.vanderbilt.edu/about/university-leadership/">University Leadership</a></li>
-										<li><a href="https://www.vanderbilt.edu/diversity/">Equity, Diversity &amp; Inclusion</a></li>
-										<li><a href="https://www.vanderbilt.edu/about/history/">History</a></li>
-										<li><a href="https://www.vanderbilt.edu/about/contact/">Contact</a></li>
-										<li><a href="https://www.vanderbilt.edu/atoz/">A to Z</a></li>
-									</ul>
-								</li>
-								<li class="mega-menu__list-item ">
-									<a class="mega-menu__list-item-link" href="https://www.vanderbilt.edu/admissions/" aria-haspopup="true">Admissions</a>
-									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
-										<li><a href="https://admissions.vanderbilt.edu/">Undergraduate Admissions</a></li>
-										<li><a href="https://www.vanderbilt.edu/admissions/graduate-professional-school-admissions/">Graduate &amp; Professional School Admissions</a></li>
-										<li><a href="https://www.vanderbilt.edu/admissions/financial-aid/">Financial Aid</a></li>
-									</ul>
-								</li>
-								<li class="mega-menu__list-item ">
-									<a class="mega-menu__list-item-link" href="https://www.vanderbilt.edu/academics/" aria-haspopup="true">Academics</a>
-									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
-										<li><a href="https://www.vanderbilt.edu/academics/program-finder/">Program Finder</a></li>
-										<li><a href="https://www.vanderbilt.edu/academics/#schools-colleges">Schools &amp; Colleges</a></li>
-										<li><a href="https://www.vanderbilt.edu/academics/residential-colleges/">Residential Colleges</a></li>
-										<li><a href="https://www.vanderbilt.edu/academics/#global-edu">Study Abroad</a></li>
-										<li><a href="https://www.library.vanderbilt.edu/">Libraries</a></li>
-										<li><a href="https://www.vanderbilt.edu/strategicplan/">Strategic Plan</a></li>
-									</ul>
-								</li>
-								<li class="mega-menu__list-item ">
-									<a class="mega-menu__list-item-link" href="https://www.vanderbilt.edu/research/" aria-haspopup="true">Research</a>
-									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
-										<li><a href="https://www.vanderbilt.edu/atoz/#centers">Centers &amp; Institutes</a></li>
-										<li><a href="https://news.vanderbilt.edu/research/">Research News</a></li>
-										<li><a href="https://www.vanderbilt.edu/undergraduate-research/">Undergraduate Research</a></li>
-										<li><a href="https://gradschool.vanderbilt.edu/research/">Graduate School Research</a></li>
-										<li><a href="https://www.vumc.org/oor/welcome">VUMC Research</a></li>
-									</ul>
-								</li>
-								<li class="mega-menu__list-item ">
-									<a class="mega-menu__list-item-link" href="https://www.vanderbilt.edu/student-life/" aria-haspopup="true">Campus Life</a>
-									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
-										<li><a href="https://www.vanderbilt.edu/student-life/housing-and-dining/">Housing &amp; Dining</a></li>
-										<li><a href="https://www.vanderbilt.edu/student-life/health-safety/">Health &amp; Safety</a></li>
-										<li><a href="https://www.vanderbilt.edu/student-life/organizations-identity-centers/">Organizations &amp; Identity Centers</a></li>
-										<li><a href="https://vucommodores.com/">Athletics</a></li>
-										<li><a href="https://www.vanderbilt.edu/nashville/">Our Hometown - Nashville</a></li>
-									</ul>
-								</li>
-								<li class="mega-menu__list-item ">
-									<a class="mega-menu__list-item-link" href="https://www.vanderbilt.edu/news-events/" aria-haspopup="true">News &amp; Events</a>
-									<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">
-										<li><a href="https://news.vanderbilt.edu/">Vanderbilt News</a></li>
-										<li><a href="https://news.vanderbilt.edu/research">Research News</a></li>
-										<li><a href="https://news.vanderbilt.edu/vanderbilt-magazine">Vanderbilt Magazine</a></li>
-										<li><a href="https://events.vanderbilt.edu/">Events</a></li>
-									</ul>
-								</li>
-							</ul>
 						</div>
 					</div>
 				</div>
@@ -145,78 +84,73 @@ class VulMegaMenu extends HTMLElement {
 		this.append(megaMenu);
     }
 
-	connectedCallback() {
-		var resource = 'http://127.0.0.1:5500/future-vul/vul-navigation.json';
+	async connectedCallback() {
+		const heardLibraries = await fetchWpMenu(3);
+		this.addMenu(heardLibraries, 'heard-libraries');
+		
+		const allVanderbilt = await fetchWpMenu(4);
+		this.addMenu(allVanderbilt, 'all-vanderbilt');
 
-        fetch(resource)
-            .then((response) => response.json())
-			.then((data) => {
-				let panelHeardLibraries = document.querySelector('vul-navigation').shadowRoot
-											.getElementById('panel-heard-libraries');
+		// Nav Mega Menus
+		const navs = Array.from(
+			document.querySelector('vul-navigation').shadowRoot.querySelectorAll('.js-site-nav')
+		);
+		if (navs.length) {
+			navs.forEach(nav => {
+				const openButton = nav.querySelector('.js-mega-menu-open');
+				const closeButton = nav.querySelector('.js-mega-menu-close');
+				const modalElem = nav.querySelector('.js-mega-menu');
 
-				let megaMenuList = document.createElement('ul');
-					megaMenuList.classList.add('mega-menu__list', 'js-mega-menu-list');
+				new MegaMenu(openButton, closeButton, modalElem);
+			});
+		}
 
-				data.forEach(item => {
-					if (item.hasOwnProperty('dropdown')) {
-						let megaMenuListItem = document.createElement('li');
-							megaMenuListItem.classList.add('mega-menu__list-item', 'mega-menu__list-item--has-submenu');
+		externalLinks(this);
+	}
 
-						let megaMenuListItemLink = document.createElement('a');
-							megaMenuListItemLink.setAttribute('aria-haspopup', 'true');
-							megaMenuListItemLink.classList.add('mega-menu__list-item-link');
-							megaMenuListItemLink.innerText = item.text;
+	addMenu(menu, panel) {
+		const topItems = menu.filter(item => item.menu_item_parent == 0);
 
-						let megaMenuSubmenu = document.createElement('ul');
-							megaMenuSubmenu.setAttribute('aria-label', 'submenu');
-							megaMenuSubmenu.classList.add('mega-menu__submenu', 'js-mega-menu-submenu');
+		topItems.forEach(topItem => {
+			topItem.children = menu.filter(item => item.menu_item_parent == topItem.ID);
+		});
 
-						item.dropdown.forEach(link => {
-							let megaMenuSubmenuItem = document.createElement('li');
+		let html = '<ul class="mega-menu__list js-mega-menu-list">';
 
-							let a = document.createElement('a');
-								a.href = link.url;
-								a.innerText = link.text
-							
-							megaMenuSubmenuItem.append(a);
-							megaMenuSubmenu.append(megaMenuSubmenuItem);
-						});
-
-						megaMenuListItem.append(megaMenuListItemLink);
-						megaMenuListItem.append(megaMenuSubmenu);
-						megaMenuList.append(megaMenuListItem);
-						panelHeardLibraries.append(megaMenuList);
-					} else {
-						let megaMenuListItem = document.createElement('li');
-							megaMenuListItem.classList.add('mega-menu__list-item');
-						
-						let a = document.createElement('a');
-							a.href = item.url;
-							a.innerText = item.text;
-
-						megaMenuListItem.append(a);
-						megaMenuList.append(megaMenuListItem);
-					}
-				});
-
-				// Nav Mega Menus
-				const navs = Array.from(
-					document.querySelector('vul-navigation').shadowRoot
-						.querySelectorAll('.js-site-nav')
-				);
-				if (navs.length) {
-					navs.forEach(nav => {
-						const openButton = nav.querySelector('.js-mega-menu-open');
-						const closeButton = nav.querySelector('.js-mega-menu-close');
-						const modalElem = nav.querySelector('.js-mega-menu');
-
-						new MegaMenu(openButton, closeButton, modalElem);
-					});
+		topItems.forEach(topItem => {
+			if (topItem.children.length > 0) {
+				if (panel === 'heard-libraries') {
+					html += '<li class="mega-menu__list-item mega-menu__list-item--has-submenu">';
+					html += `<a class="mega-menu__list-item-link" aria-haspopup="true">${topItem.title}</a>`;
 				}
 
-				externalLinks(this);
-			})
-			.catch(console.error);
+				if (panel === 'all-vanderbilt') {
+					html += '<li class="mega-menu__list-item">';
+					html += `<a class="mega-menu__list-item-link" href="${topItem.url}" aria-haspopup="true">${topItem.title}</a>`;
+				}
+
+				html += '<ul class="mega-menu__submenu js-mega-menu-submenu" aria-label="submenu">';
+
+				topItem.children.forEach(link => {
+					html += '<li>';
+					html += `<a href="${link.url}">${link.title}</a>`;
+					html += '</li>';
+				});
+
+				html += '</ul>'; // End .mega-menu__submenu
+				html += '</li>'; // End .mega-menu__list-item
+			} else {
+				html += '<li class="mega-menu__list-item ">';
+				html += `<a class="mega-menu__list-item-link" href="${topItem.url}">${topItem.title}</a>`;
+				html += '</li>';
+			}
+		});
+
+		html += '</ul>'; // End .mega-menu__list
+
+		document.querySelector('vul-navigation').shadowRoot
+				.getElementById('panel-' + panel)
+				.insertAdjacentHTML('afterbegin', html);
 	}
 }
 

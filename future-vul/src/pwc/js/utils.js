@@ -149,3 +149,11 @@ export const attachPwcStyle = (elem) => {
 
     elem.prepend(link);
 }
+
+export const fetchWpMenu = (id) => {
+    const menu = 'https://dev-library2023.local/wp-json/wp/v2/menu/' + id;
+
+    return fetch(menu)
+        .then((response) => response.json())
+        .catch(console.error);
+}

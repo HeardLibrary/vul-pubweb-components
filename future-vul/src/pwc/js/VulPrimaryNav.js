@@ -1,5 +1,6 @@
 import PrimaryNav from '../../future-vu/js/components/PrimaryNav';
 import { externalLinks } from '../../future-vu/js/utils';
+import { fetchWpMenu } from './utils'
 
 class VulPrimaryNav extends HTMLElement {
     constructor() {
@@ -79,68 +80,54 @@ class VulPrimaryNav extends HTMLElement {
 		this.append(primaryNav);
     }
 
-	connectedCallback() {
-		var resource = 'http://127.0.0.1:5500/future-vul/vul-navigation.json';
+	async connectedCallback() {
+		const heardLibraries = await fetchWpMenu(3);
+		this.addMenu(heardLibraries);
 
-        fetch(resource)
-            .then((response) => response.json())
-			.then((data) => {
-				let primaryNavBottom = document.querySelector('vul-navigation').shadowRoot
-										.querySelector('.primary-nav__bottom');
+		const primaryNavigation = document.querySelector('vul-navigation').shadowRoot.querySelector('.primary-nav');
+		if (primaryNavigation) {
+			new PrimaryNav(primaryNavigation);
+		}
 
-				let primaryNavLinks = document.createElement('ul');
-					primaryNavLinks.classList.add('primary-nav__links');
+		externalLinks(this);
+	}
 
-				data.forEach(item => {
-					if (item.hasOwnProperty('dropdown')) {
-						let primaryNavLinksItem = document.createElement('li');
-							primaryNavLinksItem.classList.add('primary-nav__links--item', 'primary-nav__has-children');
+	addMenu(menu) {
+		const topItems = menu.filter(item => item.menu_item_parent == 0);
 
-						let primaryNavHasChildrenToggle = document.createElement('a');
-							primaryNavHasChildrenToggle.classList.add('primary-nav__has-children--toggle');
-							primaryNavHasChildrenToggle.innerText = item.text;
+		topItems.forEach(topItem => {
+			topItem.children = menu.filter(item => item.menu_item_parent == topItem.ID);
+		});
 
-						let primaryNavHasChildrenList = document.createElement('ul');
-							primaryNavHasChildrenList.classList.add('primary-nav__has-children--list');
+		let html = '<ul class="primary-nav__links">';
 
-						item.dropdown.forEach(link => {
-							let primaryNavHasChildrenItem = document.createElement('li');
-								primaryNavHasChildrenItem.classList.add('primary-nav__has-children--item');
+		topItems.forEach(topItem => {
+			if (topItem.children.length > 0) {
+				html += '<li class="primary-nav__links--item primary-nav__has-children">';
+				html += `<a class="primary-nav__has-children--toggle">${topItem.title}</a>`;
 
-							let a = document.createElement('a');
-								a.href = link.url;
-								a.innerText = link.text
-							
-							primaryNavHasChildrenItem.append(a);
-							primaryNavHasChildrenList.append(primaryNavHasChildrenItem);
-						});
+				html += '<ul class="primary-nav__has-children--list">';
 
-						primaryNavLinksItem.append(primaryNavHasChildrenToggle);
-						primaryNavLinksItem.append(primaryNavHasChildrenList);
-						primaryNavLinks.append(primaryNavLinksItem);
-						primaryNavBottom.append(primaryNavLinks);
-					} else {
-						let primaryNavLinksItem = document.createElement('li');
-							primaryNavLinksItem.classList.add('primary-nav__links--item');
-						
-						let a = document.createElement('a');
-							a.href = item.url;
-							a.innerText = item.text;
-
-						primaryNavLinksItem.append(a);
-						primaryNavLinks.append(primaryNavLinksItem);
-					}
+				topItem.children.forEach(link => {
+					html += '<li class="primary-nav__has-children--item">';
+					html += `<a href="${link.url}">${link.title}</a>`;
+					html += '</li>';
 				});
 
-				const primaryNavigation = document.querySelector('vul-navigation').shadowRoot
-											.querySelector('.primary-nav');
-				if (primaryNavigation) {
-					new PrimaryNav(primaryNavigation);
-				}
+				html += '</ul>'; // End .primary-nav__has-children--list
+				html += '</li>'; // End .primary-nav__links--item
+			} else {
+				html += '<li class="primary-nav__links--item">';
+				html += `<a href="${topItem.url}">${topItem.title}</a>`;
+				html += '</li>';
+			}
+		});
 
-				externalLinks(this);
-			})
-			.catch(console.error);
+		html += '</ul>'; // End .primary-nav__links
+
+		document.querySelector('vul-navigation').shadowRoot
+				.querySelector('.primary-nav__bottom')
+				.insertAdjacentHTML('beforeend', html);
 	}
 }
 
