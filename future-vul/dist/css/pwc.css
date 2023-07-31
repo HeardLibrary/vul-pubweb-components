@@ -1,4 +1,146 @@
-/*!
+/* 
+ * General rules for PWC components. These include novel rules 
+ * with those copied or derived from Digital Strategies' CSS.
+ */
+
+ /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */@font-face{font-family:'Font Awesome 5 Free';font-style:normal;font-weight:900;font-display:block;src:url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.eot');src:url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2') format('woff2'),url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff') format('woff'),url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.ttf') format('truetype'),url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.svg#fontawesome') format('svg')}@font-face{font-display:auto;font-family:Academica;font-style:normal;font-weight:300;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaLight.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaLight.woff") format("woff")}@font-face{font-display:auto;font-family:Academica;font-style:italic;font-weight:300;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaLightItalic.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaLightItalic.woff") format("woff")}@font-face{font-display:auto;font-family:Academica;font-style:normal;font-weight:500;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMedium.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMedium.woff") format("woff")}@font-face{font-display:auto;font-family:Academica;font-style:italic;font-weight:500;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMediumItalic.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMediumItalic.woff") format("woff")}@font-face{font-display:auto;font-family:Academica;font-style:normal;font-weight:700;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMediumBold.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMediumBold.woff") format("woff")}@font-face{font-display:auto;font-family:Academica;font-style:italic;font-weight:700;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete//AcademicaMediumBoldItalic.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete//AcademicaMediumBoldItalic.woff") format("woff")}@font-face{font-display:auto;font-family:Theinhardt;font-style:normal;font-weight:300;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Light.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Light.woff") format("woff")}@font-face{font-display:auto;font-family:Theinhardt;font-style:italic;font-weight:300;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Light-Italic.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Light-Italic.woff") format("woff")}@font-face{font-display:auto;font-family:Theinhardt;font-style:normal;font-weight:400;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Regular.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Regular.woff") format("woff")}@font-face{font-display:auto;font-family:Theinhardt;font-style:italic;font-weight:400;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Italic.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Italic.woff") format("woff")}@font-face{font-display:auto;font-family:Theinhardt;font-style:normal;font-weight:500;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Medium.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Medium.woff") format("woff")}@font-face{font-display:auto;font-family:Theinhardt;font-style:italic;font-weight:500;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Medium-Italic.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Medium-Italic.woff") format("woff")}@font-face{font-display:auto;font-family:"Jannon Display";font-style:normal;font-weight:300;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Light.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Light.woff") format("woff")}@font-face{font-display:auto;font-family:"Jannon Display";font-style:italic;font-weight:300;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Light-Italic.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Light-Italic.woff") format("woff")}@font-face{font-display:auto;font-family:"Jannon Display";font-style:normal;font-weight:400;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Regular.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Regular.woff") format("woff")}@font-face{font-display:auto;font-family:"Jannon Display";font-style:italic;font-weight:400;src:url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Italic.woff2") format("woff2"),url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Italic.woff") format("woff")}
+ */
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.eot');
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2') format('woff2'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.ttf') format('truetype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.svg#fontawesome') format('svg');
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Academica";
+    font-style: normal;
+    font-weight: 300;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaLight.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaLight.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Academica";
+    font-style: italic;
+    font-weight: 300;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaLightItalic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaLightItalic.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Academica";
+    font-style: normal;
+    font-weight: 500;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMedium.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMedium.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Academica";
+    font-style: italic;
+    font-weight: 500;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMediumItalic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMediumItalic.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Academica";
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMediumBold.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete/AcademicaMediumBold.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Academica";
+    font-style: italic;
+    font-weight: 700;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete//AcademicaMediumBoldItalic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Academica/complete//AcademicaMediumBoldItalic.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Theinhardt";
+    font-style: normal;
+    font-weight: 300;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Light.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Light.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Theinhardt";
+    font-style: italic;
+    font-weight: 300;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Light-Italic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Light-Italic.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Theinhardt";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Regular.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Regular.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Theinhardt";
+    font-style: italic;
+    font-weight: 400;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Italic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Italic.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Theinhardt";
+    font-style: normal;
+    font-weight: 500;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Medium.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Medium.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Theinhardt";
+    font-style: italic;
+    font-weight: 500;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Medium-Italic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/Theinhardt/complete/Theinhardt-Medium-Italic.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Jannon Display";
+    font-style: normal;
+    font-weight: 300;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Light.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Light.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Jannon Display";
+    font-style: italic;
+    font-weight: 300;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Light-Italic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Light-Italic.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Jannon Display";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Regular.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Regular.woff") format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: "Jannon Display";
+    font-style: italic;
+    font-weight: 400;
+    src: url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Italic.woff2") format("woff2"), url("https://cdn.vanderbilt.edu/vu-futurevu/static/fonts/JJannon/complete/JJannon-Display-Italic.woff") format("woff")
+}

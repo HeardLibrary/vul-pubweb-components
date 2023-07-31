@@ -18,7 +18,6 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 });
 
 mix
-    .sourceMaps(true, 'source-map')
     .css('src/future-vu/css/vu.css', 'temp/postcss.css')
     .styles(
         [
@@ -37,6 +36,7 @@ mix
             'src/pwc/js/VulFooter.js',
         ], 
         distDir + 'js/pwc.js')
+    .sourceMaps(!mix.inProduction())
     .mergeManifest()
     .options({
         processCssUrls: false,
