@@ -2,5 +2,10 @@
     "/css/component.css": "/css/component.css",
     "/css/pwc.css": "/css/pwc.css",
     "/js/pwc.js": "/js/pwc.js",
-    "/temp/postcss.css": "/temp/postcss.css"
+    "/temp/postcss.css": "/temp/postcss.css",
+    "/js/pwc.min.js": "/js/pwc.min.js",
+    "/css/component.min.css": "/css/component.min.css",
+    "/css/pwc.min.css": "/css/pwc.min.css",
+    "/css/vu-alert.css": "/css/vu-alert.css",
+    "/css/vu-alert.min.css": "/css/vu-alert.min.css"
 }

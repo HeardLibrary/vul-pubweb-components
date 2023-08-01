@@ -1,3 +1,5 @@
+export const min = (process.env.NODE_ENV === 'production' ? '.min' : '');
+
 export const vulNavigationSvgs = () => {
     return `
         <svg display="none" width="0" height="0" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -141,7 +143,7 @@ export const vulFooterSvgs = () => {
 };
 
 export const attachPwcStyle = (elem) => {
-    let url = document.querySelector('script[src*="pwc.js"]').src.split('js')[0] + 'css/component.css';
+    let url = document.querySelector('[src*="pwc' + min + '.js"]').src.split('js')[0] + 'css/component' + min + '.css';
 
     let link = document.createElement('link')
         link.rel = 'stylesheet';
@@ -151,7 +153,7 @@ export const attachPwcStyle = (elem) => {
 }
 
 export const fetchWpMenu = (id) => {
-    const menu = (process.env.NODE_ENV === 'development' ? process.env.MIX_WP_API_URL_DEV : 'https://www.library.vanderbilt.edu/wp-json/wp/v2/') + 'menu/' + id;
+    const menu = (process.env.NODE_ENV === 'production' ? process.env.MIX_WP_API_URL_PROD : process.env.MIX_WP_API_URL_DEV) + 'menu/' + id;
 
     return fetch(menu)
         .then((response) => response.json())

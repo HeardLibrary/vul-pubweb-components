@@ -1,6 +1,14 @@
-let mix = require('laravel-mix');
-let distDir = '../../dist/';
 require('laravel-mix-merge-manifest');
+
+const mix = require('laravel-mix');
+const distDir = '../../dist/';
+const min = mix.inProduction() ? '.min' : '';
+const purgecss = require('@fullhuman/postcss-purgecss')({
+    fontFace: true,
+    keyframes: true,
+    variables: true,
+    safelist: ['alert-bar', 'a'],
+});
 
 mix
     .setPublicPath(distDir)
@@ -10,17 +18,8 @@ mix
             distDir + 'temp/postcss.css',
             'vu-alert.css',
         ],
-        distDir + 'css/vu-alert.css')
-    .mergeManifest();
-
-const purgecss = require('@fullhuman/postcss-purgecss')({
-    fontFace: true,
-    keyframes: true,
-    variables: true,
-    safelist: ['alert-bar', 'a'],
-});
-
-mix
+        distDir + 'css/vu-alert' + min + '.css')
+    .mergeManifest()
     .options({
         processCssUrls: false,
         postCss: [

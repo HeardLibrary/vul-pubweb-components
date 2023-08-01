@@ -1,8 +1,8 @@
+require('laravel-mix-merge-manifest');
+
 const mix = require('laravel-mix');
 const distDir = './dist/';
-require('laravel-mix-merge-manifest');
-mix.setPublicPath(distDir);
-
+const min = mix.inProduction() ? '.min' : '';
 const purgecss = require('@fullhuman/postcss-purgecss')({
     content: [
         'src/pwc/js/VulNavigation.js',
@@ -17,6 +17,8 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     dynamicAttributes: ['data-selected-tab-index']
 });
 
+mix.setPublicPath(distDir);
+
 mix
     .css('src/future-vu/css/vu.css', 'temp/postcss.css')
     .styles(
@@ -26,7 +28,7 @@ mix
             'src/pwc/css/vul-navigation.css',
             'src/pwc/css/vul-footer.css',
         ], 
-        distDir + 'css/component.css')
+        distDir + 'css/component' + min + '.css')
     .js(
         [
             'src/pwc/js/index.js',
@@ -35,7 +37,7 @@ mix
             'src/pwc/js/VulMegaMenu.js',
             'src/pwc/js/VulFooter.js',
         ], 
-        distDir + 'js/pwc.js')
+        distDir + 'js/pwc' + min + '.js')
     .sourceMaps(!mix.inProduction())
     .mergeManifest()
     .options({
@@ -50,5 +52,5 @@ mix
         [
             'src/pwc/css/pwc.css'
         ], 
-        distDir + 'css/pwc.css');
+        distDir + 'css/pwc' + min + '.css');
     
