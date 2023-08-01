@@ -14,6 +14,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     keyframes: true,
     variables: true,
     safelist: ['mega-menu'],
+    blocklist: ['html'],
     dynamicAttributes: ['data-selected-tab-index']
 });
 
@@ -25,8 +26,7 @@ mix
         [
             distDir + 'temp/postcss.css',
             'src/future-vu/css/primary-nav-children.css',
-            'src/pwc/css/vul-navigation.css',
-            'src/pwc/css/vul-footer.css',
+            'src/pwc/css/component.css',
         ], 
         distDir + 'css/component' + min + '.css')
     .js(

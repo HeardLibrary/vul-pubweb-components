@@ -1,9 +1,8 @@
 /* Changes to Digital Strategies' original vu.css:
     - Updated cdn.vanderbilt.edu relative links to absolute links 
     - Moved @font-face rules to pwc.css
-    - Added PurgeCSS ignore directives. See https://purgecss.com/safelisting#in-the-css-directly.
 */
-html,
+
 div,
 span,
 p,
@@ -103,20 +102,11 @@ q::after {
     width: auto
 }
 
-html {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    scroll-behavior: smooth;
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    text-size-adjust: 100%
-}
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: inherit
-}
+} */
 
 img,
 svg {
@@ -1915,6 +1905,12 @@ body > #overlay {
     text-size-adjust: 100%
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: inherit
+}
+
  @media (min-width: 1070px) {
     .mega-menu {
         display: none;
@@ -1961,22 +1957,6 @@ body > #overlay {
     height: 100%; 
     opacity: 1;
     transition: height 0ms 0ms, opacity 400ms 0ms;
-}
-
-/* 
- * Supplementary rules to Digital Strategies' CSS. This includes novel 
- * rules along with those that are derived from DS's CSS to work
- * with the PWC.
- */
-
-:host {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    scroll-behavior: smooth;
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    text-size-adjust: 100%
 }
 
 /* Not sure why PurgeCSS removes this rule from DS's primary-nav-children.css */

@@ -1,7 +1,6 @@
 /* Changes to Digital Strategies' original vu.css:
     - Updated cdn.vanderbilt.edu relative links to absolute links 
     - Moved @font-face rules to pwc.css
-    - Added PurgeCSS ignore directives. See https://purgecss.com/safelisting#in-the-css-directly.
 */
 
 a {
@@ -37,11 +36,12 @@ a {
     --c-gradient-fade: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, white 100%);
     --c-gradient-fade-vert: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, white 100%)
 }
-*,
+
+/* *,
 *::before,
 *::after {
     box-sizing: inherit
-}
+} */
 
 a {
     cursor: pointer
