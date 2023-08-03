@@ -1,5 +1,3 @@
-import { min } from "../../../pwc/js/utils";
-
 /**
  * KeyboardEvent.key values
  * @see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key
@@ -47,11 +45,10 @@ export const alertBar = () => {
   document.body.appendChild(vuEmergency);
 
   // Pulls in PWC Alert Bar styles
-  const vuEmergencyCss = document.createElement('link');
-  vuEmergencyCss.rel = 'stylesheet';
-  // vuEmergencyCss.href = 'https://cdn.library.vanderbilt.edu/pwc/future-vul/dist/css/vu-alert' + min + '.css';
-  vuEmergencyCss.href = (process.env.NODE_ENV === 'production' ? '/future-vul/dist/css/vu-alert' : '/future-vul/dist/css/vu-alert') + min + '.css';
-  document.head.append(vuEmergencyCss);
+  const vuEmergencyStyle = document.createElement('link');
+  vuEmergencyStyle.rel = 'stylesheet';
+  vuEmergencyStyle.href = (process.env.NODE_ENV === 'production' ? 'https://cdn.library.vanderbilt.edu/futurevul/pwc/css/vu-alert.min.css' : '/future-vul/dist/css/vu-alert.css');
+  document.head.append(vuEmergencyStyle);
 };
 
 export const initJumpLinks = () => {

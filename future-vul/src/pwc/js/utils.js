@@ -153,7 +153,7 @@ export const attachPwcStyle = (elem) => {
 }
 
 export const fetchWpMenu = (id) => {
-    const menu = (process.env.NODE_ENV === 'production' ? process.env.MIX_WP_API_URL_PROD : process.env.MIX_WP_API_URL_DEV) + 'menu/' + id;
+    const menu = (process.env.NODE_ENV === 'production' ? 'https://www.library.vanderbilt.edu' : process.env.MIX_WP_API_HOST_DEV) + '/wp-json/wp/v2/menu/' + id;
 
     return fetch(menu)
         .then((response) => response.json())
