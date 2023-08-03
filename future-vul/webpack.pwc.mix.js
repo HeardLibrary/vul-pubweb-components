@@ -6,8 +6,6 @@ const min = mix.inProduction() ? '.min' : '';
 const purgecss = require('@fullhuman/postcss-purgecss')({
     content: [
         'src/pwc/js/VulNavigation.js',
-        'src/pwc/js/VulPrimaryNav.js',
-        'src/pwc/js/VulMegaMenu.js',
         'src/pwc/js/VulFooter.js',
     ],
     fontFace: true,
@@ -33,8 +31,6 @@ mix
         [
             'src/pwc/js/index.js',
             'src/pwc/js/VulNavigation.js',
-            'src/pwc/js/VulPrimaryNav.js',
-            'src/pwc/js/VulMegaMenu.js',
             'src/pwc/js/VulFooter.js',
         ], 
         distDir + 'js/pwc' + min + '.js')
