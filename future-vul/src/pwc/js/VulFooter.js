@@ -124,6 +124,13 @@ class VulFooter extends HTMLElement {
               footer.setAttribute('data-component', 'Site Footer');
               footer.setAttribute('data-theme', 'light');
               footer.insertAdjacentHTML('afterbegin', html);
+        
+        const template = document.getElementById('vul-footer');
+        if (template) {
+            let content = template.content;
+            content.firstElementChild.style.marginTop = '1rem';
+            footer.querySelector('.site-footer__universal').append(content);
+        }
 
         shadow.append(footer);
 
