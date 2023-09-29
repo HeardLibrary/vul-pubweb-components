@@ -1,3 +1,18 @@
+.alert-bar a {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline
+}
+
+.alert-bar a,
+.alert-bar a:active,
+.alert-bar a:hover {
+    text-decoration: none
+}
+
 /* Harden against outside CSS */
 .alert-bar h2,
 .alert-bar h3 {

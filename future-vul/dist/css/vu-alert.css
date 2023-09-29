@@ -3,15 +3,6 @@
     - Moved @font-face rules to pwc.css
 */
 
-a {
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline
-}
-
 :root {
     --c-bg: #ffffff;
     --c-accent: #cfae70;
@@ -43,10 +34,6 @@ a {
     box-sizing: inherit
 } */
 
-a {
-    cursor: pointer
-}
-
 ::-moz-selection {
     background: var(--c-bright-1);
     color: #fff;
@@ -59,17 +46,6 @@ a {
     text-shadow: none
 }
 
-a {
-    cursor: pointer
-}
-
-a,
-a:active,
-a:hover {
-    color: var(--c-text-link);
-    text-decoration: none
-}
-
 .alert-bar {
     font-family: Theinhardt, system-ui, sans-serif;
     font-size: 15px;
@@ -79,6 +55,21 @@ a:hover {
     color: #fff;
     padding: 15px 18px 12px;
     width: 100%
+}
+
+.alert-bar b,
+.alert-bar strong {
+    font-weight: 500
+}
+
+.alert-bar em,
+.alert-bar i {
+    font-style: italic
+}
+
+.alert-bar p:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 1em
 }
 
 @media(min-width: 600px) {
@@ -102,6 +93,21 @@ a:hover {
 }
 
 :root {}
+
+.alert-bar a {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline
+}
+
+.alert-bar a,
+.alert-bar a:active,
+.alert-bar a:hover {
+    text-decoration: none
+}
 
 /* Harden against outside CSS */
 .alert-bar h2,

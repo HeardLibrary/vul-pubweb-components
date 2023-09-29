@@ -7,7 +7,9 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     fontFace: true,
     keyframes: true,
     variables: true,
-    safelist: ['alert-bar', 'a'],
+    safelist: {
+        deep: [/alert-bar/]
+    },
 });
 
 mix
