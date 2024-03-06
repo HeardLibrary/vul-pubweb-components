@@ -3,3 +3,4 @@ node_modules
 **/dist/postcss
 **/dist/temp
 .env
+vul-pubweb-components.code-workspace

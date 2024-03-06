@@ -1,5 +1,12 @@
 export const min = (process.env.NODE_ENV === 'production' ? '.min' : '');
 
+export const vulAlertBar = () => {
+    const vulAnnouncement = document.createElement('script');
+    vulAnnouncement.type = 'text/javascript';
+    vulAnnouncement.src = 'https://cdn.library.vanderbilt.edu/futurevul/pwc/js/announcement.js';
+    document.body.appendChild(vulAnnouncement);
+};
+
 export const vulNavigationSvgs = () => {
     return `
         <svg display="none" width="0" height="0" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">

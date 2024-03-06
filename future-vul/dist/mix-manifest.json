@@ -7,5 +7,6 @@
     "/css/component.min.css": "/css/component.min.css",
     "/css/pwc.min.css": "/css/pwc.min.css",
     "/css/vu-alert.css": "/css/vu-alert.css",
-    "/css/vu-alert.min.css": "/css/vu-alert.min.css"
+    "/css/vu-alert.min.css": "/css/vu-alert.min.css",
+    "/js/announcement.js": "/js/announcement.js"
 }

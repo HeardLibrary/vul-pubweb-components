@@ -49,4 +49,10 @@ mix
             'src/pwc/css/pwc.css'
         ], 
         distDir + 'css/pwc' + min + '.css');
+
+if (!mix.inProduction()) {
+    mix.copy(
+        ['src/pwc/js/announcement.js'],
+        distDir + 'js');
+}
     
