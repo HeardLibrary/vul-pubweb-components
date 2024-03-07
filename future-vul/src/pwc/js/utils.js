@@ -3,7 +3,9 @@ export const min = (process.env.NODE_ENV === 'production' ? '.min' : '');
 export const vulAlertBar = () => {
     const vulAnnouncement = document.createElement('script');
     vulAnnouncement.type = 'text/javascript';
-    vulAnnouncement.src = 'https://cdn.library.vanderbilt.edu/futurevul/pwc/js/announcement.js';
+    vulAnnouncement.src = (process.env.NODE_ENV === 'production' ? 
+        'https://cdn.library.vanderbilt.edu/futurevul/pwc/js/announcement.js' : 
+        '/future-vul/dist/js/announcement.js');
     document.body.appendChild(vulAnnouncement);
 };
 
