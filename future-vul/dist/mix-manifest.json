@@ -8,5 +8,5 @@
     "/css/pwc.min.css": "/css/pwc.min.css",
     "/css/vu-alert.css": "/css/vu-alert.css",
     "/css/vu-alert.min.css": "/css/vu-alert.min.css",
-    "/js/announcement.js": "/js/announcement.js"
+    "/js/alerts/vul.js": "/js/alerts/vul.js"
 }

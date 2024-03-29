@@ -1,12 +1,12 @@
 export const min = (process.env.NODE_ENV === 'production' ? '.min' : '');
 
 export const vulAlertBar = () => {
-    const vulAnnouncement = document.createElement('script');
-    vulAnnouncement.type = 'text/javascript';
-    vulAnnouncement.src = (process.env.NODE_ENV === 'production' ? 
-        'https://cdn.library.vanderbilt.edu/futurevul/pwc/js/announcement.js' : 
-        '/future-vul/dist/js/announcement.js');
-    document.body.appendChild(vulAnnouncement);
+    const vulAlert = document.createElement('script');
+    vulAlert.type = 'text/javascript';
+    vulAlert.src = (process.env.NODE_ENV === 'production' ? 
+        'https://cdn.library.vanderbilt.edu/futurevul/alerts/vul.js' : 
+        '/future-vul/dist/js/alerts/vul.js');
+    document.body.appendChild(vulAlert);
 };
 
 export const vulNavigationSvgs = () => {

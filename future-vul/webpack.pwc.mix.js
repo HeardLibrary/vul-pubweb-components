@@ -52,7 +52,7 @@ mix
 
 if (!mix.inProduction()) {
     mix.copy(
-        ['src/pwc/js/announcement.js'],
-        distDir + 'js');
+        ['src/pwc/js/alerts/vul.js'],
+        distDir + 'js/alerts');
 }
     
