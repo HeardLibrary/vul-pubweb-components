@@ -458,11 +458,6 @@ ul ul {
     opacity: 1
 }
 
-.mega-menu .mega-menu__search-input:-ms-input-placeholder {
-    color: var(--c-text-muted);
-    opacity: 1
-}
-
 .mega-menu .mega-menu__search-input::placeholder {
     color: var(--c-text-muted);
     opacity: 1
@@ -473,10 +468,6 @@ ul ul {
 }
 
 .mega-menu .mega-menu__search-input:focus::-moz-placeholder {
-    color: var(--c-text-muted)
-}
-
-.mega-menu .mega-menu__search-input:focus:-ms-input-placeholder {
     color: var(--c-text-muted)
 }
 
@@ -1063,10 +1054,6 @@ ul ul {
     color: var(--c-text-muted)
 }
 
-.primary-nav .primary-nav__search:focus-within .primary-nav__search-input:-ms-input-placeholder {
-    color: var(--c-text-muted)
-}
-
 .primary-nav .primary-nav__search:focus-within .primary-nav__search-input::placeholder {
     color: var(--c-text-muted)
 }
@@ -1127,11 +1114,6 @@ ul ul {
     opacity: 1
 }
 
-.primary-nav .primary-nav__search-input:-ms-input-placeholder {
-    color: var(--c-text-muted);
-    opacity: 1
-}
-
 .primary-nav .primary-nav__search-input::placeholder {
     color: var(--c-text-muted);
     opacity: 1
@@ -1141,20 +1123,11 @@ ul ul {
     color: var(--c-text-muted)
 }
 
-.primary-nav .primary-nav__search-input:focus:-ms-input-placeholder {
-    color: var(--c-text-muted)
-}
-
 .primary-nav .primary-nav__search-input:focus::placeholder {
     color: var(--c-text-muted)
 }
 
 .primary-nav .primary-nav__search-input::-moz-placeholder {
-    color: var(--c-text);
-    opacity: 1
-}
-
-.primary-nav .primary-nav__search-input:-ms-input-placeholder {
     color: var(--c-text);
     opacity: 1
 }
