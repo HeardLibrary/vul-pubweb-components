@@ -56,7 +56,7 @@ class VulFooter extends HTMLElement {
                                 <li class="site-footer__link-set-item"><a href="https://events.vanderbilt.edu/">Events</a></li>
                                 <li class="site-footer__link-set-item"><a href="https://www.vanderbilt.edu/logins/">Logins</a></li>
                                 <li class="site-footer__link-set-item"><a href="https://www.vanderbilt.edu/map/">Campus Map</a></li>
-                                <li class="site-footer__link-set-item"><a href="https://news.vanderbilt.edu/experts/">Media Resources</a></li>
+                                <li class="site-footer__link-set-item"><a href="https://news.vanderbilt.edu/resources/contact/">Media Resources</a></li>
                             </ul>
                         </div><!-- site-footer__link-sets -->
                         <div class="site-footer__contact">

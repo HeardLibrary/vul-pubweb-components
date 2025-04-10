@@ -70,7 +70,7 @@
 
 /* Not sure why PurgeCSS removes this rule from DS's primary-nav-children.css */
 .primary-nav .primary-nav__search-input {
-    width: 100px;
+    width: 110px;
 }
 
 .depository-logo {
